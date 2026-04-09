@@ -2,7 +2,7 @@
 
 Public update feed for the Penultima Launcher.
 
-- Version: `15.23-prod-d28fedca250d`
+- Version: `15.23-prod-20d9f5d3c863`
 - Managed folders: `assets`, `bin`, `sounds`
 - Bootstrap-only folders: `conf`
 

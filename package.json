@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-d28fedca250d",
+  "version": "15.23-prod-20d9f5d3c863",
   "files": [
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -94276,16 +94276,16 @@
     {
       "url": "conf/clientoptions.json",
       "localfile": "conf/clientoptions.json",
-      "packedhash": "1a52ea3d83d88f821f05adda7ee66545c32de29d53d6ab859c17bb62a60fdb82",
-      "packedsize": 163202,
+      "packedhash": "d4e0123ecfe0c1d6b1b582e35309a073bee5aa79f0665aab675bf574c073909d",
+      "packedsize": 163195,
       "unpack": false,
       "bootstrap_only": true
     },
     {
       "url": "conf/config.ini",
       "localfile": "conf/config.ini",
-      "packedhash": "69bb19fc198fb1a123a8f30c934b0c1a9fdac9a7a50736ee76dd24a5c0922c7f",
-      "packedsize": 2031,
+      "packedhash": "2c69dab2a101a2e2a9391ddbf001e8048f238af49d127ea4bb640cf3099b2f13",
+      "packedsize": 2010,
       "unpack": false,
       "bootstrap_only": true
     },

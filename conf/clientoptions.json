@@ -54,12 +54,12 @@
     },
     "deviceCookieOptions": [
         {
-            "devicecookie": "Yt3a6EEvkMJYpap8iep7sA==,7Gw4czXNHQNtxd+qqFC++g==,vNgpaYHFk8nnIOxKvFdC2A==",
-            "hash": "b97be12c"
-        },
-        {
             "devicecookie": "l7v7VfzCkOOG+0wfPSqC4w==,aoeruQe4L6S9h4X13NsfWQ==,lwoJ44kWJD0U++Q8HtPgiA==",
             "hash": "1f0d187d"
+        },
+        {
+            "devicecookie": "Yt3a6EEvkMJYpap8iep7sA==,7Gw4czXNHQNtxd+qqFC++g==,vNgpaYHFk8nnIOxKvFdC2A==",
+            "hash": "b97be12c"
         }
     ],
     "hotkeyOptions": {
@@ -4016,7 +4016,7 @@
         "lightEffectsEnabled": true,
         "lightLevelSeparatorLevel": 0.800000011920929,
         "linkCopyWarningEnabled": true,
-        "loginEmailAddress": "teste02@gmail.com",
+        "loginEmailAddress": "your_email",
         "lootSchemeIndex": 0,
         "marketShowLockerOnly": false,
         "monsterBossAreaEffectsOpacity": 1,
