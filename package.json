@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-9032edada98c",
+  "version": "15.23-prod-ade6d525e3ed",
   "files": [
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -81563,13 +81563,6 @@
       "localfile": "assets/staticdata-c545e984763f239bad400d289efc7d76b59774d5ce4c93edaf42c324bd0d9933.dat",
       "packedhash": "7a8dd6fe44748cfda059f8e203668eef255a8a4dad6d1ee1f1b2c106a7047be7",
       "packedsize": 176979,
-      "unpack": false
-    },
-    {
-      "url": "assets/staticdata-c545e984763f239bad400d289efc7d76b59774d5ce4c93edaf42c324bd0d9933.dat.before-staticdatasync-20260402-01.bak",
-      "localfile": "assets/staticdata-c545e984763f239bad400d289efc7d76b59774d5ce4c93edaf42c324bd0d9933.dat.before-staticdatasync-20260402-01.bak",
-      "packedhash": "c545e984763f239bad400d289efc7d76b59774d5ce4c93edaf42c324bd0d9933",
-      "packedsize": 174326,
       "unpack": false
     },
     {
