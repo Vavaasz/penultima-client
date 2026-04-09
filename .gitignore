@@ -1,0 +1,9 @@
+# Public client feed artifacts are generated intentionally.
+# Runtime folders stay out of the feed.
+/cache/
+/characterdata/
+/crashdump/
+/log/
+/minimap/
+/screenshots/
+/storeimages/
