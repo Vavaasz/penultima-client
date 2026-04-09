@@ -831,6 +831,12 @@
                             "action": "PressEnterInChat"
                         },
                         "keysequence": "Num+Enter"
+                    },
+                    {
+                        "actionsetting": {
+                            "action": "ToggleManualSortMode"
+                        },
+                        "keysequence": "Shift+S"
                     }
                 ]
             },
@@ -1599,6 +1605,12 @@
                             "action": "PressEnterInChat"
                         },
                         "keysequence": "Num+Enter"
+                    },
+                    {
+                        "actionsetting": {
+                            "action": "ToggleManualSortMode"
+                        },
+                        "keysequence": "Shift+S"
                     }
                 ]
             },
@@ -2367,6 +2379,12 @@
                             "action": "PressEnterInChat"
                         },
                         "keysequence": "Num+Enter"
+                    },
+                    {
+                        "actionsetting": {
+                            "action": "ToggleManualSortMode"
+                        },
+                        "keysequence": "Shift+S"
                     }
                 ]
             },
@@ -3135,6 +3153,12 @@
                             "action": "PressEnterInChat"
                         },
                         "keysequence": "Num+Enter"
+                    },
+                    {
+                        "actionsetting": {
+                            "action": "ToggleManualSortMode"
+                        },
+                        "keysequence": "Shift+S"
                     }
                 ]
             },
@@ -3903,6 +3927,12 @@
                             "action": "PressEnterInChat"
                         },
                         "keysequence": "Num+Enter"
+                    },
+                    {
+                        "actionsetting": {
+                            "action": "ToggleManualSortMode"
+                        },
+                        "keysequence": "Shift+S"
                     }
                 ]
             }
@@ -3945,7 +3975,6 @@
         "actionBarsShowLeft": true,
         "actionBarsShowRight": true,
         "actionButtonAllowTooltip": true,
-        "actionButtonAutoInsertSpells": true,
         "actionButtonShowAmount": true,
         "actionButtonShowCooldownNumbers": true,
         "actionButtonShowGraphicalCooldown": true,
