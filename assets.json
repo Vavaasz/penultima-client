@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-39ebdb072a73",
+  "version": "15.23-prod-9032edada98c",
   "tracked_files": [
     {
       "path": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -92862,27 +92862,6 @@
       "size": 90112,
       "managed_by_launcher": true,
       "bootstrap_only": false
-    },
-    {
-      "path": "conf/clientoptions.json",
-      "sha256": "2b57a9ecca9c6151ea39f01bd15d2f3ce4b0877fb0c20d5bb1f2134b828b5a38",
-      "size": 164303,
-      "managed_by_launcher": true,
-      "bootstrap_only": true
-    },
-    {
-      "path": "conf/config.ini",
-      "sha256": "2c69dab2a101a2e2a9391ddbf001e8048f238af49d127ea4bb640cf3099b2f13",
-      "size": 2010,
-      "managed_by_launcher": true,
-      "bootstrap_only": true
-    },
-    {
-      "path": "conf/gpublacklist.json",
-      "sha256": "057cc6d78c8893aa26e3aa734e6585671206b78c9cf0f96c03a2f33bd89ef48d",
-      "size": 6242,
-      "managed_by_launcher": true,
-      "bootstrap_only": true
     },
     {
       "path": "sounds/catalog-sound.json",

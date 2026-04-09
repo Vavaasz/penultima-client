@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-39ebdb072a73",
+  "version": "15.23-prod-9032edada98c",
   "files": [
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -94272,30 +94272,6 @@
       "packedsize": 62082,
       "unpackedhash": "3781362920da906ee5de8175c73c89a5604385a8921aa5d3c251a061a2ee7db3",
       "unpackedsize": 90112
-    },
-    {
-      "url": "conf/clientoptions.json",
-      "localfile": "conf/clientoptions.json",
-      "packedhash": "2b57a9ecca9c6151ea39f01bd15d2f3ce4b0877fb0c20d5bb1f2134b828b5a38",
-      "packedsize": 164303,
-      "unpack": false,
-      "bootstrap_only": true
-    },
-    {
-      "url": "conf/config.ini",
-      "localfile": "conf/config.ini",
-      "packedhash": "2c69dab2a101a2e2a9391ddbf001e8048f238af49d127ea4bb640cf3099b2f13",
-      "packedsize": 2010,
-      "unpack": false,
-      "bootstrap_only": true
-    },
-    {
-      "url": "conf/gpublacklist.json",
-      "localfile": "conf/gpublacklist.json",
-      "packedhash": "057cc6d78c8893aa26e3aa734e6585671206b78c9cf0f96c03a2f33bd89ef48d",
-      "packedsize": 6242,
-      "unpack": false,
-      "bootstrap_only": true
     },
     {
       "url": "sounds/catalog-sound.json",
