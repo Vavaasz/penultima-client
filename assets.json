@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-20260409-115647",
+  "version": "15.23-prod-d28fedca250d",
   "tracked_files": [
     {
       "path": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -1410,8 +1410,8 @@
     },
     {
       "path": "assets/proficiencies-86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca.json",
-      "sha256": "86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca",
-      "size": 462443,
+      "sha256": "1941f72b96c0ace508626008a7e6a1f0d2cb1e5b11115445812cf688d7ba55d6",
+      "size": 489532,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83422,8 +83422,8 @@
     },
     {
       "path": "bin/qml/QML/plugins.qmltypes",
-      "sha256": "df4054e543c8a89f79ac80c82289cae95bbb7bc047e310281ba54959911f744e",
-      "size": 138292,
+      "sha256": "d262bf34df3010337bf152c845eefdaf0399bc19e5fe22cc6abd9fcb8edc85f8",
+      "size": 142762,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83436,8 +83436,8 @@
     },
     {
       "path": "bin/qml/Qt/labs/folderlistmodel/plugins.qmltypes",
-      "sha256": "b75299121ae08065fbf38601079b5477da2dc640a695f95c8ef5f8ec9fae1d8f",
-      "size": 6215,
+      "sha256": "ac7a7e01573316268ba5167db40b67d4b91571c62af46a7f41083cb865888936",
+      "size": 6427,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83457,239 +83457,239 @@
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/Blend.qml",
-      "sha256": "9ec4a39085a38b9dd1c45c34bb45f38573d622a088668c56fa0520af1199de7f",
-      "size": 17074,
+      "sha256": "1e89e4a6eeb83a6919b1f0d67da4a2286789ce9751b39a9606ce3a002fb37a54",
+      "size": 17521,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/BrightnessContrast.qml",
-      "sha256": "50fd35043ba1439d0802770d12e824f68260244bd6f24a3fed6ecd987e7607e7",
-      "size": 4578,
+      "sha256": "23bf850326aa7828c00afa705b7370ae9b6528e50ffb0f6236c75ec4f247de4d",
+      "size": 4734,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/ColorOverlay.qml",
-      "sha256": "45a430d4aab721c6447bfb8e2dd009b092c1ab8435a411731b1109494cba0957",
-      "size": 3129,
+      "sha256": "1691f9d6a69982fcd529576fedea28bd85a946b5ef1fedcbf807db8a1dacc3b8",
+      "size": 3239,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/Colorize.qml",
-      "sha256": "8b6014bbe5fc7ab63ad26c1334fcdf9a303271115a46bdee814dd1d4570714a1",
-      "size": 5746,
+      "sha256": "d19f625010b0a8c2bc57931d825ae33f6f82e7c0e132573d24ad2d749cf44f77",
+      "size": 5944,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/ConicalGradient.qml",
-      "sha256": "cc48c073acb1115d36f11609ae15da68ffeee9104f0ee16da9b250a83a267fce",
-      "size": 8133,
+      "sha256": "f2c084c49896cbdc545db42588497169bd73f7b0ddd5bdc88ae3894dde2a560c",
+      "size": 8428,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/Desaturate.qml",
-      "sha256": "edb11b8d28f44a24f98e48367b9a2af99c1da288c9c500b879151b9e5b1ac6b3",
-      "size": 3119,
+      "sha256": "11dc6a800ed2b60592e1f8ba35e23d8ae060bf71f949a8cdb57a87cb500dfa79",
+      "size": 3228,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/DirectionalBlur.qml",
-      "sha256": "d41e1c4b80b7530b3f1b0a1c529c4a1d176685b547e3913feb6a64dde010f015",
-      "size": 8878,
+      "sha256": "71673dab73453b4b2f6d8fcc151bbdf321ba014eadb964541f5debf8c74e0cfd",
+      "size": 9136,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/Displace.qml",
-      "sha256": "8ccb76fa779c1aa4efce4abbd062a04ee5b642d11731f7ba63679ee0f9d8d708",
-      "size": 5214,
+      "sha256": "b37326d1a77fe311f84a3ac8361e31ce81218136297811fe0d09b45233e0dae0",
+      "size": 5366,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/DropShadow.qml",
-      "sha256": "be3f7baf8f0bf69bcd3fdd6967b392bb0299dbb2c2ca4d19543c72f00999dda2",
-      "size": 11116,
+      "sha256": "72324616494e9891adb0dbf14e6872d16814942e13fc08d9e98793467c7dcc71",
+      "size": 11470,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/FastBlur.qml",
-      "sha256": "a532d37b7781face80873e69a91936c56e03bfe8c8646c5841bfd393c2468460",
-      "size": 11383,
+      "sha256": "9ffebde3e33e6573966bff8726feb2b4682ad7f895c372207a5f428742745b2f",
+      "size": 11782,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/GammaAdjust.qml",
-      "sha256": "00eb884dc9c5af09c535205107b2e1460fac2f261ac849664cfdcd9466df3227",
-      "size": 4237,
+      "sha256": "cb207763840e40681799a44d54de9508796a2acc54fb1adec88dbadaa9d1ef09",
+      "size": 4382,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/GaussianBlur.qml",
-      "sha256": "8b5d64810128bf8244ffdb28d2b42c3981639aedd28f4328782f1d26e8f62238",
-      "size": 11952,
+      "sha256": "08ce6fbe2ef69a4bbe9a1cbda686992dd723d2dd630c6f7d2c8635c07b3efa15",
+      "size": 12301,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/Glow.qml",
-      "sha256": "48ca071ddea378409c7a24a08c2214518080b0923ce298ef676b0e25e9b6cc21",
-      "size": 7399,
+      "sha256": "c9868c1d6de3ed82c7cfe46aa06e205f788949fc00279a092ac405907a2d1588",
+      "size": 7645,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/HueSaturation.qml",
-      "sha256": "c5ee33b7cd17595ecd7e5ac6621d3bf53af114350721bb443156d232a327845d",
-      "size": 5351,
+      "sha256": "fde3e4d3b800416285951862dc6340a3659340641602e9d17509d3a3111e9932",
+      "size": 5537,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/InnerShadow.qml",
-      "sha256": "754c4348b1b58b0dc68dc0ad19a6e6905a99c04a0e4894d53f28e79e1d9e9947",
-      "size": 10707,
+      "sha256": "7627bec04dc271402382c9d65036a748a1f79546dcbbddd4c6cfc367d55b12cc",
+      "size": 11057,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/LevelAdjust.qml",
-      "sha256": "fa07f2df18c10710581700a6b42ee3771bf511c668e1ca4c606c89124c4bfabd",
-      "size": 13629,
+      "sha256": "e9efa700b71458f0cad91eae8e6ce983826fbfa46d1236ed8fc0b23ef21a7470",
+      "size": 14031,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/LinearGradient.qml",
-      "sha256": "b814d98a35663e15aa240cbab162368f89f8e7daac8b83c0c97026bcd9f9c5d7",
-      "size": 8723,
+      "sha256": "a0a1ab61cf20952bd1260cb554f28574519b13bdb2f88b5c4b163992aaa90c6e",
+      "size": 9008,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/MaskedBlur.qml",
-      "sha256": "7d0020e76e6c45b60354cbab194ad707bbaa4300e9169545ea6a0ce7ba76f8eb",
-      "size": 5044,
+      "sha256": "a56e83f8bc95577117e2bad160a7f426f378b038323f17f4dee63be1cb74cb63",
+      "size": 5200,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/OpacityMask.qml",
-      "sha256": "f236dfc911e08b6955a455d6cfc25ab0945896606f5cbf741808971cb0508d81",
-      "size": 3625,
+      "sha256": "9e85682e01c62b98f7d03ae6f20aeb7030af2ede25d6e4dedb2ac1b51f413a36",
+      "size": 3749,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/RadialBlur.qml",
-      "sha256": "01fcc912d7863afd52ac8771e8df6563372a9d461ef3c412bfb76d647fe8d065",
-      "size": 10119,
+      "sha256": "6b865d3b8ba0cde5c40aed8cacb03f3e8756ca46f0fba747c0336d8008b94f43",
+      "size": 10401,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/RadialGradient.qml",
-      "sha256": "fb7c0f0f5a8a07dd9d43be7abc22fc3f544ee6ab2d2be23bf15090bb2a1d5970",
-      "size": 11552,
+      "sha256": "007a2cc0a1e5a4510a4ab77d2efe63e3f307e2a0d75a9a3c1072c816badb44b6",
+      "size": 11924,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/RectangularGlow.qml",
-      "sha256": "df15ebccc9f517d0389d9a27e4746c5d288aa7a9e5fd01286c5fc4c40fc38648",
-      "size": 7196,
+      "sha256": "1e491831c372b304b30fffb75e812edfaa579a7211741eded9f45106867c1fab",
+      "size": 7426,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/RecursiveBlur.qml",
-      "sha256": "7166d085a9ca9f6c96f71c6a81be89ef859322de87c0d0bdc8af4ffd7f592dc6",
-      "size": 9600,
+      "sha256": "318f9a1c6d7f88c527f08161032e48d82e21913c2541adbd0baf8b99a26d5370",
+      "size": 9893,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/ThresholdMask.qml",
-      "sha256": "7165b1f01e216691bdcd7332465ca3dceab97dd43526c9ca10fe1b6bb8d7567d",
-      "size": 5434,
+      "sha256": "10aaee92a2161e10dc3a1c3444796a3852698925eb5ba5c8516afa499f230ed0",
+      "size": 5611,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/ZoomBlur.qml",
-      "sha256": "c9509b190045ecb00450a1e6728253a38cfd164a6977dca12cc049e7b0442478",
-      "size": 9576,
+      "sha256": "d3c90800401d991c44bfc137572e868b75324aa37d72424a646edc8ad2e944e2",
+      "size": 9848,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/plugins.qmltypes",
-      "sha256": "9744506def36a8c14884a34dd62be42560526ad857e7a97cd7016f283f0b7bb2",
-      "size": 265,
+      "sha256": "97c8c8b0fdd647a8dacb68380d5bf3abd9e8f9b3a15c594bf451c7970259ce21",
+      "size": 275,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/DropShadowBase.qml",
-      "sha256": "342b036bc512f6d6c794d913b4be0276d0331aa66ad057a0497b31e378704d7d",
-      "size": 1902,
+      "sha256": "ecad95c5d37b4d5c7cda20d47103f6a1bc0e20021eb352d45138a3ef8999e2b0",
+      "size": 1964,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/FastGlow.qml",
-      "sha256": "f5914d3bcf11b964ac712b939c1d14bf84655d95e74ffa954c5729d7e76dd0e6",
-      "size": 7901,
+      "sha256": "6d2f7fcce8e0339b8ec01a3def63fd8db8f0dc5e1887a99d1b4b39daf184fa56",
+      "size": 8196,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/FastInnerShadow.qml",
-      "sha256": "7357474c0b570cd74c12ec55952d4b4b06ab8dc9e4eb5d3bfcb693e5a61f014f",
-      "size": 8050,
+      "sha256": "7ffe1b5ce7678b3a40d5dd84b6455ac65896230fd405b0938cb1d3f4b4945be0",
+      "size": 8349,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/GaussianDirectionalBlur.qml",
-      "sha256": "8c1bc8c5e4827e7f5f6cdc204209df5abe30998d43a4995a1f7fd7408e69e814",
-      "size": 10308,
+      "sha256": "ed86e8fda7e61f6cddc059d59d9d266fc46068616f490899a22ed51490a74d36",
+      "size": 10563,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/GaussianGlow.qml",
-      "sha256": "5933841b103634d43162400e1503226535bd7b69cff8d981c129606394ff8c72",
-      "size": 1951,
+      "sha256": "64026c89cbc3e34336239f8ea6434d4d223c22287fc41e75290e4562a0958d58",
+      "size": 2013,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/GaussianInnerShadow.qml",
-      "sha256": "42e4435ea9ed716e0e633f8fbef75b4321ace07d1c1c688474e62283fa8a8dd7",
-      "size": 2478,
+      "sha256": "1fcc60cd14b399950355ecae85eb881044626550b2deac0fa4970fcd3146e74c",
+      "size": 2565,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/GaussianMaskedBlur.qml",
-      "sha256": "bbb78c01b70b9b603d00524bc8e3f4a73df92080fc613dc229d5cdc068343ec4",
-      "size": 2163,
+      "sha256": "5f51b8fa2c620566258e634c72820ab88198d97923e48b51d8cf432a34c1de28",
+      "size": 2231,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/Qt5Compat/GraphicalEffects/private/plugins.qmltypes",
-      "sha256": "6de879e1631a6a219da0f4c5fdedc335319dfa8f92f59a9a8bf9be28a6085ad8",
-      "size": 3261,
+      "sha256": "bb865aa3cc4b0541533629b894414a85719d4ffcc8546ee1513990743932a53f",
+      "size": 3370,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83723,8 +83723,8 @@
     },
     {
       "path": "bin/qml/QtCore/plugins.qmltypes",
-      "sha256": "8b2333f2caf9097bf774e4be387a9912154dd7eb9867b11c1a244dd90f741f1b",
-      "size": 15242,
+      "sha256": "21e3553fcee462c3c5f9b8d6b28060e783babaf4f767b8f55946682410e21963",
+      "size": 15754,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83751,8 +83751,8 @@
     },
     {
       "path": "bin/qml/QtQml/Models/plugins.qmltypes",
-      "sha256": "a0a87ccf2c06643299890c47a4ff66b355c6664fcafe5662c7a0561a997946b2",
-      "size": 51139,
+      "sha256": "02b64422de22278b634b907750018268d57514198dadd70d02f44d416b1a6faf",
+      "size": 52691,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83765,8 +83765,8 @@
     },
     {
       "path": "bin/qml/QtQml/WorkerScript/plugins.qmltypes",
-      "sha256": "520febb8b3efd6a08ca58620a3406ec8e59b186e855af2508cdd905a38d97e77",
-      "size": 1358,
+      "sha256": "a7d488467d18ff0290402a15f23e95ff61186c12f30b913d90a02fb7456b203a",
+      "size": 1404,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83786,8 +83786,8 @@
     },
     {
       "path": "bin/qml/QtQml/plugins.qmltypes",
-      "sha256": "8b63b9eb3c6af020315f297f92092c28948a1dca3016e15ab30a25d770c63123",
-      "size": 6197,
+      "sha256": "b56b1ae7cacb115777753f8ea57876fb8521fcba2e4fdfd96f3b3e82eb7b1026",
+      "size": 6404,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -83807,456 +83807,456 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/AbstractButton.qml",
-      "sha256": "5594fba24be25eb7ba8379d2db4f235b5c408728db0aa641d1fee433cb29443a",
-      "size": 547,
+      "sha256": "5f25819786382927d780a6b5a2b7c03a32c61178e5414f488f7e1a3905491412",
+      "size": 561,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Action.qml",
-      "sha256": "6dc0acacad3c61a64ec685a1e10597a9993812821cd9804e103d5f1fa3eab2ba",
-      "size": 204,
+      "sha256": "b458b122b7f11edf54c2be5452c501590ce78143faf4de2d1c5b0d651adaedc4",
+      "size": 211,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ActionGroup.qml",
-      "sha256": "709bc56c84a301867e21eddb5c723f6b203dc533cc51c0741deac5f8feb914a4",
-      "size": 209,
+      "sha256": "df3d6ec96ad33d36f7e1d651457a1ea6a49f687e7af47868f9546482b346c48e",
+      "size": 216,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ApplicationWindow.qml",
-      "sha256": "2a2633fd792f558ffb8ae3499c98c12a1390126b39c63f9a1e2ade6e958f57c2",
-      "size": 293,
+      "sha256": "85842243642b31825032ead6fdf922d704b51bd7e6bd3f5742126460f04dc8c6",
+      "size": 305,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/BusyIndicator.qml",
-      "sha256": "906c25574340c4f699196da02671b6ab5b928773093c06b381f97f93fe36ca43",
-      "size": 905,
+      "sha256": "ea5f95ace79cda59b8a9b53aa90b9043c98a4c620297961def0cc4f94b1674dd",
+      "size": 934,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Button.qml",
-      "sha256": "edf2f8a25b46c2de8888e263d75ac4ca92e99c20b21a3f7cab97244a2ed85cb3",
-      "size": 1881,
+      "sha256": "85faa6d482a67cf9394de727abae8bcf4c717a37c02c266b17aae8deeee8ffce",
+      "size": 1927,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ButtonGroup.qml",
-      "sha256": "6be60ec225390c872cad421d1c441f223086e0f33c2177315476ddc3031b045c",
-      "size": 209,
+      "sha256": "e7335aae72f3b5ab7482e3c230595ce9e5faf2689af37c29e60087ea98283b06",
+      "size": 216,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Calendar.qml",
-      "sha256": "ae878b4c539ea140d10d031b2175ec71827519bd0a1b16b3e7e300ca2c007cb5",
-      "size": 208,
+      "sha256": "612e8507f9de54fe3abfaf71622c763054b6a7abaec9a8bf1bdccdb8f67e232d",
+      "size": 216,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/CalendarModel.qml",
-      "sha256": "308196e7e64866854122cd56893d69b43664aafb45bec98b76807b67067cc94d",
-      "size": 195,
+      "sha256": "f5603ffac82dc59d74a8c89015ef2ea141c300beca1b95cfedcdaffbdf0877fa",
+      "size": 201,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/CheckBox.qml",
-      "sha256": "422311435eeaf3559d95937a97f0c0c713002196cf036eae38de84c0d2fbe761",
-      "size": 2297,
+      "sha256": "82f34e380c06238cc94c7592dce6e17f917900a3c9b0c4020e6d29d8c5d940b3",
+      "size": 2356,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/CheckDelegate.qml",
-      "sha256": "2e44c04497e5e2cbe67c616391ac4f93adcf0feaae50d4d5b6b12ce5f0a0a81e",
-      "size": 2736,
+      "sha256": "3aab407e474467e53c2f457a85da4da80b5567aa9bc284e1d60ca48124ebf29c",
+      "size": 2812,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ComboBox.qml",
-      "sha256": "5e94ef575f1532e1c71d42f4644616a4278ed5419095e2a131c86c08b50e728f",
-      "size": 4151,
+      "sha256": "4efe0c51ac943be70ad87c2917c41498aec29def1a04fe5ceadbf33041165346",
+      "size": 4263,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Container.qml",
-      "sha256": "fe106a5202791d026ddc31fe85895b7d24ecd05311821bbdca36684ee9decbda",
-      "size": 526,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Basic/Control.qml",
-      "sha256": "c16195d42a23d636e43fd8c28b7e427256130dc18c4a0e0257d5e738f162f8ea",
+      "sha256": "98f5ed783febb55e7a282898d232e7cc8810447ed34564963a2768d50d93505d",
       "size": 540,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
+      "path": "bin/qml/QtQuick/Controls/Basic/Control.qml",
+      "sha256": "127501b4b0385f6d31fc19130bb9d94249c610df36ad5d943ef29a135d189dde",
+      "size": 554,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
       "path": "bin/qml/QtQuick/Controls/Basic/DayOfWeekRow.qml",
-      "sha256": "ce2c2589399f77ebdaacd71b5801ba6fa505a8e91dc765fa907e617f91a233ae",
-      "size": 1086,
+      "sha256": "642a3042db9249944da27bacddb76d88f0fc2f357f89169c2bba5883ed82bc09",
+      "size": 1126,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/DelayButton.qml",
-      "sha256": "b0f2cb276f6809ca5e627d367d678d630461ea3b5360ee009f4d7eeb81fc048d",
-      "size": 2422,
+      "sha256": "fca6af9de0b6976d732f203767bcf4475dabf3ecdb89863349a51f0412a5c5f0",
+      "size": 2493,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Dial.qml",
-      "sha256": "a2172f4edcac02087af4da8fbc73b120900714cf046d6d204ef3dbe38e0d8f9a",
-      "size": 1879,
+      "sha256": "6bf3feb7961f14fe5972131e06fe066766ea2a40a6dfc86565c90bd6500be075",
+      "size": 1928,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Dialog.qml",
-      "sha256": "d8092f456ce94111172f02a30e3302e2244bbdb59c4d9aa2c0725555a5b3149b",
-      "size": 1626,
+      "sha256": "bdea60306a83b1d289be8ca674ba7b6b988515290107d220851633cc3b5ee73d",
+      "size": 1678,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/DialogButtonBox.qml",
-      "sha256": "751b58fb8d2807c9dfbdaff334e4c7909b765d8a4777a73decb48039a0dccb3d",
-      "size": 1301,
+      "sha256": "6c7e55279effd43c85f63fa9331d22c20d21e5815f143ab37c15d9fdba4d6649",
+      "size": 1341,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Drawer.qml",
-      "sha256": "b651ebac2ac8e11f1856419c351a6110f795dffbf682618816ea5bce2a2be038",
-      "size": 1586,
+      "sha256": "5c10098b64a7e469a0bb93c3d7d95360cee6c65bfb2ae506b3da4b8aabe9c4d2",
+      "size": 1631,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Frame.qml",
-      "sha256": "19248caa7abf83c4990495ad5e96e9c5363976093af0f1758b54802ecde700b5",
-      "size": 674,
+      "sha256": "be87a7b36fc689f693cc6e7cbd36950d62eeedf925f21749a6c81adcd3681ccb",
+      "size": 696,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/GroupBox.qml",
-      "sha256": "3eeec2c9cfc1d0352897052abcd7d9809d928f686e8c52f6e2a898f08f6542ee",
-      "size": 1282,
+      "sha256": "50fa4e5db1e5a17da70bc21044bdf47406ef3fbc754fb9a25a11620a665b9af6",
+      "size": 1322,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/HorizontalHeaderView.qml",
-      "sha256": "81a3c703413e7aebcefa323108d2585b6d7f9b31ff01c11343d2280eedab92ac",
-      "size": 1472,
+      "sha256": "a20e12d2e657e69060ec6b823bd111c4689e45553be5bdea2c492fe6f0200499",
+      "size": 1515,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ItemDelegate.qml",
-      "sha256": "962d4ac8c845e4b0008279114952011947a9208efcba88010c1b6b16c3fa0026",
-      "size": 1574,
+      "sha256": "214aa637fd80ebbe65c9b695047093e5e07dcc96da93d469deffc25b4741ce0b",
+      "size": 1617,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Label.qml",
-      "sha256": "953901f333b9c4499b3968826df523d0fa9c5dba44c10f78ada60779d342c73b",
-      "size": 323,
+      "sha256": "b9d39a0b40f5cb60161517ee58a5305d68d26e147685a3dbb5b12e622945dce7",
+      "size": 336,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Menu.qml",
-      "sha256": "e1d84101d1a6a01ea71e831034adb1eeb07b9b7e4c9f5d25488afe121c341c07",
-      "size": 1375,
+      "sha256": "75fb5fbcc3e62659da00b29a983ab393487a64dafeed9226e82e5dfacf6b36ed",
+      "size": 1422,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/MenuBar.qml",
-      "sha256": "83e1d5bd1538e8c5da8083ad2cd3e6cf85d60ea144b249fc2fbae0c5e1385a19",
-      "size": 816,
+      "sha256": "3b78209dcc8efefa0a3680377b1d89ba69b5ff487416b0a8901931134c6c6714",
+      "size": 845,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/MenuBarItem.qml",
-      "sha256": "0bb468aeadb35c4a7f77f59baf32452632b3f7a2f0ac7bb49e4a71061f8af26f",
-      "size": 1281,
+      "sha256": "94113232b1dc2d3c961d757c82339ca7cd486933bd9b8cbc1054effe0f3c5f46",
+      "size": 1324,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/MenuItem.qml",
-      "sha256": "921ff56d7c94886b71dd4205c638fbf880249a1737da61972e336bac36e1d586",
-      "size": 2646,
+      "sha256": "c9b1e22f238bf97a400faac8bba6706a7357726a4f2c8f8fb244c075e6328881",
+      "size": 2717,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/MenuSeparator.qml",
-      "sha256": "df960bc31a87e3d2946b7cbb666fdbe3cd936b6d2b1114d230f2d11645e21b79",
-      "size": 748,
+      "sha256": "eacc98fffc00abab53ba267d66560b45b062f0c3f4ccfdb345cdbc0e3c471936",
+      "size": 772,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/MonthGrid.qml",
-      "sha256": "af017fae224eccbdeba4a9f36962abb5a846bfda6cc5fc4af623f83826d110d5",
-      "size": 1151,
+      "sha256": "43a4472b431cffba430eff9f768594ad8e14cc5996916412737c7ff701581894",
+      "size": 1193,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Page.qml",
-      "sha256": "f90e8cc91d5d2825f27178526d77e7044a3e3ea64a54fc2da082a5c3d9afc34d",
-      "size": 911,
+      "sha256": "592b807bc9b8c52a4a3e353b0f34f7f992921706c8085736997276a2fd754cfd",
+      "size": 934,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/PageIndicator.qml",
-      "sha256": "2d5052779fa3766a919e0aa2fb3d782c31132f95443b0b11affe46fb1fb253ae",
-      "size": 1101,
+      "sha256": "978bdc7bd76df7f7fe3b42adb489543d08cb30ddaa827416ddccf5ee966e5b88",
+      "size": 1142,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Pane.qml",
-      "sha256": "405998ff95969b08156e1fd34bcaa0f8f4702a54c82620cb7e8c09509147b30c",
-      "size": 640,
+      "sha256": "de75ce767ad3680ef1b1ea849f30c45c6647a494d13e7f13cf2f4aaae01995ab",
+      "size": 661,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Popup.qml",
-      "sha256": "8701f9efcebed882054c3a9ba91f85f79f5d2f7120f123efce3f6882ba71fc6f",
-      "size": 892,
+      "sha256": "c3c90311cbd82995027aabfa2bab9a8554a38bab48d09e2e32ed3f79145f5998",
+      "size": 922,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ProgressBar.qml",
-      "sha256": "c54c473738113e3f6e1c88d8c805c070b90fdd2dab82ef20ea2c71a4c35f85da",
-      "size": 1038,
+      "sha256": "988b5563ba4db763cbf33cf8037b6528f4d7817bda0655ced468bb7cd268c3f1",
+      "size": 1071,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/RadioButton.qml",
-      "sha256": "4645740bf06c41a509ae4fb6102c1f269b094d4da0b7df79be01bac491606818",
-      "size": 1991,
+      "sha256": "8c4700f6f454730fe19f072c6f921ac5f1ccc3e04f5c24cc08cbdf18c780668e",
+      "size": 2043,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/RadioDelegate.qml",
-      "sha256": "d117d81ed79f95f520c4ee789018014dd606a603dd6921131d5e6262f8402d49",
-      "size": 2430,
+      "sha256": "9a9d794d56af96a21361fb29c98ad775ac618598ef8f3a83903000c7e2261ad9",
+      "size": 2499,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/RangeSlider.qml",
-      "sha256": "eade5b9dd9722defd7c2d5c3609a3278874be23b14f67fe404e91ede46c5c905",
-      "size": 3273,
+      "sha256": "bdbead55f5a49eddd6c61d7749d361dcc5a1e07aa4b4b53159fd79f71b8cc0b7",
+      "size": 3335,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/RoundButton.qml",
-      "sha256": "81486b2e509141605d4046cb0eca6fc94df2ef48b21f715595f69d74946f2fd8",
-      "size": 1916,
+      "sha256": "dfd0aa2e498e8d12d9a5093bf9627b103bbe6e7aff231e5450a3df2167606f7a",
+      "size": 1963,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ScrollBar.qml",
-      "sha256": "27769b4b121c91cd59712c7cddf1498100290e1495860648d2d7f7dfcfa67085",
-      "size": 1491,
+      "sha256": "f199cf86d387cea7009aaa11f2e6367c0b33f84d0111f4bb5ea5af843833423d",
+      "size": 1533,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ScrollIndicator.qml",
-      "sha256": "9aa836aeb3e45dfda24bf02a08e9e38ee48928f65c22878e6894aec3b5f4e98b",
-      "size": 1260,
+      "sha256": "cfb20b93a3558ddede35fe3c9fedc7d17039e28ab8dfd2c4244b563f97b094e0",
+      "size": 1302,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ScrollView.qml",
-      "sha256": "69ce788d3767d82fbb59e00389cbaed47edd3e6bbd79e3bdee70b6f74e825542",
-      "size": 1024,
+      "sha256": "40824260bb7b20a47eacbe189d9db84db8cdf5c5bf2e34f5ff49d3ae27453e92",
+      "size": 1055,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SelectionRectangle.qml",
-      "sha256": "6bf7d931cd8fc95cc54ef28050dedf7d8eda616a4b22cf4710e88f5221b504c7",
-      "size": 787,
+      "sha256": "29c1329550838c46adb7cc3683ae2968db3fa67c146847f63dd778429795daae",
+      "size": 815,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Slider.qml",
-      "sha256": "338eca29c01e35b9dee8ff191d7fac9006824f90a61b4f15eca05f4c0cb8b017",
-      "size": 2204,
+      "sha256": "2af56aafda0a9575cd651668918f816b42a5ef66485a4edd9f5dd9c728905cc0",
+      "size": 2253,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SpinBox.qml",
-      "sha256": "6d9b53b6736d433d760db12155a4610c2b024cf078a91c30c6e88c7c04e98835",
-      "size": 3406,
+      "sha256": "eb01ac7454d58bc81baa0cad22442e574e32118205c88ac8d0efc5d4876219d4",
+      "size": 3504,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SplitView.qml",
-      "sha256": "ce4e11132eac128e6cebb40a768be5cfed7e3ac51e7db888f23ca0980d1cb603",
-      "size": 914,
+      "sha256": "5d9570da4f3c81bfa6d6b84970deabbceec30773372b3dae52b89a5b4a3975c6",
+      "size": 935,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/StackView.qml",
-      "sha256": "663299e39b9abd4c457035b9776855f90a8d806eb245bbddd21292d7901ebda9",
-      "size": 1181,
+      "sha256": "98a088aa1b04dabdd010922be24691f9a36a9416edc1b897c40bd32e38f010c9",
+      "size": 1214,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SwipeDelegate.qml",
-      "sha256": "671b44df30edee2622c006e408875eae4f06ebbe491b9faf97544fdcb5af3756",
-      "size": 1548,
+      "sha256": "791e31c6ef1e86c1187bc11ab88ba25f6ecafcb132f1d2e7a3f1a893d8f74abb",
+      "size": 1592,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SwipeView.qml",
-      "sha256": "81447ebf342a5c5dc150a9e336e1f154e0f1444043ae7126785fd9dbe91b5533",
-      "size": 1124,
+      "sha256": "fbc75418409191b4b4ae5fd4531426cc71e8b03161e360eb2b42497eeceea9e1",
+      "size": 1156,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Switch.qml",
-      "sha256": "95dcd91c7da7c1d993b414b1b36be5c857547ed31ad0348d09aa1f500963384f",
-      "size": 2219,
+      "sha256": "9920acf5932bd16003fcaab07850ab3594d3e9e6f1ef764d8ac992bd861a3755",
+      "size": 2277,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/SwitchDelegate.qml",
-      "sha256": "72888039ae35ce91a23ce41abdfeeb7ed4c7bd879a2bfde5e1538c600afced45",
-      "size": 2744,
+      "sha256": "eab165c82b3b39c92f008de7dc27e40365d20d0ce384a3440613d3cff89d7eb9",
+      "size": 2819,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/TabBar.qml",
-      "sha256": "f7751abf5b764d776e430d6eccda376587f5a1c17b31654d8a9ba7df1fda729d",
-      "size": 1102,
+      "sha256": "496c221520e5951f107717d618f4e46c7631f84d8cf3f01728c55e9304cdb7f5",
+      "size": 1138,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/TabButton.qml",
-      "sha256": "1dfa5483c15bd605f5a70cf255c230e237585a57aa18e6bf2966e31edad39e60",
-      "size": 1278,
+      "sha256": "c16e3ae3c4bb05fba3bc8ae55cfc272dcf0145afd0b6e0995d456b2bcfe0f20b",
+      "size": 1317,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/TextArea.qml",
-      "sha256": "014800c32ddb34df695f46a2ad5087dfd9ba9c445afbff6bd02d7aaa18e3a6e8",
-      "size": 1596,
+      "sha256": "087a43001e0d64235219347849515a5712fa9d95d90d93a4ae781cb281a136c3",
+      "size": 1637,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/TextField.qml",
-      "sha256": "66658790bd494013f2cf505735feab6de65932488297e0909b19257cf0cfb158",
-      "size": 1846,
+      "sha256": "8cc91bcebda17c5a6079d05e5de45670eb494a68b1422d1e403f50cff02836b7",
+      "size": 1895,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ToolBar.qml",
-      "sha256": "6e258726afa1394f7415ebb2607559dae03cb4e50ac5dedac3e4c95d7558d19b",
-      "size": 653,
+      "sha256": "dbb29d2d348caba33fab0927a15bfabf69fa2cdfb3ecfe343343cb6ef922c14a",
+      "size": 673,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ToolButton.qml",
-      "sha256": "c3a541449fdeadb29f821f661762de75f39fb90bc4e4a94127ecefd5ce17bc88",
-      "size": 1287,
+      "sha256": "4a0acfa77d931f042b736c2104e84a26437cbef6b355608faabc93104b8fda8e",
+      "size": 1328,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ToolSeparator.qml",
-      "sha256": "a644fc83bb88e855c61095ea9a73c028e507f94df236f956f3b190260dd3bf6a",
-      "size": 814,
+      "sha256": "506775120cefee574ccd79596b5cea40c9cb61b65914eb0d07beeca0d3f32d80",
+      "size": 838,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/ToolTip.qml",
-      "sha256": "005eae491087fe074478693f421d378b1e8d391cb690bcee4c553ced36402bd0",
-      "size": 1058,
+      "sha256": "87e119b868bc67e0c0e0d249de4fd6ebfcdcb5d37e58f8db3f8303759791fe44",
+      "size": 1093,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/TreeViewDelegate.qml",
-      "sha256": "5e8df20158b911d22f6677ef1b1cc7e808d95c3c73164ee7a40a4cdcf7beeaa1",
-      "size": 3961,
+      "sha256": "1484ee0152420f67e0535ecd0f31720da46cc9baec3b57f629155b0e64401a05",
+      "size": 4061,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/Tumbler.qml",
-      "sha256": "ec3d70f86fd0532040889b8f1e413589d0b6f1872f35ba22d0f93ae248a1884b",
-      "size": 1755,
+      "sha256": "226db2e956bf71d99c1848e48c45867f4500368c2306ff10e8287492a062b917",
+      "size": 1803,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/VerticalHeaderView.qml",
-      "sha256": "82f713c9cdd7b32b89f6808a75dd81722d2100a0bd7337437916bf7d9ecda3ad",
-      "size": 1463,
+      "sha256": "1e8b6ac222f9b63a397b410f3a0c81ed67144a2f73ec00e12ecbc433ea76205e",
+      "size": 1506,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/WeekNumberColumn.qml",
-      "sha256": "94907a7f25e5a7f478a819b6cb694a2cb8cd880730fecf5e424662f2b57acd69",
-      "size": 1092,
+      "sha256": "41d1b700e9c24d941c7ec7936f40cc467c0b1e2f481938f09bfdceb3905d624c",
+      "size": 1132,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/impl/plugins.qmltypes",
-      "sha256": "30002e27f8c263cb85584d7dd5f19475515321e0be327a124ca68913f5216021",
-      "size": 4205,
+      "sha256": "481133cdd7a7a271e7b13e8d1ea7bc27b946b2cbe2c5867f4185aa7ca24947b2",
+      "size": 4314,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -84276,8 +84276,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Basic/plugins.qmltypes",
-      "sha256": "fad0be58a17e81004ec24f588a63b703a89a46caa9e446c926797450ad034149",
-      "size": 12585,
+      "sha256": "a93f6f16f0fa204909ded68f5b04f151b029897cb65867f8a4093055bbaccfb4",
+      "size": 13044,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -84297,281 +84297,281 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ApplicationWindow.qml",
-      "sha256": "fb371d54f0b0cd690e3157f5b148e331fceba43e42bd68d4e555bfb83185ce53",
-      "size": 293,
+      "sha256": "075d30c539bd229718dae32432fd6275091234a88f1c6e1f3f101741c306a2fd",
+      "size": 305,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/BusyIndicator.qml",
-      "sha256": "866ed38abc3d60c14ead80df26c5c0428e7f1b39e0007d638a2d59da755c7298",
-      "size": 2573,
+      "sha256": "7346adebacb93d280c89212e8fba077edb2095ede721dd2f32f5934eef117288",
+      "size": 2638,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Button.qml",
-      "sha256": "62ad93c2620ebe423ae9d789384b22f62096b7191b21ba1064c4b89edc629dcc",
-      "size": 3093,
+      "sha256": "5c61a044c4a67ca3d3c5b3a6241b2bbc9a1b39fb14d5ae8d354c80819a339e10",
+      "size": 3173,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/CheckBox.qml",
-      "sha256": "11d3cd2c2b9419335fc248c3d980f71dd870d9818afb84b56df292926d4d857b",
-      "size": 2603,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/CheckDelegate.qml",
-      "sha256": "49e7ce6f7b8ce985407b6c6db778da806c85385b1e7d6c8dc57d882084cd48a3",
-      "size": 3997,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ComboBox.qml",
-      "sha256": "b52605a5fafcbaaa154ceef13dbd8aa7db2114a1097c6e1a2fd225847c3b98be",
-      "size": 6465,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Config.qml",
-      "sha256": "85fc1089a53e391f28fd0face7a166f27e0da26243c3ee88b9a22fce143093f0",
-      "size": 1215059,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/DelayButton.qml",
-      "sha256": "9e9d154258d88235b7117ea909b747787844934499dcf301c448754d9775d1a2",
-      "size": 3854,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Dialog.qml",
-      "sha256": "83cfaa7fe3c890f5b67326bbdc76ada8a6a57aeb26a3bbfc933cef2b4765bf2b",
-      "size": 3008,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/DialogButtonBox.qml",
-      "sha256": "99da21a3818102c9a5a2eb38934ca686977ce1ffde28ea329157a95043e8b9bf",
-      "size": 1634,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/FocusFrame.qml",
-      "sha256": "fd46dd5cc34761fb12e9deb68d65b565848ee1ecd1a49226802c7cc82b4757da",
-      "size": 1718,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Frame.qml",
-      "sha256": "43abaa227022f60b48a504e06e62c3eab6754142e9368dc44df6bb3c6f141e7c",
-      "size": 1240,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/GroupBox.qml",
-      "sha256": "7033f35d9ff61cf7832ab1d0cdec72e13b58ea27a0a2c33ca52f4b6a5368ff2d",
+      "sha256": "b1f82383b7bbba2f40f8acfdf317edf9c99a839ff352ffe06e5480da9375ca8a",
       "size": 2667,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/CheckDelegate.qml",
+      "sha256": "83d69fa8f6d214bb4b5a1f1fd1ddbe286016c89c377b2b71735d8cbda5723a28",
+      "size": 4086,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ComboBox.qml",
+      "sha256": "8a8cb32e3012023323fb21b63c666d9652aa4baeade144a15e59cc61c40034e0",
+      "size": 6611,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Config.qml",
+      "sha256": "7b33e6e9416d0312fbf327567cf4207d1fd52133fa8035c52c8e71bda883f67b",
+      "size": 1235933,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/DelayButton.qml",
+      "sha256": "701a999f207e36908d9b4e50f5534e00e8a7a6c6e076d905053231762daed49d",
+      "size": 3960,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Dialog.qml",
+      "sha256": "709dadfeafdc5021f074f6c97ad6eab245e927ecba141daacd316f8b58240aaf",
+      "size": 3094,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/DialogButtonBox.qml",
+      "sha256": "5685627549964e65afe440080ab62482aa8c3ce1fe67a12f56b4b601e4dceff8",
+      "size": 1686,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/FocusFrame.qml",
+      "sha256": "f48fc2bb07cc6c98178f3f0749d7372d64de680511fb36aa59dc9e007e446f2f",
+      "size": 1768,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Frame.qml",
+      "sha256": "f7142059dc85c07a43c21521c2bd6dbacf88cbf9a6f22fd1a3c6d63fff138693",
+      "size": 1274,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/FluentWinUI3/GroupBox.qml",
+      "sha256": "d257b0df2cfadae82c2c8c36cbd1101d1cf7a040682565db78fee3fa2cd892aa",
+      "size": 2731,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ItemDelegate.qml",
-      "sha256": "39d8ee410ba544a1b8471debfaed177a5c89f61e560435de36b62fd1263bd3be",
-      "size": 3636,
+      "sha256": "2939db2a70e37a413167e055bc04610c5ac954717df9e0e7c62a3119357c4253",
+      "size": 3728,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Menu.qml",
-      "sha256": "0674de05ebd4a45c8a71caa2aae33f94817bb3a2b3ccce8ad502f7adf1af7c4e",
-      "size": 1664,
+      "sha256": "6e00ecd09957a4fa59205635103360988ba450a169414f3f4b6b2bb5d912b4f6",
+      "size": 1726,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/MenuBar.qml",
-      "sha256": "1011f0ef2bb2c159f56dc99f541a4e09254db782ec7858d3cce1164580d43bec",
-      "size": 1077,
+      "sha256": "2f690128c0ae0abd6a0c374b9f87e2796f107384468838c456f9bda6714e1179",
+      "size": 1114,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/MenuBarItem.qml",
-      "sha256": "7233bd3e8ab33d0d376fc1ce3b129f0e7af8ba3d2c0e98f5e501cba0db7bee68",
-      "size": 2428,
+      "sha256": "bea3592fc3cfdc10f613ae3f72a730381ea8873a3f8739eeb13726c5e079b0ea",
+      "size": 2493,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/MenuItem.qml",
-      "sha256": "c4df91fdb7074357fb6d8d247cb688326123e55d509bce3087755a1937e1001a",
-      "size": 3008,
+      "sha256": "5eee7acf8fd0813838daf12202565a4dda5c4bd2fc66b4bd0e52f5127a44d3b4",
+      "size": 3095,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/MenuSeparator.qml",
-      "sha256": "49513386b02e925b222658c89da2240e718689cb335527c0cc366707daec7985",
-      "size": 775,
+      "sha256": "4602f410c2c9c65dd36776e19142aaa87db1f2322dd30cdde19a999fcb4fb876",
+      "size": 798,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/PageIndicator.qml",
-      "sha256": "7540ee5f1daabd7c23339e136ab1f24fa26e205a4f9c6501f74fd66dd9d2da14",
-      "size": 2274,
+      "sha256": "93f5e190d6bb2692e820593accfdb6054e380758ac1b7ba4c2c13e031d6ab7bd",
+      "size": 2342,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Popup.qml",
-      "sha256": "8c2c34092aa11ba577ada2294218eb7ab57258849cc0ef56b58767b9894b6fef",
-      "size": 1862,
+      "sha256": "b5a18331979fc24b45251b522d22e8b73e718e910eb76e0164fffd841b9caaf1",
+      "size": 1914,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ProgressBar.qml",
-      "sha256": "ef3045aef8b096844d71cd4bfc14609df2dfbafd33397966356a1a41eebde874",
-      "size": 4569,
+      "sha256": "3987cfc27bae1136e159614c92406b3729e4c8784d3937ea8a73ddf65ae3943f",
+      "size": 4686,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/RadioButton.qml",
-      "sha256": "738cd66d661af8c441c1135a16eab449e94e9da9cc42fe40a6b94b757e0c8460",
-      "size": 2498,
+      "sha256": "c0b08bf25ad4139bbdef36fcd90ce87eb666a6b9e0e2490639979a1948a1947a",
+      "size": 2561,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/RadioDelegate.qml",
-      "sha256": "3a6636a217e2a132b7ca118517849781c8de6ec5393809ea7aa56b65f5daca93",
-      "size": 3832,
+      "sha256": "0f085db76b9f54464f12be5cfdee3dbf1d7137184c7cfa80a9050b499a14e0a0",
+      "size": 3920,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/RangeSlider.qml",
-      "sha256": "bca280f56339529cfb630c20d7985be3f460c4cf88dfd74b8139676431ce5cef",
-      "size": 10413,
+      "sha256": "c84fcb8af24350e44d9a90534a8673b442c7e111f91adf04a7cd2e811c5d0bf5",
+      "size": 10619,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/RoundButton.qml",
-      "sha256": "a55f0e4a0528d65530ef889221b760802a54c174e57c3f4ee37fd5a8873a350b",
-      "size": 2782,
+      "sha256": "2c6aa7d1e6177dd15c3b01a74c8d35c84da55eaa82e307b3de7ad1fee490a3a7",
+      "size": 2857,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Slider.qml",
-      "sha256": "11da8855081cf99920deccfcb9131f001cf04d1b54bbce3ec25cc172fc4c472e",
-      "size": 7202,
+      "sha256": "b97844377f732491cb85569f1b1828f24c6322bf689254e202cf594bed091dd0",
+      "size": 7350,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/SpinBox.qml",
-      "sha256": "0b3151b178638e10d48bb5a1f54f97154b99a67532f92e3e070bc353bcb9c365",
-      "size": 4249,
+      "sha256": "f8ba03cbfac771420047d040c7cb2c7bec4689cbcb30b765c1d73fe498f228e0",
+      "size": 4355,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/StyleImage.qml",
-      "sha256": "56bdda77b050e2ffc2b153eea31f2410e05effc3856ada6f58103d22aec83230",
-      "size": 2356,
+      "sha256": "36824bb0f2674785ff7b497feccb74a75d41844a0773c64103fd833053dd2e24",
+      "size": 2410,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/SwipeDelegate.qml",
-      "sha256": "2365fab32b314cbe5ce70f64e0404568705e326a34f58ac869c7473c7a881c73",
-      "size": 2775,
+      "sha256": "ec40395f583f4f988aaca634eee2e905ea8586461577638e82c6354c2704a11a",
+      "size": 2841,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/Switch.qml",
-      "sha256": "625c58056f25deb176e7ad58771e0b7056dfdfa8a0dc4b0fd7e2658a79b5cd74",
-      "size": 2611,
+      "sha256": "b0f9bdbfa88d63bfdb60eaff4623be145ef04b6a5657d21639d7a1e2833ec6ac",
+      "size": 2672,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/SwitchDelegate.qml",
-      "sha256": "c6d78d603905b406b5f85cdb45c0d113d5644e52f9e605578479cb85159ec8c3",
-      "size": 3880,
+      "sha256": "0f3f08434d91aa3f5f967e5a126833f7704df4bd71503a8dcbe6b5e5cd02d064",
+      "size": 3969,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/TabBar.qml",
-      "sha256": "fcd5b69db5642fef83bbabe697802b201b730469a192fdd4a47466cd092bcd14",
-      "size": 1746,
+      "sha256": "a9c108871309cb92aa6722b2ac1e181efaffc819171a320004af7016760cfd1f",
+      "size": 1798,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/TabButton.qml",
-      "sha256": "1e477847922b6839b57eac9ba6e42dcb4c9d09c3a5ca84e0530781c0fbe2c167",
-      "size": 3712,
+      "sha256": "8f4a5aa92dc82e3e184efa6ec2bad6b35c8ff2fa2aa107dbfb1ac72e9c20a448",
+      "size": 3802,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/TextArea.qml",
-      "sha256": "43fccdaf2ce20812a007f8ef70168ff6a24cfa38a3342bf4e078e3d755fa1230",
-      "size": 2712,
+      "sha256": "aa5bf367ab438353ae5123a8638cdf04c775ecd2f2e366316310face0f3bb5c4",
+      "size": 2785,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/TextField.qml",
-      "sha256": "2531dd6d07b45f47a6c36e88c139ae0580761c890e3a879a611991d51a8f488e",
-      "size": 2714,
+      "sha256": "ddc0acbaff392b6838abb5de4c52f6b3a3615c0bdfbaf372a5446b976e7251e6",
+      "size": 2787,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ToolBar.qml",
-      "sha256": "4eb07cd5f211a71493739c1d402915bdfe7a10ff541b7615f93ed66255c78ac2",
-      "size": 1223,
+      "sha256": "7d4fd69555713afe426f427801b7d43f919f406872dbf7e4d74d45e88fdcf5cc",
+      "size": 1258,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ToolButton.qml",
-      "sha256": "7276b0cee84c245e43110a0e53a2cc314702842197fc3c38ad9e93e8c33a5d8c",
-      "size": 2970,
+      "sha256": "761cc9512eec0f077514b5280e9b465d328dac28259a199e6cdaa4faa139d6f3",
+      "size": 3048,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ToolSeparator.qml",
-      "sha256": "57bf6dc9e57a78978b38e474083ec93b15854d16d8d914b6c020a5985eb0947f",
-      "size": 1158,
+      "sha256": "6f996334d7eee5102b7fd535060b55e790632921fff1880295de25e4cd67c7bb",
+      "size": 1186,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/ToolTip.qml",
-      "sha256": "c3ce435ce05d808acb7233376c6233a8191a09676cd8df4e74d278372ef14258",
-      "size": 2002,
+      "sha256": "fc0be25fcc45d3674540aabd549fb2b79d950acbd73420d622a614a231ca3822",
+      "size": 2061,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -87349,36 +87349,36 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/impl/ButtonBackground.qml",
-      "sha256": "8521a09710fb4c35141290f1fff3c932fcca6e5b8a0d363c42e6e8494b946f15",
-      "size": 4047,
+      "sha256": "78892dac822ff412629dedc92688bd980d673137409888068d1bdfa7b48c89b2",
+      "size": 4138,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/impl/CheckIndicator.qml",
-      "sha256": "566cf4810ea49bfa25513f6fd1af330e4a76265826121552e7ff32e9af840264",
-      "size": 1908,
+      "sha256": "a63487f9a60defbfd12b52d65a72f7e3b0651b9b4a457f8307088183be772b57",
+      "size": 1966,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/impl/RadioIndicator.qml",
-      "sha256": "90fa35a42da8fc36376dad379b9b3f117d784fe1b8fb2fa47f520af321d4b222",
-      "size": 1919,
+      "sha256": "c65932bc6fee3ad343985efc705aa049ced0c70ea0c23b4826002321e728a430",
+      "size": 1976,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/impl/SwitchIndicator.qml",
-      "sha256": "5c9d84fc0ba26659f149534e19665496ac3e8ad98cb131a125fe8a5c2c9168bc",
-      "size": 3652,
+      "sha256": "8f818ecea482251d50a4667a78ee20106ae2e0760d4392195bf0edcf7f29efff",
+      "size": 3731,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/impl/plugins.qmltypes",
-      "sha256": "4eb121ff5a550f228572e6193d27caf808f77afee20e03d1b8401a31e90259c9",
-      "size": 752,
+      "sha256": "ae1cfc7e1b65d85328a8ad0687641f2886d23963ae0021283e354dc06eb2d2e6",
+      "size": 771,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90128,8 +90128,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/FluentWinUI3/plugins.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90149,407 +90149,407 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/ApplicationWindow.qml",
-      "sha256": "252f003a71990445496d103db37f2139543263648f61e2eaf7d22d4550a22ac5",
-      "size": 353,
+      "sha256": "33e1319df6998bdf1f54b22a0d9a76cf995f92c29db7beebab6d862610fba6ae",
+      "size": 367,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/BusyIndicator.qml",
-      "sha256": "8e8597ef9323625e2145e209d5df33e342bd807ed613f573f1a2b16a0502dbf2",
-      "size": 1155,
+      "sha256": "fceeb43589c66acdf27627849d802603c15b2c58d13eb3da0f5cf109fd82c880",
+      "size": 1192,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Button.qml",
-      "sha256": "12168645ba4ea8d6e924de17e569549b18c65f535295ef429c35e00156515263",
-      "size": 1239,
+      "sha256": "9c610d137c3eb12d307edbdbb3f94f366e85bdaadcd63356e248b9e18b0cc0e6",
+      "size": 1282,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/CheckBox.qml",
-      "sha256": "601f9a538f0bbd678a8a9c115d5746212489fd6691c2af903435039dbc682b97",
-      "size": 1533,
+      "sha256": "a4e7e1588f6d6587e71b811ba5ecd9d9ccbf61ce9836c312a073be1e59c09256",
+      "size": 1572,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/CheckDelegate.qml",
-      "sha256": "196860e291349d197deca41d7cc724eb5c03bac5e083a3b661a31b1d05e01c26",
-      "size": 1943,
+      "sha256": "5e3cd849a8f7cc487e0000088df7d4bfbebb13748bdb475483da6017c1aa0bbf",
+      "size": 1996,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/ComboBox.qml",
-      "sha256": "c3bb9d6db89e0c5914c62cd8f4bfc513e05bcb4b3b4e38daa71b67ae7d71ddd1",
-      "size": 4918,
+      "sha256": "5fa95a2a939e4c6293c6a82ec7afdf3367db0b30bf73a7e64ef8c54f9ec6a066",
+      "size": 5064,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/DelayButton.qml",
-      "sha256": "81c7e7a80d0dbd45a4b70370f30680ecddcf76b2bff45f676acbe574a50dea24",
-      "size": 2791,
+      "sha256": "87282871918d33a1f979c1e15fab1f2542aef90901e1f11f3742655d906b05fb",
+      "size": 2873,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Dial.qml",
-      "sha256": "3fd775bb1dd6f9e8c0ffe949092adc30598d8a1ad169e6f11c528a71a4be8a2e",
-      "size": 1459,
+      "sha256": "20106ec6d2dc0dd8cf961245d5a7195e49d00bd1db821a99eb3644514ccac5bc",
+      "size": 1500,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Dialog.qml",
-      "sha256": "e3e24109c84eb398ba49b58db1355cb6da442e9991ad5a96f855d1256401d86e",
-      "size": 1896,
+      "sha256": "7206239e9a1b50c1df80dae69d5e6d3031f91ca38a6ffd752824c40728f8d6aa",
+      "size": 1962,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/DialogButtonBox.qml",
-      "sha256": "0969c3403e4e9672643e5d7a3cc275ef4252e75b282ccbc9d9175f155a2e25aa",
-      "size": 1183,
+      "sha256": "32323e43bedfbe63ac57f9f792b874de3a082cd211838510dd5ff9ece41ec4a6",
+      "size": 1224,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Drawer.qml",
-      "sha256": "5dae3c777411471fea7b64a6d3a68a2680885d2204a997987a056e87b2a0c855",
-      "size": 1938,
+      "sha256": "2ffd4e241c222dc6462108bdb7280b45faf48c2d3712733f3feb6176d189b332",
+      "size": 1993,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Frame.qml",
-      "sha256": "acf1d1979ebcdf1d771786de74f61c636a27c77ae628505df92bfd4541bb6a3e",
-      "size": 770,
+      "sha256": "a8528b7010fe313a49fb53cbbcea9cdfd81b0223a1ad6ddfec6b016988ce1d49",
+      "size": 794,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/GroupBox.qml",
-      "sha256": "a136a8d4024ab3a682dd26321e67e4296286e7166a222bff3fece0e95cd8dd44",
-      "size": 1418,
+      "sha256": "d8cf5f28dc4f7f019e7f94d12665d5dc02529aad35d8813f0d77403e93429fde",
+      "size": 1461,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/HorizontalHeaderView.qml",
-      "sha256": "28cffaa0053f99eed5c358de39c5c73844cee37326e06e44c036a73a9714918f",
-      "size": 1764,
+      "sha256": "7582ce3317ebcd36752f2531d2427630c7f44b685792c5de0e05918174086512",
+      "size": 1817,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/ItemDelegate.qml",
-      "sha256": "009f11af11c2fcb41ce4ae0362c5db78115d2e5fc56956e9e88fd1a500271c8b",
-      "size": 1534,
+      "sha256": "b292fd7c256acc8b18fd3ea43d842ce8185323cf984ae92a065416a5baa7c143",
+      "size": 1577,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Label.qml",
-      "sha256": "a8329d4ceefd83c58b1a642e9fb713faed927dc2da18293463d3f3868480e136",
-      "size": 390,
+      "sha256": "3e35c2074a073dcf700c404bfb2b5779bca4bf95a7bb280a9586fb555c73bdd3",
+      "size": 405,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Menu.qml",
-      "sha256": "bb431e056c7a16a98fecc0189b90f61343e9b3109ee2fdc55b28b31b6b2950f1",
-      "size": 1633,
+      "sha256": "da67924765a8e2d4200fd9fd757b7112946c823f5899c37aa7e5949bd9b6048a",
+      "size": 1694,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/MenuBar.qml",
-      "sha256": "82fb18ababfa44052e4816454355e02424c4c2a7eacb0553054cf0c2c11734ef",
-      "size": 1179,
+      "sha256": "1e0cf033318f7b67a4a819c2fee18e6a765107c901fb0d45aedd653fe9342df0",
+      "size": 1219,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/MenuBarItem.qml",
-      "sha256": "765c636b39ad65eae3e47064605414404a9442753666f1d18d67fb66074d22d5",
-      "size": 1352,
+      "sha256": "4e55352728aea6bfac5ca6694516d35e13ee5622b9db2447f63df43a50f3bae6",
+      "size": 1396,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/MenuItem.qml",
-      "sha256": "1a769475267d08cfc1afba61d2904d5994c09a97bb9b0c6c86f35e892eede302",
-      "size": 2561,
+      "sha256": "0a4ffdd92b8919b28b78c54337ac8eae68312c04a80d381bbe86c199af8e6f49",
+      "size": 2630,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/MenuSeparator.qml",
-      "sha256": "454198ed3925e7977fa746dc7641814c1646698f0492009c78e0c2a2350e3c49",
-      "size": 820,
+      "sha256": "ae59964c358d71ff245797e29aa1090d9a2646619035d1593b659f497a6dc65f",
+      "size": 846,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Page.qml",
-      "sha256": "c7590c392f4110298c145fe6e057e7ecacf6e13ad6d570c8c3edd16f8d66b54b",
-      "size": 978,
+      "sha256": "3d8ea3d2723deba564e4d19ade09196dc3edb7aeaf29d28f8e691ffd38eb0897",
+      "size": 1003,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/PageIndicator.qml",
-      "sha256": "c6029178d7bfd9537860e5d4786aa9dc22a905bb916f8646e375c3d7486ef6fa",
-      "size": 1163,
+      "sha256": "7c774e6f607f2d1599eebe6d568ec4ca54506db4cd41f6dbbbbc4e58c9c2989b",
+      "size": 1206,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Pane.qml",
-      "sha256": "7da6246ad2c1afcde91fd8a6c50f3875692257c60f701f823d62480d9f33aa2a",
-      "size": 706,
+      "sha256": "f76e6ca5bf10b2d254667d6fd3cceeae577aa3e6493ba4609b5803125ea5a648",
+      "size": 729,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/Popup.qml",
-      "sha256": "1c0c15f01426e72174f6bd3c3aca61e7158f986aff1561f25acf84aaa10c96dd",
-      "size": 914,
+      "sha256": "aa29627060899ead536db5d8fff43c7a96051c3dde8c391596407fff30042344",
+      "size": 947,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/ProgressBar.qml",
-      "sha256": "74d97d7891db521cb7b6ac1d64d4c9a9432d0062750980df0cbdb98c1d4b52c6",
-      "size": 2680,
+      "sha256": "afe94d0aef4bb67ceca52c639e566cf05ba7361ae83447a4daee9b00087fb5ed",
+      "size": 2763,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/RadioButton.qml",
-      "sha256": "5d6d3deee5d588572d7a0424b55f386a7d602ea993f9b685a9c4c9f214a24633",
-      "size": 1484,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/RadioDelegate.qml",
-      "sha256": "a2a8c59993c9e7e088f924d1f2954b99d7fe77c216a15232c80decd822ddd732",
-      "size": 1943,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/RangeSlider.qml",
-      "sha256": "ad338d419b7a0f0fa71f7b84057feba06fb0cbe9343a26ac25eb62e3d2d4ec50",
-      "size": 2127,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/RoundButton.qml",
-      "sha256": "146509ee5ea3d4afe06ef3cd4e67ca318810d4157fc7d04e51b835af9560efa4",
-      "size": 2411,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollBar.qml",
-      "sha256": "a9cfa41105882454da71480890622f0b842ebf579654744eda0082219c7165c4",
-      "size": 1558,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollIndicator.qml",
-      "sha256": "e830d87a4e3e0c8cae31470505f4e0666b1a37d7b7a65a5ac8e2df7d2206e183",
-      "size": 1327,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollView.qml",
-      "sha256": "5744512d0163200f17ee614036412b66b355eeda442b4843f6ab1a31a8b1f07d",
-      "size": 1024,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/SelectionRectangle.qml",
-      "sha256": "12aee112250c8c9a5963f474b88ccb75f1aab19a712c63876c480397422b897b",
-      "size": 936,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/Slider.qml",
-      "sha256": "5158b27bff52b9640590d4229edc91d5cb8c9be425a92423706a0986c54a1d66",
-      "size": 1317,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/SpinBox.qml",
-      "sha256": "5033e95702774781d7c633a911bc426aa5e6dee60e771bae1d9be73d58e574ab",
-      "size": 4985,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/SplitView.qml",
-      "sha256": "f04691e38eda107585fd091e6b2979c1b7d38a33322ea4c38f40aa64b6e8440b",
-      "size": 954,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/SwipeDelegate.qml",
-      "sha256": "0a44de3bc0a9cb267ab939bca921781ec8a4e2e67fb049effdbf6cfd450fa107",
-      "size": 1639,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/Switch.qml",
-      "sha256": "489fc3d28ca1ff6658ff63f4cb200465d1db73619747f06475acbed93f5c4a92",
-      "size": 1474,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/SwitchDelegate.qml",
-      "sha256": "871dee1fbc97a41f2d77660e019aea4d08615caee7f99c7963e7052fecd65005",
-      "size": 2022,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/TabBar.qml",
-      "sha256": "97112c201f20e53ba112fbdfaa94766b7102020310d6df6f27767c39914ce2a8",
-      "size": 1395,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/TabButton.qml",
-      "sha256": "20b880a7d3bbbb5f2c44fce3f95f650631b3ed3c03dc6dae5e0bd91bdd45341c",
-      "size": 2120,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/TextArea.qml",
-      "sha256": "2c63fe6542eaa10ab2045d75f5e02dbb6912d85070b1986d5b45217bbfd7c090",
-      "size": 1663,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/TextField.qml",
-      "sha256": "65389922f5d37ef0b4c1bc7393109baf12d9f6b750dcecae21266ea2628790e4",
-      "size": 2365,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ToolBar.qml",
-      "sha256": "56be7f05abb6370abb0eedfe7127b24971de843f7315027b34dfe42ac524638c",
-      "size": 1523,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ToolButton.qml",
-      "sha256": "fce083edd0958f07cc4cc5e3753bed405d6d423cbb1e0a5a38a6fb9e9d4c3a48",
-      "size": 1226,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ToolSeparator.qml",
-      "sha256": "a7b3f73a35b164393a8d46829cec56fe87d40e0c87c488c06857ff279af34822",
-      "size": 1060,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/ToolTip.qml",
-      "sha256": "0ae98471af4a9d2d30b4be4375215780f75b4e6032b7bb215d3b31fc81b07c14",
-      "size": 1337,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/TreeViewDelegate.qml",
-      "sha256": "0663504b15f642ce8ba26c052cc25b7d136576e078e29de1cd6f736a740894da",
-      "size": 3859,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/Tumbler.qml",
-      "sha256": "f5df286159fdfc39c83e69e47c2b3db48995ae05b0ebdf00cef524a639e45a1f",
-      "size": 1607,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/VerticalHeaderView.qml",
-      "sha256": "eb8b854ace749712a8f496aff115532a675e89eb831d8c2fcbeef739f921d12a",
-      "size": 1724,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/impl/ButtonPanel.qml",
-      "sha256": "983b94698fa7063f1444433deefe4412c73a43420fea396ff04138046dbc22b3",
-      "size": 1482,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/impl/CheckIndicator.qml",
-      "sha256": "e230d5b880abf845d6e59929fe8a5dd92030a9593616644c63883cecca5d65cb",
-      "size": 2052,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/impl/RadioIndicator.qml",
-      "sha256": "ddda0c54b2faaea38a9da1d692583bab336d899df936f026289aca02338c2e39",
-      "size": 1485,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/impl/SliderGroove.qml",
-      "sha256": "a35676403d1c5b202c1e969cf3e0b149b633a5ca5f35b104cb9bc0cb0302755a",
-      "size": 2036,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Controls/Fusion/impl/SliderHandle.qml",
-      "sha256": "de88a9f38077ca317c58bbaffb0f46c0d6c3724d7f69e08e7c32f949dd7a20db",
+      "sha256": "8880057a98d05df877e6b34673a5914019147e4ea3d87a241e325966714bcaae",
       "size": 1522,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
+      "path": "bin/qml/QtQuick/Controls/Fusion/RadioDelegate.qml",
+      "sha256": "3dac808b1fc435a4053c48f02a3f2721fe4150daa9d159d3222ad8bdc03fcc0d",
+      "size": 1996,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/RangeSlider.qml",
+      "sha256": "bf6cd106d66fe0d076f6ef4886cd953ad257243ff4e2bb052f7f27ce57c3f7f0",
+      "size": 2175,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/RoundButton.qml",
+      "sha256": "869f8e6b54746e3ab1f603c1ae2fb6d500ab1c90ff7ba15d0874166326a0e2ce",
+      "size": 2478,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollBar.qml",
+      "sha256": "b8576428b79dffcd20bfc680fb2b55a02a30b6e9b8e4ed7a51041e90f7caaac0",
+      "size": 1602,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollIndicator.qml",
+      "sha256": "f871b598c1ae0995b0121be36153af771d65e4e6ed8d7f543acefa74717f7b7a",
+      "size": 1371,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ScrollView.qml",
+      "sha256": "78b5fc58e6d881d16351e92d32b8cadea6b14fbf8c20c1bc7e56d02946467ae8",
+      "size": 1055,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/SelectionRectangle.qml",
+      "sha256": "62ee10921745a6b8e486809ff112506090b5dc7e89c7c00981dad622023b5e19",
+      "size": 966,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/Slider.qml",
+      "sha256": "17d5b3b7b05a7c2aafac4552fc5c73c60e437cd03beedf2175f275d1b9e60250",
+      "size": 1351,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/SpinBox.qml",
+      "sha256": "e056e7a455fa6f9d15e4b037cb8cc71f90dcc388e53e2c279eb0475be82918f7",
+      "size": 5132,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/SplitView.qml",
+      "sha256": "167c3f33ad52d84b498aa76488954f212fe3be323db6cb6469e35c05440fef1e",
+      "size": 976,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/SwipeDelegate.qml",
+      "sha256": "92424e8ac0662886a3d2aeeea5eb020ed79af2a0ffc3991cde77680ee587f59d",
+      "size": 1684,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/Switch.qml",
+      "sha256": "1da9e3b8adf87f63b2bc40c16b44ac7238242e47b024212dc91fbbea6f5451dc",
+      "size": 1512,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/SwitchDelegate.qml",
+      "sha256": "eebb3fc095b04ddf21f7ae80e2449781d7ef808f729c541f19a1604108e8d504",
+      "size": 2074,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/TabBar.qml",
+      "sha256": "8400673a8d3bf182a0c5239f4252a2a3f9165cc9eeea72d6660a85c9022c88cc",
+      "size": 1441,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/TabButton.qml",
+      "sha256": "bb09b0a26de48e97d038603aae13d1534ec366aaf63628012972a8853e1210de",
+      "size": 2184,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/TextArea.qml",
+      "sha256": "78995328dadea7a05ab7cb80aaf32905dd7058521980bf76e29f05b54211f829",
+      "size": 1706,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/TextField.qml",
+      "sha256": "a68148ed839a7ead0db6ebfc3f815bf4c6ecb7201a1e9528ca2e942540de167d",
+      "size": 2434,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ToolBar.qml",
+      "sha256": "00489ddee75c8a8ea416e0e09b875c1cd999c8aa203a29776f939eee72d5ef6f",
+      "size": 1572,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ToolButton.qml",
+      "sha256": "02b204b8605620f49a05ad54350abe0ee2368d5d75d2bc41cb4c268092f7b124",
+      "size": 1269,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ToolSeparator.qml",
+      "sha256": "592f1d4a4ddf61d25310bdebe33c80373e6cedfbfa86c02fb31a5d42810975c3",
+      "size": 1093,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/ToolTip.qml",
+      "sha256": "a86d026a4643903c6dd5c251f12f6db770b384602dc8115118323561696a8b3d",
+      "size": 1383,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/TreeViewDelegate.qml",
+      "sha256": "a6d5a6760729b68c443639c823bbf7498b5a52d1568a818b92182de6a33f9379",
+      "size": 3958,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/Tumbler.qml",
+      "sha256": "354924d68d2451f5fb488f366a0e17e97e0320eceb5ad75a3061d326522fe4bc",
+      "size": 1653,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/VerticalHeaderView.qml",
+      "sha256": "fa0df04f90c915f1b3a0db7da69610f6dc027a54e5569e08b51330177356c8d1",
+      "size": 1776,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/impl/ButtonPanel.qml",
+      "sha256": "26ae2f2113b50dc704068ba814df1fc7f8ee6fbe59b42e400799c3dc94d30a87",
+      "size": 1528,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/impl/CheckIndicator.qml",
+      "sha256": "8169ea708c7539aac65bed100f2118f33e2a039a21656d0782605b63d28bf490",
+      "size": 2112,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/impl/RadioIndicator.qml",
+      "sha256": "affe8147613ca877802b3e78ac3df05deffa8583e546c8bbd33b40ecb452b4fa",
+      "size": 1529,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/impl/SliderGroove.qml",
+      "sha256": "e3e36cca1a6eb1c32b471184c7cf8874e2bb6fa5c1c81dcd31563800bbf0c952",
+      "size": 2096,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Controls/Fusion/impl/SliderHandle.qml",
+      "sha256": "5d48628ab095914deb6a4fa60c62eedf6b985ce5f2f688da70903aaa2fe5a43e",
+      "size": 1576,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
       "path": "bin/qml/QtQuick/Controls/Fusion/impl/SwitchIndicator.qml",
-      "sha256": "6053bb2ebb106b6fe27e328d1ad3c53636da501640444062559261131338c0e2",
-      "size": 3677,
+      "sha256": "22eae89b0218751dc390bb5c4e5c5f3c97b7f2578d0c7f78f2ef1f4ea30a948c",
+      "size": 3785,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/impl/plugins.qmltypes",
-      "sha256": "702200247ed4558e3cdec87d4048cbd235a68d1781cb6b6c9f7fde73d1422650",
-      "size": 2737,
+      "sha256": "cd08f2fbd9a026b57edc59ebfc149ca103c5b38f3472fc58b343a27b1cd9a83f",
+      "size": 2804,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90569,8 +90569,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Fusion/plugins.qmltypes",
-      "sha256": "9ebb8f225137d39afd9f8098469e859d9e4d00f1360402a60c022076b1cca4ec",
-      "size": 5142,
+      "sha256": "0c6a8ee26ca552740722fd372267d6e281d5d902dae44bdd6bdae2383796ec64",
+      "size": 5303,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90590,365 +90590,365 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ApplicationWindow.qml",
-      "sha256": "80ca4c574e8fac2ad7e55da45210dcdfac470a3eaec86326a3b09f817a776aea",
-      "size": 612,
+      "sha256": "3f2a29ccfca9a1678c72569962318077410759d0254715a1f6b99162d9679882",
+      "size": 636,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/BusyIndicator.qml",
-      "sha256": "787a37d9f7f3c8bda11b9434774ee3967a895aa25b5eb6a20d78ba7397e0e6c5",
-      "size": 2075,
+      "sha256": "be2d946acc988b8d8c1fcecc558cb3cc01bedbd912dcb1f49f8e73623ed9bb81",
+      "size": 2130,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Button.qml",
-      "sha256": "bbfc36aa109a9830aeae12ceba9c6a1fd8277620e70d1a20f88782f4e68ea784",
-      "size": 2646,
+      "sha256": "1556365e87e28a432e190fa1c8afa7a750346be846ecaaa467c82c2cb1e9df37",
+      "size": 2711,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/CheckBox.qml",
-      "sha256": "465273cf261b9659f869f4ff8fa2f6b02c99cb3c91dca267ebe47af28385479e",
-      "size": 2999,
+      "sha256": "c7a2b281ba74c9fcc685eb06495f8ca76fe583b02e188815b8b69709cefd0429",
+      "size": 3072,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/CheckDelegate.qml",
-      "sha256": "5664bb36a447038bc002eafd385d44a00820068dc5d91b7394d7d199404c7c0f",
-      "size": 3298,
+      "sha256": "44bb7271c934025e041792f97630a979a3423e9a8e916fea15846cc9cc47b2ec",
+      "size": 3382,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ComboBox.qml",
-      "sha256": "ac6135a0fd8314e883a755a5ca9411bac813324d04fa8b2286810cf0ad7f4fe3",
-      "size": 5819,
+      "sha256": "9da81e9eff15cd6b95eee429dcf2463c173e9b17ff33332c93179699f9d75dee",
+      "size": 5963,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/DelayButton.qml",
-      "sha256": "1b2b591bfb4d98054eff1c5fc483d274b7a7601c507cafc55f4e7369576b72d3",
-      "size": 3857,
+      "sha256": "656cb4e108458b37ba8215d7373e4b8666cd1fec74bc33aec8485e9bfad0f91c",
+      "size": 3961,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Dial.qml",
-      "sha256": "c96374781cadf6848d4ce8ccea51d32da5022ab2a543c4015d2319ef6e40a9db",
-      "size": 2591,
+      "sha256": "a706d7ac6e9bdeea8f2f62fb746c1946f5a09fc7c41ee27fca65a6b282016299",
+      "size": 2659,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Dialog.qml",
-      "sha256": "4abfcad287c7354e07b864e58dd146c3555d7862946ec5ea224de91daad33933",
-      "size": 2662,
+      "sha256": "84818a792e1edbf294d6515e432e32b757fc1673bc35bda0009cd1cc0148b5b6",
+      "size": 2745,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/DialogButtonBox.qml",
-      "sha256": "97f2c55935564cb8a1474a970fdd0409ce99d68042a6c0d78d4848f40b393a3e",
-      "size": 1808,
+      "sha256": "6a23dadd30a694ad66bb3ee262aa09d125d0ee4b8042059b7e38ce5e2ae205d2",
+      "size": 1860,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Drawer.qml",
-      "sha256": "f131de22ea0332be83497d8326c6d59193a07be671babc265576bfabc8e9f43f",
-      "size": 2133,
+      "sha256": "a8a70a654fd129ec26ac68f47a8ace1b82934c7f117a389fe8e83935b1662aa4",
+      "size": 2196,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Frame.qml",
-      "sha256": "c8b7d5c40c8564fa4c72e680b10c64a7f764a749b2077cef5b36fb35e0ee79ee",
-      "size": 1338,
+      "sha256": "8a56e5622b75232ee28a9169518d074bc7d1c41a64cddf781b5ec9cb2334ea93",
+      "size": 1374,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/GroupBox.qml",
-      "sha256": "00826c19a88cb439a66cf2700d4b08d5b1582448e6ad93dd228279a095901a63",
-      "size": 2288,
+      "sha256": "d4f67cef711c378bf9f88d9c4c861987df0c3301fef5c43305941c122557721f",
+      "size": 2353,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/HorizontalHeaderView.qml",
-      "sha256": "81a3c703413e7aebcefa323108d2585b6d7f9b31ff01c11343d2280eedab92ac",
-      "size": 1472,
+      "sha256": "a20e12d2e657e69060ec6b823bd111c4689e45553be5bdea2c492fe6f0200499",
+      "size": 1515,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ItemDelegate.qml",
-      "sha256": "451f98d7c2ca88dc26b4476f89b00fb5c0028681ba469c690b9dc684cf3a01f4",
-      "size": 2185,
+      "sha256": "5aae62bd02d13311fd516f4b30bdfd09a7db64c8eb7d97f4e0fdca7cedb3fdb2",
+      "size": 2245,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Label.qml",
-      "sha256": "c1ea55a2c46b870c9654950990081ad743dea9e081d1f3795ceeb10b5dfb4f47",
-      "size": 942,
+      "sha256": "afc2bb3cf64bd7361bc86dbaf78e8f947842a13e7284fd8f797c90c1bad35593",
+      "size": 972,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Menu.qml",
-      "sha256": "cb7ca9b9c0ab8840938600cb1a67666c3e78041c80337871b8467939c7630706",
-      "size": 2408,
+      "sha256": "0979bc7ba128e33c9030854fd1a1fcee8b8d2964c6b5b0135eec47efb9e632a7",
+      "size": 2482,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/MenuItem.qml",
-      "sha256": "6d0b56d4f9c6a7cbe0c932a84d0dafb55927bc51eae3ced971e4be4a30a494bb",
-      "size": 4038,
+      "sha256": "545840b1a0726d6b76319240a59275c0bfd884af2692b5c6b1a18a7f247e5546",
+      "size": 4142,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/MenuSeparator.qml",
-      "sha256": "97b88d5795cfa2c38ad40e956e9db1352be8dc883b519e0d89ec58c53518de76",
-      "size": 1651,
+      "sha256": "5744ddc291b3688ecf679a01bc26ac269e061d9df977b0fe508f387dee219d2c",
+      "size": 1697,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Page.qml",
-      "sha256": "c5a8b4c6fa70f9c6336f8f1af2e19dabcb031eacedb2a0e57243a1d09e052f8d",
-      "size": 1624,
+      "sha256": "90c56457b2ce08216089bc45c0f617c932c21183668a613a2bdda1f9b0db8d7c",
+      "size": 1664,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/PageIndicator.qml",
-      "sha256": "9b1a79c2ea0929694380d6c0865cd5a9b8bbf63595544907d5575a6078aa4da6",
-      "size": 2053,
+      "sha256": "695426292b5035010d42a3be4c4b3fd213a8a4c0ef99bce8fc4694db780e9b91",
+      "size": 2112,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Pane.qml",
-      "sha256": "2df6df64bee04dc64bb49b9e1558541263972e0fd8b1ac941fec49b487355b58",
-      "size": 1336,
+      "sha256": "8e3b490cf461a544608f56340fc42f6c22da2a3e61d718d7823e04206c221610",
+      "size": 1372,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Popup.qml",
-      "sha256": "f7a9108b69e2a4f8f2cd733ebb35db9a5ab5364a4dabb955e61bd3208a768e7b",
-      "size": 1782,
+      "sha256": "a0f7488d1330b743df489ccf69e1ea47000c092093db47e17fbfd0931c35a459",
+      "size": 1836,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ProgressBar.qml",
-      "sha256": "90f1655e47c100d0e0ebb2d28c2eb45c952959e7601636127f384bf0887102cc",
-      "size": 4278,
+      "sha256": "63469ade2ee4385bfa2cd9b8898ac76945d146342238245c3991fb8cc0977773",
+      "size": 4386,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/RadioButton.qml",
-      "sha256": "6954b39fecbdb84bf29494c1080395c03d41257641b6b8a04b7ae04cd8e8b63d",
-      "size": 2806,
+      "sha256": "542fb7b81379668616b1ab78245444dac86811690f14c406655129d48441a9cb",
+      "size": 2877,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/RadioDelegate.qml",
-      "sha256": "31d79dbc1d9bc7fe4cb59d2bf93a9a25ac4d43325926dfb1b5736058cc6d7cca",
-      "size": 3096,
+      "sha256": "5a0826b6e209c14ed98345462e81fb0a68d94d4bc76d89398bf153bf7202518e",
+      "size": 3178,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/RangeSlider.qml",
-      "sha256": "1f4f0a3c034c5ef410bf66f81f682957e352f22ce6f3ffcf427856c202536cda",
-      "size": 5009,
+      "sha256": "c99b91c33bb915228294a19bcb7f5aab754af836ec56659956b03b0f454cf0fe",
+      "size": 5113,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/RoundButton.qml",
-      "sha256": "ddb20312c30e84f5e54b22ebcaf3f5b68546d199dcef371b27c61d012f215284",
-      "size": 2662,
+      "sha256": "fce675a7be8e37c0c5f98252249f7e372dc034763f8f1d04e01e145a5966de9e",
+      "size": 2726,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ScrollBar.qml",
-      "sha256": "6b3a9f03a2cd9302cc6d88f50c7710862b2c65a91529afcf32d959cc745e2138",
-      "size": 3184,
+      "sha256": "e6ff5d0ec0b055101cae305a23265c86a6f7560ca5b88953c6c3eddfe6624a5f",
+      "size": 3270,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ScrollIndicator.qml",
-      "sha256": "09e2fc330e33ff647ac3db659aaaa2922b8e090d2aa071d904ec6c369a809fee",
-      "size": 2705,
+      "sha256": "73731d792e89427bf6fb7c28ee1403a6decc35d17143490a2e72e2a4fc5c63dc",
+      "size": 2783,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ScrollView.qml",
-      "sha256": "a41ce0e82fa261a8f1f5b21107db1943006559120b6e4635a8226e4771323ca4",
-      "size": 1825,
+      "sha256": "91a90de59e3cdf150142ad8feee881ce5678dcfe45137f2ed15592c6f17b5f9b",
+      "size": 1877,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SelectionRectangle.qml",
-      "sha256": "726f06403d4fb8f6b51bf81237bd80960d2811fbbcf0196bb9433483d548715f",
-      "size": 1173,
+      "sha256": "84bdb245c8b48611e83c4b6e6bb998284d7decb52b09be71d9d0f9584ac0e76f",
+      "size": 1216,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Slider.qml",
-      "sha256": "e88da50f49f76fbe97686ab9be09f183ccd2f0bb0cca435f736e089b4c570353",
-      "size": 3849,
+      "sha256": "18fd21f20183186c2c4c247ad257a55be7546d25f6fe74e5ec5ff53e84533bcd",
+      "size": 3939,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SpinBox.qml",
-      "sha256": "f990247acc58d5235153a84bea402fc2d5f0366cc8af2f3e627280769131eb25",
-      "size": 4387,
+      "sha256": "fc4b2abb3106d123e53ef377ce7828080f03143c775ebbc91d2199a5c8b85636",
+      "size": 4505,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SplitView.qml",
-      "sha256": "53ec0ac0b8b02a27612031ef908e35eee6371da925cccb9b8f3c2c2bd9afbf7d",
-      "size": 1121,
+      "sha256": "2cc1bfbcf719da43f68a5dae216b17a47cafc3617dbce7715acc86af00135686",
+      "size": 1151,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/StackView.qml",
-      "sha256": "c9426d09b08aacea44234e8e39ab14db25004594b9fa0b6f6c1b9fa286c1649e",
-      "size": 2090,
+      "sha256": "339be14bc88c4ad34ee80e4ad514f56ba1c9eeba63a97fe6d4b773758bbd0f9f",
+      "size": 2148,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SwipeDelegate.qml",
-      "sha256": "6ff12c2f6af60ddd0224e083fd633a1cb3549d4c42cddcd15d10017343e13a1b",
-      "size": 2291,
+      "sha256": "14afb0064d83d7af92ef93b921fffce5f70b09a34d46067b4c443c67da916379",
+      "size": 2353,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SwipeView.qml",
-      "sha256": "b8f5bee3a88358fff117497b4ff0b8806543bb90bc557190ec7735a5356a368c",
-      "size": 2069,
+      "sha256": "43af569a94833b64a9257cf8639b12357517664125d1e32a28c91f69ca8a6ce0",
+      "size": 2126,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Switch.qml",
-      "sha256": "7ef76ae83e885513cce4f7038f96c448531a9480025dbed51c8bfd99c5bca01a",
-      "size": 4170,
+      "sha256": "b184eacbb6dc72ba2fd63f66261b69feb25e6b14897e4b5490bfbb1412f875f7",
+      "size": 4271,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/SwitchDelegate.qml",
-      "sha256": "301fd90dd85170192e58078980c7c676177dc26b08f6d60b8c98a80ed07e0952",
-      "size": 4622,
+      "sha256": "b7345b37c56b36162ce9fd12d6eec5e298ddf2186283eb4fe233ca1f7308e1db",
+      "size": 4735,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/TabBar.qml",
-      "sha256": "b779ef206202d9b1b7ae2ca12830f104ee696b7e2ebdf4be955910fadc88f855",
-      "size": 1964,
+      "sha256": "74ab41b48f18eef3040af2ca4942988ed1944e5db90d5949f0ecb8ac1f2abb7b",
+      "size": 2018,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/TabButton.qml",
-      "sha256": "6b2834327580dcbd89252663f6be1ad24e45f7aa6da06004849a7420674bf414",
-      "size": 1962,
+      "sha256": "978b0393433e9f14faa88eb00ad133e1fcc49000ccce6535a6b5626de9c8da1a",
+      "size": 2020,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/TextArea.qml",
-      "sha256": "1ea43be633c60b21fada570cf67dd5ce86caa1b7fec80d3a6eed51b4e3289232",
-      "size": 2524,
+      "sha256": "9f34ea179fff194e40410c5882912d6928b90755e994638afb9aa6a925c577ed",
+      "size": 2587,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/TextField.qml",
-      "sha256": "fb3d4e3d90a55e0849e4ad64f14a31f978e700b5897bfc97d5ccffe60b8b41d6",
-      "size": 2462,
+      "sha256": "e8148ef4fd783c5fcc28e7391edc40f0ebe1af19e2f7855ec99234a7b8a3053a",
+      "size": 2524,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ToolBar.qml",
-      "sha256": "c5b64f0f47af89f5c4f028efde100b7ac01ee6e80a58b5de1cf363f541a3e3f6",
-      "size": 1478,
+      "sha256": "f54048cedb585d1b662267ed606a4a4e5cf4b544b6ec97cf84dc44bd54f4a140",
+      "size": 1516,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ToolButton.qml",
-      "sha256": "69ed56af5a7e9fce301100b583713ee1b84c7ed1c6a17931441852c8dcd6bb9a",
-      "size": 2108,
+      "sha256": "77f022e52002d6bcbe3d9544e3bbfbb553d3e986ce792f6f6b7d0e6cb995cea3",
+      "size": 2169,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ToolSeparator.qml",
-      "sha256": "5f70099e9b2f1d7070140e5f707ce314dfbdabdc4e6351c02c88ac948ff8662d",
-      "size": 1851,
+      "sha256": "fe039b3dec6c9ea4a2bb66c57db800bab17cb20fc476dc52e62a6cc334121b47",
+      "size": 1901,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/ToolTip.qml",
-      "sha256": "7974a2627d2ec77c5d1a2c9e5461081892e116e78c99cef85d44843b56840567",
-      "size": 1923,
+      "sha256": "9aba77684126ea23b66170f1faea905442c9e955be96bc1cacc0335c29dcf137",
+      "size": 1975,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/Tumbler.qml",
-      "sha256": "cfd3976256a7973412e97c6c7fa543e7d9780ca2217cfaf083fa2c6070f14923",
-      "size": 2324,
+      "sha256": "60fa55d4311ac41caa364b2b6c72a97a2e708ce01820d762282bf3d01e23f341",
+      "size": 2389,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/VerticalHeaderView.qml",
-      "sha256": "82f713c9cdd7b32b89f6808a75dd81722d2100a0bd7337437916bf7d9ecda3ad",
-      "size": 1463,
+      "sha256": "1e8b6ac222f9b63a397b410f3a0c81ed67144a2f73ec00e12ecbc433ea76205e",
+      "size": 1506,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/impl/OpacityMask.qml",
-      "sha256": "4814e75b575ade192b9a6c6a23784c2120db9e3fa7dc778a3b32e5f7c6ed633c",
-      "size": 876,
+      "sha256": "31a85eadb1b9cdba3e9e1e46661ee092fe3b206ed3a3e274acd1bdc319d209eb",
+      "size": 911,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/impl/QuickControls2ImagineStyleImpl.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90968,8 +90968,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Imagine/plugins.qmltypes",
-      "sha256": "2e1f7def68a0692ce850eea188bbe2bf287313e8a4b9b804fbfd83bd77f100e5",
-      "size": 1347,
+      "sha256": "003dff3942fbc835388f89f1be6e185e46da8b7f462da04fc509a816957494d3",
+      "size": 1395,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -90989,442 +90989,442 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ApplicationWindow.qml",
-      "sha256": "9854c2a9dcf12601d8931a3f61f5efe401a12959a396c987097473c6097a6b2e",
-      "size": 322,
+      "sha256": "4ef85be2cb13539bcf0d1a56c93063c4d6498a58394e3e9030029ab70206436d",
+      "size": 335,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/BusyIndicator.qml",
-      "sha256": "be409540e710b611daecc855938a3ecf07989048be31df71168b2710b57b711e",
-      "size": 967,
+      "sha256": "01eddbf63950d459c086aeb39593da7554b183f23121e043e52b26e096997720",
+      "size": 995,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Button.qml",
-      "sha256": "79c2e25910be807fc0c5e42b6dbc8bdca11b6209d7ef85f8058702799e237fb1",
-      "size": 3365,
+      "sha256": "cd6ebb42987ff33fafe963c8f98360e1d6ea4a8d2038d39d77680aa18e09cd0b",
+      "size": 3443,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/CheckBox.qml",
-      "sha256": "51d67f569de20cd6e90f04b7337513052ed1e5a9ca256f3c76ec405b1fd76e0d",
-      "size": 1969,
+      "sha256": "a57724ff019008e441c7bbaa311b7d1aa70045f890a37f329513569af9c1e790",
+      "size": 2019,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/CheckDelegate.qml",
-      "sha256": "994a4581969b9932a4e21bc5bfa501e10ee1f766f111f7f5219c60665c02cf03",
-      "size": 2334,
+      "sha256": "f6a78026b95824cff6c0855b2295c293cabd172851369b0696da0995dcff25e0",
+      "size": 2398,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ComboBox.qml",
-      "sha256": "0c0e5a62c9f6cb3451c3e2d0f0de96bd686470796dc2d6ea4a5bdb12f82b37b7",
-      "size": 4897,
+      "sha256": "ef7c303d74c0a4f74c6e56c1f82765e4be660bf7d8037d3a25c3b0dc82a3daf6",
+      "size": 5022,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/DelayButton.qml",
-      "sha256": "fd46b2e73feaeecbc9eb11825744677e633168a57a51199f72c3375375b9180b",
-      "size": 2822,
+      "sha256": "581f671f9e989827aab708b11e12e473d2cc25863199a39515de04d1997e1d12",
+      "size": 2906,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Dial.qml",
-      "sha256": "c2622cd6d10c31762c6cb60c44ae0954a1d17a081751b728a3e6e328d9af7249",
-      "size": 1834,
+      "sha256": "5677453fcf47ee199d273a38f0fc280f42f814d52b4b4f4c7cb0315ffb82aaa6",
+      "size": 1887,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Dialog.qml",
-      "sha256": "3bc0b7a5c182d00ab743c2c8484ecbdef7eff33b13a55105d1b88d5d43690962",
-      "size": 3419,
+      "sha256": "0c17ae4ce81c6d6fe2aaf82b1aa6763dee2ea80b3a9ec1ffe21bd2092ec6ac5f",
+      "size": 3506,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/DialogButtonBox.qml",
-      "sha256": "de0ba2132936d7d07f8720c249462318f8f59ef97c48122bd8cb1711605f91e7",
-      "size": 1608,
+      "sha256": "a5bf696f6e3cc90e30ae950b1dd918bb55e9b504e4660fb6ed1a7ea115e29417",
+      "size": 1655,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Drawer.qml",
-      "sha256": "a1ab509a924b0890d869ae5d73d035b9c6af4627c2d42b18932c7e19f6740cf1",
-      "size": 2230,
+      "sha256": "c8f5241af0ba061a06c0f6066ec299fbacd1c601f9f77211fe1d535690983885",
+      "size": 2288,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Frame.qml",
-      "sha256": "aea6cc8ea8123d162c9f525625c9249325d6e8d87f54f8d30a74d2de2ef49477",
-      "size": 1175,
+      "sha256": "c9b28f9a556b33dfad482df4fa2b865a387e3e560b89f67d06606468e264fa75",
+      "size": 1208,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/GroupBox.qml",
-      "sha256": "709a6d502b0530a28064347c112c0c18f30ce17210d20ba9adf02e31909d19b7",
-      "size": 1896,
+      "sha256": "2a87431b2ccd22df4f5b80303c81374923c4aaff86de06e37f203130cc9f74f1",
+      "size": 1947,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/HorizontalHeaderView.qml",
-      "sha256": "52ea32297b574cc6ee1b00e0685eee131e3f845c6696b0526b89f5fae6eef5f2",
-      "size": 1593,
+      "sha256": "644993daac7f405a3919a03891b92283efaa71be2c49defa163667c26c50a1a6",
+      "size": 1637,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ItemDelegate.qml",
-      "sha256": "fb3e95a866a1830c17ea70ba549d7099feddec39525849bed835e9db00a9b08b",
-      "size": 1848,
+      "sha256": "b1294a456491b4b66b77e21b2f0f0ac58d319dab00c4db92aea1283477d04139",
+      "size": 1903,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Label.qml",
-      "sha256": "8327586c8089f71e0ac787bb0f306421b456c677cb0c9eeb66a52a886d966d27",
-      "size": 355,
+      "sha256": "40e4bb6f9367c1ef8f210993a5ab4a5363060031678e8fdd8da08e16950bedd3",
+      "size": 368,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Menu.qml",
-      "sha256": "086a616cdd4abb324397223444748fdf26be306de7b3b52e9e0e42b133c265cb",
-      "size": 2584,
+      "sha256": "8d96a390fd0da6006f8226f12f48f95e7067f98f3a5ab738625e922ca8b34cf5",
+      "size": 2660,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/MenuBar.qml",
-      "sha256": "4eb57422819cdf1fdc2ee53ed1afda32ee4eed6c98c3f43e5de7374f8987007c",
-      "size": 893,
+      "sha256": "d91375c8d9310f74a58cc3ba0e4465fd90cc48f49f2c806ed4b7349698b91ba6",
+      "size": 924,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/MenuBarItem.qml",
-      "sha256": "caf6cb4bc005a847e5dc27b51f3a2c1cb638c8eb5a5c263704e35f1f0d3f53c6",
-      "size": 1707,
+      "sha256": "2686a1299273a71b98b083928cacf25b08a7f0d200b304a04082abe7c25ccc15",
+      "size": 1762,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/MenuItem.qml",
-      "sha256": "1967bfa09cf316056d87ddbf3e3aaf99fb226c405501199b3d3148b253add09c",
-      "size": 3028,
+      "sha256": "798811a61d640d6c2c7b841ccab4db67998f8322e4e5a81d73ba91f5ec04fede",
+      "size": 3106,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/MenuSeparator.qml",
-      "sha256": "d83c8364aaced4c70dec9a0baa8cabefef07eefe5e30e9dc46237df9e7c7b0da",
-      "size": 737,
+      "sha256": "e5ae1431bd6b51a3abaa09ad0621bdbfe8a8bed36bf14211185bda9bb7279d11",
+      "size": 760,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Page.qml",
-      "sha256": "8aecd94f738637105292a74df370146258c470a9b3dd1ac63e42ff29377fa9ed",
-      "size": 1137,
+      "sha256": "334aaa5effef2731c6210579cc8d1b2e5d89f38f9e486612fe261ae1ba89bfe5",
+      "size": 1166,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/PageIndicator.qml",
-      "sha256": "d31aa5ca74f3db70c03555bed9edcacd1fd9e79b0389a2960087a2dd35279525",
-      "size": 1369,
+      "sha256": "04cd9b621135585eca13e664c82fa2f2a11911af2258591e8e676af100a2b898",
+      "size": 1413,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Pane.qml",
-      "sha256": "f8b9215ac8595571d306eb1b78649e36249d792fcf0bd6a484be82b5abebcd02",
-      "size": 1078,
+      "sha256": "ee56ca859b5fc45e32e95d19864cbc01fbad320903f24717c8dcaed66aafbf8b",
+      "size": 1108,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Popup.qml",
-      "sha256": "8ad7b0c38530a8b053663dc597553b349b8a0fe79d0fdea827ef6f99b38841e5",
-      "size": 1960,
+      "sha256": "43c419a74ba5d75d3615f5b6501ca2b915ec503f9899c7f7a22df3a2fb03767b",
+      "size": 2015,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ProgressBar.qml",
-      "sha256": "395ec5c8c2723f6ecf681a8552aa90f814d2ed22eb02a7e0a0a9ebf0d302b3b9",
-      "size": 1141,
+      "sha256": "04dc9d1c59620806ba411cd066d58329f3c9822f5c1ddec231011da3ac18c427",
+      "size": 1175,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/RadioButton.qml",
-      "sha256": "46763e6db3824fa2fc7720d4ab792f2df9f470512e294ef831790e949883e0ae",
-      "size": 1959,
+      "sha256": "fbec66323a91343a2509ece80bc7e31dee37c9d08935ca8eebbaacddccd3e1f9",
+      "size": 2009,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/RadioDelegate.qml",
-      "sha256": "8c06ef90f598608bbda17f894f01c1d9ba72844f9a7414bc3266e5205997d717",
-      "size": 2321,
+      "sha256": "5de5ec78ccbd1c8ea0e7ad108690ee17da2641f131efaec175ab7df628f55a84",
+      "size": 2385,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/RangeSlider.qml",
-      "sha256": "c2b0cdd5931f13c7225f507f25d6ca7350185ed9ca3c26b9c083b5f9e89c1119",
-      "size": 5807,
+      "sha256": "229b687f4453e195ae127f0f107f0100be7c3f0dfc5758c909a3b82425c0849c",
+      "size": 5905,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/RoundButton.qml",
-      "sha256": "71a7e174a03f45671256b7dbe84226dca4764b026199aa2c33b7dbbf92977359",
-      "size": 2877,
+      "sha256": "f62639f1958eb3a2d7a9f935ae6854d2de1da0ab2583a7e47d67df91f0657172",
+      "size": 2957,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ScrollBar.qml",
-      "sha256": "5fa77b490cdaa4d930af7c7ad0edd64f60a8153f0f013cc791cbe6b19b6e9267",
-      "size": 2076,
+      "sha256": "84487e918e6cbab7e2c20a715954854995adc784eff704aee1a8cd3365149047",
+      "size": 2132,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ScrollIndicator.qml",
-      "sha256": "c66af7f116fc3716698dd7fa8894c0493d32d72232ea61598214707efa71c41b",
-      "size": 1276,
+      "sha256": "a047a7e37926eac126d3ed5413c7fb260a9e453ac1a03ce320b48ac875bd8a7d",
+      "size": 1318,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ScrollView.qml",
-      "sha256": "5744512d0163200f17ee614036412b66b355eeda442b4843f6ab1a31a8b1f07d",
-      "size": 1024,
+      "sha256": "78b5fc58e6d881d16351e92d32b8cadea6b14fbf8c20c1bc7e56d02946467ae8",
+      "size": 1055,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SelectionRectangle.qml",
-      "sha256": "5f0db579bb6105a6ea6c9d93d5df9a62f2e36f661a5f0a37e5ce3299b19e4b54",
-      "size": 848,
+      "sha256": "5c85492c197f68020fc50e91a2a51f646d2962987e647cd938d15152923ce772",
+      "size": 881,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Slider.qml",
-      "sha256": "9dcc445f2d59820bb736816dbd4c1c48694e09bb9bed980d3869bea6c0c671fc",
-      "size": 4834,
+      "sha256": "1bb57e2d297dc3f46668718e6ed0ccab3fbf7c0fabdcfce339555f88d62847c9",
+      "size": 4921,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SpinBox.qml",
-      "sha256": "f7c8d659575897fa747d02a03536e135089960a4496b0386580138575224de2e",
-      "size": 4546,
+      "sha256": "4df963a1e5440635b5779763310cdcd6b8929efae06eb9ba2792acebd3346a75",
+      "size": 4666,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SplitView.qml",
-      "sha256": "23e4643da77856c2143192c88fc2eb2296d9b634176c5df38b255209915edddd",
-      "size": 1600,
+      "sha256": "3fb3f2f1c06df3dc0aca0c6f4f9289df874c18bace8caa4b6571f06799fa1e86",
+      "size": 1640,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/StackView.qml",
-      "sha256": "58736ae551c0f473379d84da5a8f62deb29b5d811555bbfd87f2df62b9945f0d",
-      "size": 1678,
+      "sha256": "e0bf8deab9398b9b2736de6d3bd3a235f2db7766d1fc45f88d8a11ffea664a3c",
+      "size": 1741,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SwipeDelegate.qml",
-      "sha256": "b40cb458f814d1d24cabc698a9734ba6e634e843a97a058fba8a4388f234fd3b",
-      "size": 2155,
+      "sha256": "00f4efda2d733fc31d8f130eeb7c0fc329a53612deadac502543754a95da00b8",
+      "size": 2220,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SwipeView.qml",
-      "sha256": "7fe4180886b9c620e799789950110fb8c448c0e95c0b9d033cdcdde55623016c",
-      "size": 1157,
+      "sha256": "b2259273b218ae423b4fe0a0420de3eb1de3d1ec8c0a8a74e35e6fe29706fb28",
+      "size": 1190,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Switch.qml",
-      "sha256": "235acc1c01097930bec92260e3d8bc7cecc84c6fa0013faea05a42dbc0d5beec",
-      "size": 2367,
+      "sha256": "7e51b59b872f42357dc87a0548d1a163a6245dc67fd36411420a65052eef22b8",
+      "size": 2422,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/SwitchDelegate.qml",
-      "sha256": "8cb10e96223f3ddcd73c6751c61a2f23fc618f34b336538cb8b5757d2db9e15b",
-      "size": 2373,
+      "sha256": "f2bba7c6de8fdefff508905089f0d0f198e5390f49d78ebae6063839e3c3a1e2",
+      "size": 2437,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/TabBar.qml",
-      "sha256": "81c20ed0a2d18a2f64bd8a69bb649f7df8f5dc44d7dbc193faa13d6fc6d20e41",
-      "size": 1736,
+      "sha256": "6f123982fb4654620d90ac74f57c00db8a6924f3f230ebede98e32146b9327e8",
+      "size": 1792,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/TabButton.qml",
-      "sha256": "0ecd0b83b3ff5af5317e48d8611f94f80768cbf96d7910d7fa4aad6dc32790c5",
-      "size": 1496,
+      "sha256": "9ae1bfeb62d2f194c936fa42ac0e68aad3451b9f24bf701c67dad1b2658fdf22",
+      "size": 1541,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/TextArea.qml",
-      "sha256": "0b3276e74b2d5cc84a781f5daf05f82defc6ef27454a07063b0b38b5f9de2aa4",
-      "size": 4197,
+      "sha256": "e1aca9990f9c1dd0fd71f23828c2b822618180703708cc50a09b5b579db2450f",
+      "size": 4280,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/TextField.qml",
-      "sha256": "c35d8a3271ecee48d9201a7bcf99a6fd75b801cb20823ad3eabb61b7b63ae36a",
-      "size": 3665,
+      "sha256": "860e3c80281abd7f35441331e6accb0ef075ad15edc4e5bbad939df9ec8acb24",
+      "size": 3744,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ToolBar.qml",
-      "sha256": "cbd963bf6edb5c8c35736fcc258ed25b1800097ea58285c21c2af8620b9210da",
-      "size": 978,
+      "sha256": "f6ad8d29e6c488b81147c471564313b7ac4e0f465f9a07db8447f1817e8b2ccc",
+      "size": 1011,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ToolButton.qml",
-      "sha256": "5b55bbbc12491dc07e7fb104cb85a13aed58e9f30973f9ebc2d80d3959f4ef84",
-      "size": 1869,
+      "sha256": "a1ff8b9f6ee3702456904338e5c1bb92d69ca98a8ab2a4639ce7bd6d2a07baff",
+      "size": 1922,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ToolSeparator.qml",
-      "sha256": "def7296678a7d926a3992f117eac7af4ba3b9a6ba108fe160fec87515e32229b",
-      "size": 841,
+      "sha256": "eb219ac88ee5839ac197c0ea83dec3e8435735a2e27a735fd0bed24a47515587",
+      "size": 865,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/ToolTip.qml",
-      "sha256": "1654e60b328c0396552ee2ff5350e1f291888f2ab62239b12a37cfac26f7cb2d",
-      "size": 1516,
+      "sha256": "264fed909447f2ea367c7f469b0ddf5e64d07cbefa3672156ceb0d7ef5914f3e",
+      "size": 1566,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/TreeViewDelegate.qml",
-      "sha256": "7c85268af85a479dfbfac107105e9fc0794095972132aa55f56145ff8a28888f",
-      "size": 4458,
+      "sha256": "a36c16f10554e27e7999944e765249d90dfc99e10853befb40a43f82f8096759",
+      "size": 4564,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/Tumbler.qml",
-      "sha256": "f14bfb734dbbf24cc90f5a1f31e463588eb49e72906606e92f8a4eb29ce5de50",
-      "size": 1574,
+      "sha256": "e9c7f567c586044ccbc5af7dbee0ab01229e8db352fb2ff8aa0a6b5cfb442665",
+      "size": 1619,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/VerticalHeaderView.qml",
-      "sha256": "3164fd0040b90abc898f026eec6e1c499e80ae4c172a3dd99f86b2030141e7bf",
-      "size": 1584,
+      "sha256": "bcc32016734780537d86d3520881bce6f17c90d6b4566f63c28b7d2b2fb8930a",
+      "size": 1628,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/BoxShadow.qml",
-      "sha256": "8e261daa4e56ffbc3728246112793f25475429b2bb9610540417355e84ebe252",
-      "size": 1674,
+      "sha256": "7184f77e4df7a912fd84662152763db2cf9febdd15d9f514ca1bc0416da14d03",
+      "size": 1722,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/CheckIndicator.qml",
-      "sha256": "dddd1b2bed0f85e2d8689cc1bade946e70904c9bdb02850666a2c7c71b9b71be",
-      "size": 2425,
+      "sha256": "512503a79f2b618c5dce49bc8b8211b019df02f385b452604b2e9f7609acc658",
+      "size": 2512,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/CursorDelegate.qml",
-      "sha256": "647579603420900d97332433113900995dab33c7f155470962dab6891c55238c",
-      "size": 958,
+      "sha256": "c7d7c54555cb7830bc3a5372518f5c42c8dd2529cd86015088a7a3fa9dd0a69d",
+      "size": 990,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/ElevationEffect.qml",
-      "sha256": "05871ec442068a4bd087ce8329aa088ea9355649351c659e96d6c53321c5d53a",
-      "size": 8387,
+      "sha256": "c96e191587c58f9629f9794cd354124cc0c2a103c905cf811c4ee8e66ce6fdb2",
+      "size": 8644,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/RadioIndicator.qml",
-      "sha256": "2b3c9bf73764a2a385c671182020cab6cdeb6ecd5c0f0ea73bd9bfc196c5565d",
-      "size": 1470,
+      "sha256": "b744854b50e2ca81d761dea1984b324f5b0dd6a7ca7bdd6af6d8e8616bbda4ea",
+      "size": 1523,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/RectangularGlow.qml",
-      "sha256": "c7203d9d18f5ee1418e4a49ede42f0aec125c53116838cc7418157bf4e398a0a",
-      "size": 6474,
+      "sha256": "7de16148d42c6f299888d2bcfcad77b3b0cc20ca1a70357b5a32498b9a2a3ae4",
+      "size": 6681,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/RoundedElevationEffect.qml",
-      "sha256": "0dfdba3a27984357c1dd061ea8fe11e07a4f660629a01c591cf2918d9485da99",
-      "size": 1728,
+      "sha256": "bb3498a1fb540fc1dffc93d4ef0117a9eb0d71069d64ffec2e9b367cad57e305",
+      "size": 1763,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/SliderHandle.qml",
-      "sha256": "37d92806c50bfbbbaac794c3d60046b4ac48a7266bc56c0e61072c4a18da79d9",
-      "size": 1196,
+      "sha256": "6ffa0657d05ec74fd6e1b482834d7f9b7c6bf41aeb7292937c1ffba82c934643",
+      "size": 1234,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/SwitchIndicator.qml",
-      "sha256": "89fc6b27d6ad2bcafd30f7e04886bc8b3bf511e2f99fdf1ab7b09a8060ba538a",
-      "size": 4122,
+      "sha256": "2b34f992b4fad90d6aee6613cba1eca1eb7a85cfc4189895691515d234044651",
+      "size": 4223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/impl/plugins.qmltypes",
-      "sha256": "788c6032db416b280bd732812960e8ab261986f3b7fcd3b8d01c76694b9be514",
-      "size": 11196,
+      "sha256": "44d7e0431674e786dc43222fbc9b8e4f969070380da460e1ddb5cf371c2cad9a",
+      "size": 11539,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -91444,8 +91444,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Material/plugins.qmltypes",
-      "sha256": "4284633f9db755cff2cc800307f61334d629ea9f7d5e005d0c4df50b464eb68a",
-      "size": 21698,
+      "sha256": "3a27b1130eb0d60cd59a8e5c903c7557df7b576e7e884cc262323133f1ed8c54",
+      "size": 22464,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -91465,386 +91465,386 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ApplicationWindow.qml",
-      "sha256": "434c1436e8bacbfc0bd1a0d23fe0e77255656d8edaa83753cef10636e5f4a9e6",
-      "size": 594,
+      "sha256": "27323601bb4d3ad207d4e2422745529d553c0b8fb594d0f27f11e5884b4f4a1f",
+      "size": 615,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/BusyIndicator.qml",
-      "sha256": "c7d3c791f386ed5362248f98a9720a65228903cfcbfccec2473b82fccbc79ef2",
-      "size": 942,
+      "sha256": "b3363202f2491c73695b79ecbf8fbe53ca21e1abc1c9ace8c93837fe36707965",
+      "size": 969,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Button.qml",
-      "sha256": "c1c51d992c442823b96901deea104f712c72aaed37a8dc3b66cd0816d060b15c",
-      "size": 1891,
+      "sha256": "949b10d491d1344a27e80a9d19be1aa485e9b0f0e13fe54c4e633ab52e389864",
+      "size": 1947,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/CheckBox.qml",
-      "sha256": "1f8e563a0ee31e1aaa4a5196359b2ccfba0f86c7f38a641c6bfdc31cd4f51463",
-      "size": 1545,
+      "sha256": "905a736c609fe49567aea391c7d544b6afc6226280585a9ccdd3ac549d150de9",
+      "size": 1586,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/CheckDelegate.qml",
-      "sha256": "c5d6893db1af7b688ea6fec5603e92cd81b596d155cb0721ff9d0ab7d6f675f3",
-      "size": 2459,
+      "sha256": "de81d069679fa530a143d6ef17a0fbd64ce18c66bf78180b76efa2168a76bda9",
+      "size": 2522,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ComboBox.qml",
-      "sha256": "63c06ce350c524b98c00ebbed06c20183a882ff90d2b6c3207c7047b52db02ad",
-      "size": 5333,
+      "sha256": "fa36ffc621bbb6be91c0313e453eafb3f915698dd7377c0a3b62c50145a82581",
+      "size": 5462,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/DelayButton.qml",
-      "sha256": "d11d1a2fd0536f3cf0816341a46c179425ba879bd4cd97820d0898969cacf9ee",
-      "size": 1907,
+      "sha256": "41407cf566e208a1867ba67ad65ee207e6e0d7325d97c8a8edc5178e2161cf85",
+      "size": 1968,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Dial.qml",
-      "sha256": "d1891c176184c776af7ec8ca5c9f06605b701066078b205ceeded3b5b18163c1",
-      "size": 1943,
+      "sha256": "554f09f558f5ff0790e49cf7df883f41336e64d76e0521e71c9b1d60a20bcd85",
+      "size": 1997,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Dialog.qml",
-      "sha256": "149a7444715dec7580ddd8001802571fe65ec2d44c225370bac8aa4325015083",
-      "size": 1855,
+      "sha256": "ee24d53664997143eaef3f69b5a0a008c35c487252b3201f34fdcd1d02b446eb",
+      "size": 1912,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/DialogButtonBox.qml",
-      "sha256": "84c9ad87fee0243a66fa9294b40166f1cd0b10122e4834e9c5388364d7cee0f2",
-      "size": 1480,
+      "sha256": "77e3e9e5b54d19d6b2f4cb73d001173fbce0a2986122c6aca62d3533e949a0c7",
+      "size": 1523,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Drawer.qml",
-      "sha256": "7c3e519a8ff6321c630c9c2f14bd9122dbe4a37581299914d2ef0cd8e55448fd",
-      "size": 1587,
+      "sha256": "2edf6dca382694511983c30e9b38164c7b906dea9132cec8ece7126627b8a96d",
+      "size": 1632,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Frame.qml",
-      "sha256": "c6f23c5ea1cb80b3ff7cd5f08700872558213f960611740a738824cf8c12c522",
-      "size": 700,
+      "sha256": "d448e317388d5549ef9ec3acb166f2e819e6d257fe3bad016e561eb04a0b7b6a",
+      "size": 722,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/GroupBox.qml",
-      "sha256": "0b6ca748bb35817ed7ead7923e0b9375f71602206f5b3ad0f91b7fa448eaf690",
-      "size": 1349,
+      "sha256": "f779f8ce431836662b22349693886579d9786cdaa66456d32e2307d0201bd9b0",
+      "size": 1391,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/HorizontalHeaderView.qml",
-      "sha256": "15d0d4ba073af5078d7e2fb0ae79e48bffd2167d622f159828c4442b63a5889a",
-      "size": 1618,
+      "sha256": "6ace9fb5a9c638647205c637299116b035253e1b781b8d185802a2fb3e70a31d",
+      "size": 1663,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ItemDelegate.qml",
-      "sha256": "b8bfec80e78cc170a196ec4ffeb0902593e047676697699fbae8b9c166410f91",
-      "size": 1934,
+      "sha256": "01ed8fe6cc44d8e7ae98e8c5936f779d7d3e02d4159ad4971f1f9a4ddae7ae03",
+      "size": 1987,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Label.qml",
-      "sha256": "72ea0ec5d3944615dff1814a24e12ed138cd3cc9d5c2ee227002fb72e88f5d7c",
-      "size": 359,
+      "sha256": "f51e833da9510cab77b434dcaf9d7572827a36061434ecc4260f8d194e86d4e9",
+      "size": 373,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Menu.qml",
-      "sha256": "997672fbaac245e83bb8942ea0007555d079ea1e7634308b82a1ad3f627f0449",
-      "size": 1452,
+      "sha256": "bad493d269d855377203de4fc70a08830fa9fdc78eb99a357b1849f532a7172f",
+      "size": 1501,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/MenuBar.qml",
-      "sha256": "faa746fafa2ba79b3a9c694024822ed9d31fda0a55eb39f00a3e44ce4053ae75",
-      "size": 863,
+      "sha256": "7cec2f429d5c575b33ad3d8073b08bd08023eed6a21edb6a3859fd202d822197",
+      "size": 893,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/MenuBarItem.qml",
-      "sha256": "f892ee268ea5e0f0ae3990576bcacc5dcef1331010a1477e3ceadb6ba96b7d2f",
-      "size": 1847,
+      "sha256": "86f5a2f9a1ad5ebb7b6a130e99f4cbdcec9f20ca94d84c1f4d3a4e5fa80dd66d",
+      "size": 1904,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/MenuItem.qml",
-      "sha256": "34f9886cbd02998a4c5cd0554a10da7ea18c76e1f6f5f7cd62ba3509af7a898e",
-      "size": 3313,
+      "sha256": "c44be9d0dfbf8777de55c4ab3cb52abdd6f578c6c723ea5daa51ffa147b32740",
+      "size": 3394,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/MenuSeparator.qml",
-      "sha256": "273a37cf26ac061de2cb47b31ad32af3c0f16debe5299964c66d8355bb9b38c7",
-      "size": 864,
+      "sha256": "d9ef6587a8682cfd59b419ce092306c8ce6475f5379ad936fbcea1e5fb310319",
+      "size": 893,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Page.qml",
-      "sha256": "b9b0ef7f2fd8fa930eef2ebd2848f2d30e45272200fb47c2a635cade53f990e6",
-      "size": 922,
+      "sha256": "c1126ae9a6b5da8cc60a0f9e656bf6b581462f6a4e91e4b69cc189da69848870",
+      "size": 945,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/PageIndicator.qml",
-      "sha256": "553ba411460c669aaf514452ae139afbde6debd7967d122b68072c355338501a",
-      "size": 1130,
+      "sha256": "f6904f012281911d658da8fcd1b45a40949e34e8f8784ff4bfd0e3be033d9623",
+      "size": 1168,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Pane.qml",
-      "sha256": "a3a0779c9bd18517c558260ab5479fca3fc2529754f845808f6dad63ac2b0f7f",
-      "size": 651,
+      "sha256": "dca009ee7afa0c5f498a1d2e3597a893925b41b13f8ec2eeca2ed796c8a4b9e7",
+      "size": 672,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Popup.qml",
-      "sha256": "700885d035463f0b9f1a47884e63ec0436e7d8407af7b1a691b15aae355c66f5",
-      "size": 947,
+      "sha256": "c2d3f9da6327f0c8935cf25fdfd18e439a84ad7943502114d22be656d7a243da",
+      "size": 978,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ProgressBar.qml",
-      "sha256": "1745120ba9d39441d1d94d1dfc377105d17ba55eaa7bad1c74f86a7bc34a3621",
-      "size": 1103,
+      "sha256": "344c693be85064fb28c25620681ed89f24caa25b876c2ab28f0d40bae3df7a87",
+      "size": 1138,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/RadioButton.qml",
-      "sha256": "2d05f8458ca0825f59f4b47d79b4aba6ae53195ca4d726ee5525dc4c3d89af93",
-      "size": 1548,
+      "sha256": "b9c19ac5f7e2361965cc115b31633c64b0aa9b1779c3edc790489448515b4a46",
+      "size": 1589,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/RadioDelegate.qml",
-      "sha256": "28f3477c367b54f32fc3bb8844faca56f97b6eaf6618d77463cc8d913bf8e3d7",
-      "size": 2459,
+      "sha256": "0780d3480d7940ef747b0d07c36d0e56aa689b3866fe1fcd5ecded9db8f24677",
+      "size": 2522,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/RangeSlider.qml",
-      "sha256": "8619975d27f0544af589d156a9b7de34da4b2e1dc37a4a1a62f027e04ca43ec1",
-      "size": 4030,
+      "sha256": "eb937b47baff2f66d78bff30e0bb6fb4008e56c13f8c1940e174cf772ad67ce0",
+      "size": 4106,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/RoundButton.qml",
-      "sha256": "0f9b601705b40058cd8b19d7ed88929987c560f52fa9fc7f211357fc2ed05f5b",
-      "size": 1929,
+      "sha256": "172a1641baa47a8ea227bc3c28499c051229ae89c689b9aaa17d79708f5b75c6",
+      "size": 1986,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ScrollBar.qml",
-      "sha256": "87db396e27c50e22ae561480f216c6ccfe33648d2c981d3ce073de9c197ad1b6",
-      "size": 2125,
+      "sha256": "7383fac02549cbe007cbef28dc3fa62775de0027e349ccef0283290a93a401e3",
+      "size": 2186,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ScrollIndicator.qml",
-      "sha256": "8327347a446bb1bccca534ace68781453319f14d5d5983ee545aff69971283f6",
-      "size": 1385,
+      "sha256": "17889071247ae71a28d0dedaa3c8778a0135cd0d15457f06dd559d37370a5685",
+      "size": 1430,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ScrollView.qml",
-      "sha256": "5744512d0163200f17ee614036412b66b355eeda442b4843f6ab1a31a8b1f07d",
-      "size": 1024,
+      "sha256": "78b5fc58e6d881d16351e92d32b8cadea6b14fbf8c20c1bc7e56d02946467ae8",
+      "size": 1055,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/SelectionRectangle.qml",
-      "sha256": "45e81eed45093c4ba69dc7f7c27d3bce05df8e40ea7fe7ae6a3bb2110dad78fa",
-      "size": 983,
+      "sha256": "79a329bb3aa61938e877f20e8228d5ff36b5ea63bf704b00b3b32e578e362eb3",
+      "size": 1020,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Slider.qml",
-      "sha256": "ab5e1eb18a3799bce5ed38d2ddef422ba39ae2c389a5435379855f8d9eaf2462",
-      "size": 2966,
+      "sha256": "f0a0545511b447401f42ca975ae3cc87e28cbedcb66701f3a1fcc76716fd9a14",
+      "size": 3029,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/SpinBox.qml",
-      "sha256": "462dddf3d48215c2ed85bdeb5ba266af4910b5e2e3f2b6697e170e5471140ba6",
-      "size": 4871,
+      "sha256": "5efd2be6049db2502dc0bc4f3c75a1512f171fcef09a4de875e8cfb69e936db8",
+      "size": 4985,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/SplitView.qml",
-      "sha256": "34cddd23c94fd3d4afea23de38bb8ee4596526a2a53b177db327ea70547b632c",
-      "size": 996,
+      "sha256": "2c4b7a07d3804e6db897219d2be296ccc616b4152a5970f7e71a302539717e01",
+      "size": 1018,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/StackView.qml",
-      "sha256": "43fb8e86875f8d15e2babada533a11973842ac6201c902a69750da3a8f1885b6",
-      "size": 1705,
+      "sha256": "a08fe1e73c0cbc458f29eb0fed4107b7c17300938e1b4b358917ae0f924b2798",
+      "size": 1748,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/SwipeDelegate.qml",
-      "sha256": "484d781374d7439cb7f5001afa5a4de3f464e781e9f61ca8677615bdfce6d830",
-      "size": 2118,
+      "sha256": "e0ad2040ffcf8e4613ca8c2202355b8bbdfb21db25e55e5104cede0e867b129c",
+      "size": 2177,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Switch.qml",
-      "sha256": "ef01a81ddec31e255e99c083c7936bae881ac4c1d7e851c41c82bc8138fcc4cc",
-      "size": 1544,
+      "sha256": "8504b65b35bbc207d371a7c055817fdab10dcf2bcd34ea4db5132684da6f4dba",
+      "size": 1585,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/SwitchDelegate.qml",
-      "sha256": "c1adb7c235aacf2c5d95665ef7e5fa6506cfe56364f54c3eb6b0cac71a22849a",
-      "size": 2461,
+      "sha256": "047025a50fa77f8394ee75a520492da099c8eb7d16991dc849a6a183869ecfa4",
+      "size": 2524,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/TabBar.qml",
-      "sha256": "eb301a1fcd62ace399b67a081bf7102428fd80eb7f6351e9748e99cfc27ee964",
-      "size": 1182,
+      "sha256": "2b8abfb0bc62589a66ab5b8db1dc85188ebda9a661cc3144283038dc8d90ac46",
+      "size": 1219,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/TabButton.qml",
-      "sha256": "42d27355f692c13a40405702cc7647bdc8a78ddb068f5ff45914c14ce33965b4",
-      "size": 1395,
+      "sha256": "86fc4ed22079fcee4ebcb962a07bd230d91909b9b61c23a4f253f2f25780cfe0",
+      "size": 1431,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/TextArea.qml",
-      "sha256": "3819788d39b995267032db84a6db5bc462703f7f29b6122faf59ffb081fca088",
-      "size": 2601,
+      "sha256": "659aec5ce657d2dde97f2ccc5360ba4030b760c97572b124ca0f17aec0cd8580",
+      "size": 2661,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/TextField.qml",
-      "sha256": "c6eb4822baa7ab20e28a381b6c8e1e08fe77298b09857ce1a23e8db973df43ee",
-      "size": 2584,
+      "sha256": "6d102c46603c069564e7e4bd12a845c3fe9b0d0c1bdf449c2615462ed84d2d80",
+      "size": 2644,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ToolBar.qml",
-      "sha256": "5d124f522e77b8ac781c1b134e7f2303455b4da6f86e56aa9a40daddeb3d02b8",
-      "size": 699,
+      "sha256": "f2e26a8eedc956212d7b1e631461e55feac9b5514b612761cf1d7caca19e77a6",
+      "size": 719,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ToolButton.qml",
-      "sha256": "33231e0fa3578319651b3f650e1aa0aff9c488e0394e60061f71e92f4fc652dd",
-      "size": 1603,
+      "sha256": "cd2d3a110fc845abf95f5042fc5d4261ff372e912ff6e5c2384fcd9d6d322792",
+      "size": 1653,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ToolSeparator.qml",
-      "sha256": "e4abf27d26dab355b1c3a17fcb707648b90b5ad7cbdb1b3a83923e987d83c4f5",
-      "size": 914,
+      "sha256": "5f3ee21a55d27d823551e3575a9aa42a444fb2d8ce5374dc17df4ef906fc572c",
+      "size": 940,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/ToolTip.qml",
-      "sha256": "d724b6fe6c47c06438c1c405f874eca652761decd1b861c86350f68dde1a6a1c",
-      "size": 1240,
+      "sha256": "eeb6789babfdf90fcbf17b132a2e3c913ed1dda6863d46af1216a95c5c6f8cea",
+      "size": 1279,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/Tumbler.qml",
-      "sha256": "c613317c3ef9e027721c3d035b8d1dcbbca2ed63526f40b79936e8f310f8a590",
-      "size": 1666,
+      "sha256": "0e081a7633544a269f5e451a2ff7b7d9659d9f0cd6fdfe18fc9d458a7bff9f90",
+      "size": 1713,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/VerticalHeaderView.qml",
-      "sha256": "07e8e5c8335bfd51be32690d0162933e031cee077768294b6e62304e16d459ce",
-      "size": 1609,
+      "sha256": "eb675c0457d0e9cb24ff8eb16c62f2a7b59849e0458d25563066a80b445d43a6",
+      "size": 1654,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/impl/CheckIndicator.qml",
-      "sha256": "d46a6fc38bb834620a366bc86f26ffc8a22ae3235044894222485650de0490f6",
-      "size": 2250,
+      "sha256": "8fa940b2297e61430dc7c3b0b6f815223d1ef8a47a99bf6f7dd6649c36f608ca",
+      "size": 2298,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/impl/RadioIndicator.qml",
-      "sha256": "5da6a498db70ee6b3f49850b42de952a69dd80f9ebefeea99d159ea87a69e305",
-      "size": 1780,
+      "sha256": "7a34f6d6702c8f396a5249472c939153c369e3ce8f509872e30a959d77845ad7",
+      "size": 1827,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/impl/SwitchIndicator.qml",
-      "sha256": "de0223b09ee32d85445e3cf3c116f9d03e85e91b8fce67c301ac669a9f7e25bb",
-      "size": 2084,
+      "sha256": "39c1f35a18ebc1031b8b81fcbafb937d1aff7c06b41a4c950feefa7595de88d5",
+      "size": 2132,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/impl/plugins.qmltypes",
-      "sha256": "702cf3556be5ed833a81daff4d59064c617dca527e40552bdea59eed72cdf340",
-      "size": 3600,
+      "sha256": "00b27c24c2b52cfd53e763720c9a37aa160c72a4790823cb1e2e8e9d15901e9f",
+      "size": 3683,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -91864,8 +91864,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Universal/plugins.qmltypes",
-      "sha256": "1a62f7e28aa72222715d3a62c41938945e3148fbda2b1a869512bc3a97dac9fd",
-      "size": 8862,
+      "sha256": "5e512cc12204a50c0036ddc4beffb72f3aaadbefcf60664647ff64d8404df97d",
+      "size": 9185,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -91885,197 +91885,197 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ApplicationWindow.qml",
-      "sha256": "963603207998f1061af4cc58c81639bdbab133923d989d57e19a83ea15bad2bb",
-      "size": 253,
+      "sha256": "168426a51c845acb799d55d15d66d969b6594e5fd2b321809dd7da6ad10bc837",
+      "size": 262,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/Button.qml",
-      "sha256": "46aa8157856a03d43b3dc9492c1da8d752af10d7dec68fbf9d660b5eb11a7ab3",
-      "size": 1486,
+      "sha256": "33a5c0db5101f50c9b2e02adde9765809c8607fa3bb407e29eff84ac7abab9f8",
+      "size": 1533,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/CheckBox.qml",
-      "sha256": "60016f5c85a04b7019cb76d08106a1593b9e64f9b87691155d8f1124dd5317ad",
-      "size": 3021,
+      "sha256": "ce1f3c7b94ad1072722f8425f6e41c1a9fee8a4cb890fdecc266fd58dac2b886",
+      "size": 3100,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/CheckDelegate.qml",
-      "sha256": "c422956aff28098dde7a05d262e31c84db278d6e39d90512363af2ffbf8798dd",
-      "size": 2793,
+      "sha256": "f8af5c98ef3e8fb46251625bd24bba24d334ec8dd6a520f4bb73bb6b4e170e07",
+      "size": 2868,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ComboBox.qml",
-      "sha256": "5e5132d714154c696bcf4e2ebe9c94116b702e6fb0bf9906cc6850a38f50925a",
-      "size": 3831,
+      "sha256": "4adece55ce31e9f3e74402839fb76f32862f5596aa05a21f784b736ae6071e97",
+      "size": 3935,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/DelayButton.qml",
-      "sha256": "40e38c921f1123dfd20d4a86f2e2e1c12e47445173dc271da09bd8ee5b02a8cf",
-      "size": 2796,
+      "sha256": "e3f0faea2852ddd3483129f0296d9a99feefc178269ae5a161622f2f7f3c0be7",
+      "size": 2878,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/Frame.qml",
-      "sha256": "a7b01d73295e39fb9025805013faedd04297048b8625ce9a9eebdd75e89d7281",
-      "size": 232,
+      "sha256": "d411f02112f782803d5ab5aa18c7f50fd349ca5af09286ad22c2465907c360b4",
+      "size": 240,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/GroupBox.qml",
-      "sha256": "5f2a2b9ef0dfe1d48b5f79203dfc785f5df996a93e9381171d1d39798eddb433",
-      "size": 235,
+      "sha256": "bb648f2fc0956833fe107ae81ad0966a4d9a62f2fe9243a2500e5e67db01542d",
+      "size": 243,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ItemDelegate.qml",
-      "sha256": "d1e2316ccab03de8df2a88fac383cf4329aee23ad7e25571abb1036b4521c809",
-      "size": 379,
+      "sha256": "d8230fc09271dcc0ceac9cf412f9448fa4fc75163a78217c6f8d4ee6d2413561",
+      "size": 389,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/Menu.qml",
-      "sha256": "4ddbf668896b6e005b350563a3ed3bb46456df0f767d02745ea33c57c8d94bbb",
-      "size": 2482,
+      "sha256": "b21b4c73bc37998b842e57f1ef29f7bdc58fd2620b1626d8e654411de5601bc1",
+      "size": 2560,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/MenuBar.qml",
-      "sha256": "d590c3562d53dac6525eede8176c8386fda1a7f1977b28441eeef1ce99ceaecf",
-      "size": 979,
+      "sha256": "841c5bfe8c769c808bc86b7cc016d8bf76142126b8be849df0e275f93d587dfd",
+      "size": 1014,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/MenuBarItem.qml",
-      "sha256": "74b5978db9206a0016cd0c92f14ebb13a86c7de2f099841a6e918c9861e97a38",
-      "size": 1284,
+      "sha256": "0d2075db9b3418b265acea126dc75185cb4dcb913c16932f38b8868d65ac81af",
+      "size": 1331,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/MenuItem.qml",
-      "sha256": "dce82de4fa29078ef4ac5862d1a74d077c101b426f73eee7e1840c0595fa75a8",
-      "size": 2505,
+      "sha256": "c7daa5db1607281271a8d133ec7b32b1984f867b09040970d99cf5ecf19d747d",
+      "size": 2580,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/MenuSeparator.qml",
-      "sha256": "5916518a7e2a78c30b4de157413704db9c57923de2aac4e522d03daec0479a6f",
-      "size": 724,
+      "sha256": "a8b1e029424cc9c087a29983ed5adc77f3b6c2ee91f5d31332f7d89bed38d89d",
+      "size": 747,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ProgressBar.qml",
-      "sha256": "93d46ca3c5134e06d4c23dbe63dcf5204c0e836f564c0b1d8fa5fc6e10632094",
-      "size": 238,
+      "sha256": "a83164e21d1bb74e1bbae6ca7e49f8601a11a708144d12a18842753a3bae9aff",
+      "size": 246,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/RadioButton.qml",
-      "sha256": "133f2d1cc5648252686b93059aa3dd0ac4ac1dbd1240d9db83d05b4bfc94110f",
-      "size": 238,
+      "sha256": "434eb58d251598f291721861820e4ce65fe8b36eca0255cdcac62c801182e5c6",
+      "size": 246,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/RadioDelegate.qml",
-      "sha256": "a48eb109a1f15a6de043baa866abc7cf9bf155369953862d2e9fdeda45a2c545",
-      "size": 442,
+      "sha256": "2c8863067cf6264249f7c0f62817eac990390de96abb7a9abc8ff7bf05a595fc",
+      "size": 454,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/RangeSlider.qml",
-      "sha256": "6e4e0250e7ce06ea775b6f50428ac8f36dfca66c00697845e04a35f6e8338089",
-      "size": 4571,
+      "sha256": "5678e279ec5a244beee168baae6d2de446220a0f51bfd2d0708839fdcec4dc2b",
+      "size": 4676,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ScrollBar.qml",
-      "sha256": "d908207cbc101623c16fe87fd37d6144230362a64a8c7ac112f62bc040245b3b",
-      "size": 3652,
+      "sha256": "6f5e6c6544f0300122642f8f8951ad4947065a2df7d3c7b305981ce2a1e7cb94",
+      "size": 3752,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ScrollIndicator.qml",
-      "sha256": "a8174c3b9d5b0d4afa182d2c8b2b9c8e8d5b129ec47286f5cf965b8acd1a20e1",
-      "size": 1260,
+      "sha256": "900d93da9f0ca95067d70bcb64c445f159809a4935f434f304b3f6d96dbabc85",
+      "size": 1302,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/ScrollView.qml",
-      "sha256": "239bc55cbbe43d0f4bc14d9c5f79578e9c4b39725014b351f232fbee228f7dba",
-      "size": 1347,
+      "sha256": "c406d9207aaa5fbcc2df4855a6772ea742360ca7b588694e35bad530977e07c4",
+      "size": 1384,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/SelectionRectangle.qml",
-      "sha256": "68f3e5615988adda822a4f3f1f86fc52448722016005436d114a8e490ddd01d9",
-      "size": 915,
+      "sha256": "96f82aeee30fbd3028255fc7a305b24a644e89a1facb79b3a5819370190aacba",
+      "size": 946,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/Slider.qml",
-      "sha256": "01c8abcc978068d16fef548b6f5df1fbee233a94cbba0dcfa1fd1774590706a8",
-      "size": 233,
+      "sha256": "5dc118785ed47733de5e600c66dbbf7e5ac4538d34c2b259567180c6bfbb2651",
+      "size": 241,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/SpinBox.qml",
-      "sha256": "afcf7080da4d7f04dad6f340f89329498d1098b1807e9659e9d0916d742115eb",
-      "size": 3397,
+      "sha256": "4329284dbcfa5ba252a9eb381c8da87fb408b360aa7ab19be89b2ef39e9ac288",
+      "size": 3493,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/Switch.qml",
-      "sha256": "698909596363142b400ccf0da724cab376d7585a50420687b26017833d9d4305",
-      "size": 1375,
+      "sha256": "e9a1005f455fd98d1cf2b24f724b7640affe11497f6330b1336dd11edb9100f7",
+      "size": 1412,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/SwitchDelegate.qml",
-      "sha256": "f17e9220d896e6da69cbcff891172add85b6c0c7db57a2da30794df386bb625b",
-      "size": 1651,
+      "sha256": "07b8b3650d954234e58ddb7322b9b91cc4924420c030cf3f2c33d443945a4bb9",
+      "size": 1696,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/TextArea.qml",
-      "sha256": "18023e9a06a1a4245ac0c902ff5c966dfeed48590aa12721d92ede63f561e6f7",
-      "size": 235,
+      "sha256": "0f302256f178f9f11792d3f77bd051f49a52e0b406f71fec4495011a5b5f8462",
+      "size": 243,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/TextField.qml",
-      "sha256": "17e1cc642f58ad68cbaa9d2bdca2e637d2561f124553908832f4a5212b6d79db",
-      "size": 236,
+      "sha256": "a63745f7e325ae94707967d9cec4d1840c7ecfeaecd3c118c475f8d134cefce0",
+      "size": 244,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92123,22 +92123,22 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/impl/CheckIndicator.qml",
-      "sha256": "9e7ca0b053ca25ae44e612d723dc73a9dfffad5f2976a7db02e00a405fb32782",
-      "size": 636,
+      "sha256": "b132c21c7fb661cf0c22a3c2674439ab249757f3b90e72c1689415b22fc3fe17",
+      "size": 657,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/impl/QuickControls2WindowsStyleImpl.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/impl/SwitchIndicator.qml",
-      "sha256": "ab8f7bdbe89adabd70731c606dd5c9f6d1943b8bc17faa16a6ab3ab9f57b85d2",
-      "size": 2142,
+      "sha256": "4740e169f36d0d1b88e79943c29bd011dbab294971f475acfddfafbac7eac071",
+      "size": 2201,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92158,8 +92158,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/Windows/plugins.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92179,8 +92179,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/impl/plugins.qmltypes",
-      "sha256": "9261e8d9e1b0199fca8d181a6f3d53ad4c9c1181251894cc16197f95c91522d4",
-      "size": 45103,
+      "sha256": "3c974f1989772aebd3b58b3a950b19c07f08574a376bae6ac5ff422293de3523",
+      "size": 46547,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92200,8 +92200,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Controls/plugins.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92221,8 +92221,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/plugins.qmltypes",
-      "sha256": "5d930b83ba0868ddb807c04a9c57e741e799260e9c5a6f60a10acbba2d4a2d05",
-      "size": 14465,
+      "sha256": "ab41e11cc008da3548bbd44a99b4b94701af011636939f6788ceec4911090cea",
+      "size": 14953,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92242,337 +92242,337 @@
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/plugins.qmltypes",
-      "sha256": "3a63ee8cee648e5f194b6ec6e57e8087c1798695900c4d26fb1a03cb8d40f57b",
-      "size": 75689,
+      "sha256": "f13b94de5baee997ae86fa1615a804ba77074f9779cea6a0ac5b883d69bbcf99",
+      "size": 78242,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/ColorDialog.qml",
-      "sha256": "53983e60a1f5362bb5b88c8c990d4725d1e4c299227214361b0633c4eb14de71",
-      "size": 8121,
+      "sha256": "c6475378a634fee26002b894a5c03ddb673037795344ed578dc98b168944884a",
+      "size": 8378,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FileDialog.qml",
-      "sha256": "360e6cec859c525796ec63b5737fbd9b78353e5b689e303be9e98368d077b870",
-      "size": 6839,
+      "sha256": "505b5b49fefd3c7e70cd909448140609769f863beada2f6e456a2ea71b178a6a",
+      "size": 7059,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FileDialogDelegate.qml",
-      "sha256": "6b515ce33f1254af93907913aff758ec000eec558786d04fde6085f6a6e870a7",
-      "size": 2099,
+      "sha256": "f8ba60b8c2f801f557778286825ca14f982e431e3855f60b4e2bb8c35ed11ebf",
+      "size": 2154,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FolderBreadcrumbBar.qml",
-      "sha256": "7cf252d3c528e1ec43fc806f90fe28ab3866986c07f00ba14545637a2ffbf8fc",
-      "size": 2529,
+      "sha256": "595a8d157444dc9786c2bb5e8b1e21296ac6a469a217b79769c93890fc18d824",
+      "size": 2603,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FolderDialog.qml",
-      "sha256": "b23b85e34455e931ddc59572bed0ef60ae095785d666be02aad57f16f3d4fe28",
-      "size": 3970,
+      "sha256": "9c415297070260e6bcbd243f68ebb5914fbe9f036aa3cccaf087eef086037cf9",
+      "size": 4107,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FolderDialogDelegate.qml",
-      "sha256": "6c15c400ab3e06a3901b73a816f168052818006eec62e7f536e869bd16d23ffc",
-      "size": 1895,
+      "sha256": "26a0707a91ae4ddb7ef4b2238a102c12227d758894052b973017cfbe982f5f99",
+      "size": 1944,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/FontDialog.qml",
-      "sha256": "fc0bc65d91610cc2a5691148e513f46c17b13767b2cbcae0d3a607ed68684d79",
-      "size": 3572,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/MessageDialog.qml",
-      "sha256": "896b6e7ee49e086b127c5265630bae360e09e687d2577f46196d94b88634ccd5",
-      "size": 4026,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/ColorDialog.qml",
-      "sha256": "fe0c20d8975da4491cab592e31974ab0dbabb4e128f4aeb673c69d6a88ad01d5",
-      "size": 9024,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FileDialog.qml",
-      "sha256": "04e796a21fae832b9f0e5267c8078bd61d506d0593dc6e30c4e3b2942c34b5f2",
-      "size": 6648,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FileDialogDelegate.qml",
-      "sha256": "6b27ca6ab3943bffb684943d2f1b32d92059986daa2257913fb45181bfe72c09",
-      "size": 2570,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderBreadcrumbBar.qml",
-      "sha256": "2c7072f95049e347b0e0186eb3e80449062a0483baec40fca2973e02d03550af",
-      "size": 2049,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderDialog.qml",
-      "sha256": "e494bb8c4d731adf57edcc74c7811310e1bc6a1b99ccc5d60d6620de766652fd",
-      "size": 4527,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderDialogDelegate.qml",
-      "sha256": "d6102acb3158e363e2fef428112967022afec5be59343fe81478fd22f0f91f43",
-      "size": 2367,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FontDialog.qml",
-      "sha256": "632560dd9e6a6edb871e12e8d5f67c02dd0dca4f93edcafa470b4a0993b316fb",
-      "size": 4179,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/MessageDialog.qml",
-      "sha256": "a6d843028c832a6b1f7990a91e7fad94687bd3f49e471533da2ae1a0cc9f2ad6",
-      "size": 4847,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/ColorDialog.qml",
-      "sha256": "1d3086b4761d6a4abc95c2d1be1bf1f878d04971d7bef16c65e0e520c6b41b08",
-      "size": 8149,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FileDialog.qml",
-      "sha256": "acafababb683002ef3473d774529b54449dc21f41921d2b1ef5afadd272023d3",
-      "size": 5731,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FileDialogDelegate.qml",
-      "sha256": "484a879b7c46b114d6edd6f726a34555cd05c9de34b707fb42aa8bb3142bde65",
-      "size": 2134,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderBreadcrumbBar.qml",
-      "sha256": "179485c31afd30d2e978907b72cf8915a34c5a3f01186c7ef804378bef1e6457",
-      "size": 2557,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderDialog.qml",
-      "sha256": "33dafb223638db3a39f1fef382c68f57ec6d6300baa160503bae37d3c2876ec9",
-      "size": 3304,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderDialogDelegate.qml",
-      "sha256": "82992d7f3a6428145996421b17f80354558eeeb0bf9c653c49ff4066436463f6",
-      "size": 1919,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FontDialog.qml",
-      "sha256": "0c06d2fb95ab6f6936a3208f35b3ff611979474755504c122428a320e4a8bd59",
-      "size": 3143,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/MessageDialog.qml",
-      "sha256": "4243bd85465447dc833f5bf2a9022c194bfb814d212187f6f4d4f51fb467983b",
-      "size": 4052,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/ColorDialog.qml",
-      "sha256": "a88779c1d3ca78e64280a556a34567c983181232f443306869872bf82caf32a1",
-      "size": 8546,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FileDialog.qml",
-      "sha256": "c57078d240ed3141321bbc7e784fecd0744efabdb5301f0d357f56137d08fc14",
-      "size": 5781,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FileDialogDelegate.qml",
-      "sha256": "cc4caf125aea39853f0b8cfec72aae0ccc9a55311011fd39ef5b4d025f69b8e0",
-      "size": 2136,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FolderBreadcrumbBar.qml",
-      "sha256": "8e76bc95fbdb4863d979c5a3f3ee908a848888ccf74e4285fe7e769858798764",
-      "size": 2493,
-      "managed_by_launcher": true,
-      "bootstrap_only": false
-    },
-    {
-      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FolderDialog.qml",
-      "sha256": "197dab838dc27bae18b8b916511e18f8ff29ce45e4bdc9de6d2828d0d84b4e02",
+      "sha256": "2a6c0d022874f1feca0d81d0d1255e23aac8210d562c6aacd2cf9d2dcb10b454",
       "size": 3691,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Fusion/MessageDialog.qml",
+      "sha256": "205543f6c3c20455ba6150ad4aa014cb622f9520b55998d7f7d24e17bd71b404",
+      "size": 4162,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/ColorDialog.qml",
+      "sha256": "9daad742749619a698378edaa5a10d1a015de8397c6b3a16cfd8fc23414de158",
+      "size": 9300,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FileDialog.qml",
+      "sha256": "78b4d2899b0089a5ca9393eaedc440129e4899898911e4dc10bcd871b15cce04",
+      "size": 6863,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FileDialogDelegate.qml",
+      "sha256": "a05b07aec471f55313d2772a6df55ac0543be1a4ac17c7fcc777fdbd732b8d11",
+      "size": 2637,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderBreadcrumbBar.qml",
+      "sha256": "122a8b3a9ca3913f2f5d1ebb0f89f59886b3fcf549fee90348594d7f2dc38c40",
+      "size": 2107,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderDialog.qml",
+      "sha256": "81bd5ce6ef198491ef4939a3e237a695046c51f52a3317c8df1e7b84acf51e73",
+      "size": 4670,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FolderDialogDelegate.qml",
+      "sha256": "55aef0ddaa4f0d0859b77eb8556bc39dff3d730e0a255c53608587a087b825aa",
+      "size": 2428,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/FontDialog.qml",
+      "sha256": "935521e35cd2fc09ec1eb685d63765f2b3f8df2320ac40cab62e3e6b8e0d373b",
+      "size": 4311,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Imagine/MessageDialog.qml",
+      "sha256": "025e321808dd6ec8da928828bf8fc00533fe59f1dfdfb2ab921f9f65be34f9ff",
+      "size": 5009,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/ColorDialog.qml",
+      "sha256": "a00bfe0ea5703a1ff76af565ba44ff7315971fcea3a1e23bf5605425de8a3e9d",
+      "size": 8400,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FileDialog.qml",
+      "sha256": "b23c7edddec01d1b2148a003c4cb27c29879bf336c2ff9bd9e25a3e58d563d02",
+      "size": 5924,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FileDialogDelegate.qml",
+      "sha256": "64ec67da33ec803b1bda030ea649cce296f816d2efc6c122b3dbaa41429178e7",
+      "size": 2196,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderBreadcrumbBar.qml",
+      "sha256": "142f1ff7d09fbad20e9a3c6debdfd0dae21509530a2efa006b83dc7cc53f3e6a",
+      "size": 2629,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderDialog.qml",
+      "sha256": "c246d93e7822a35305a3adf13df0bdebad40edb3848a5f0e3064acd2c4a121e7",
+      "size": 3417,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FolderDialogDelegate.qml",
+      "sha256": "517528df3c895b3fb0cec97d47419d67fb3526608d26a731a7f06d71f1cfeb56",
+      "size": 1975,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/FontDialog.qml",
+      "sha256": "f11c5f3c711900b7b8c5a10bfc3b99f9e5ee5719cfd7bd3520d0bfd58448ea7e",
+      "size": 3250,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Material/MessageDialog.qml",
+      "sha256": "81b213ebd9f1b1f06e754e82f4d8e499c6ea47a2f2dcd2f91b873fc92cd3f16c",
+      "size": 4189,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/ColorDialog.qml",
+      "sha256": "4450a31060b402abaaa79c824c0f6c51c4ed49865e197f91774dd9e6fdfa7d7c",
+      "size": 8806,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FileDialog.qml",
+      "sha256": "ea4a8f0dcde3c70a69a22504b107e26702123adfd75cdbdf37778c08c13f5657",
+      "size": 5971,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FileDialogDelegate.qml",
+      "sha256": "d8ff18f822248e647b9d7337e968456c601a7a73b39fb209ae0ae04ef2df624b",
+      "size": 2196,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FolderBreadcrumbBar.qml",
+      "sha256": "26b4b0e46fbe2dc4452098e25d1eceb027028f5984d27b4a88639ed351f49ae5",
+      "size": 2563,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FolderDialog.qml",
+      "sha256": "59823be6f463a26c15a94d6192a7f9ed71e410583153ed67a9b51f5f5773d76b",
+      "size": 3812,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FolderDialogDelegate.qml",
-      "sha256": "ed67f18773bc21e49a600027727ce4d9bca27c6d80d5ef002da8c792d23ba142",
-      "size": 1936,
+      "sha256": "8fad8c4480c439d1e3b776ddce29a14d0557f536c701a5c351f8c37502226fc6",
+      "size": 1990,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/FontDialog.qml",
-      "sha256": "8a1fbc9a4ae1f8005efdba61b15f8f392a9d828a680500ab4d111dc41fe1a25c",
-      "size": 3363,
+      "sha256": "24005801faceddc16c001d6fa8329c7603163dd35b56f6bafb0b25d78b21d090",
+      "size": 3474,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/+Universal/MessageDialog.qml",
-      "sha256": "a06d2ab20fb60b0b811c344ea5144f764872a161bd3529f909134fcee1677fd4",
-      "size": 3916,
+      "sha256": "cf554455d392c09925cc54725ef6c80cecc6467825a33170cad5cd1b6fc3d0eb",
+      "size": 4050,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/ColorDialog.qml",
-      "sha256": "a6408085af215b930a61b9457e5e94382de19de6c3542fb02cdc425a51d37401",
-      "size": 8750,
+      "sha256": "512436395b590cfd54bb5079f4c300d4815573c874d61f7a4c9e3f93ce128626",
+      "size": 9013,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/ColorInputs.qml",
-      "sha256": "2104d727fa8cfb91cdf6012bbd14a052cc4ef95083de77c1acadfdea07ab480b",
-      "size": 10790,
+      "sha256": "f1e924de9c11a2faaf29be14ac9ddf313427cb5632d7aee9f337951518e2e890",
+      "size": 11050,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FileDialog.qml",
-      "sha256": "c60a6303462fbe32e30537c9ec97405b089b501bd46efcf533a7eaf2e1174457",
-      "size": 6539,
+      "sha256": "53deead780cb120f4f1e1f518c142a0a191913afdcbb359893a86154c0c94d56",
+      "size": 6742,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FileDialogDelegate.qml",
-      "sha256": "487c1b9356dfcaa17d666b0b3c8f1daf7df568cd0a808ef814aab97cc72ccc4e",
-      "size": 2058,
+      "sha256": "5478946e006d1fd0ca05a4bbdd9c4fbf547550281280ad0f2cdf5285a3b3f3fd",
+      "size": 2114,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FileDialogDelegateLabel.qml",
-      "sha256": "50bb768f22c96a0727ce7c9ff3cdb7ae1337723a8ea9d476dbc855ae3d2fb7f5",
-      "size": 2378,
+      "sha256": "ca2a512cae4305580219aeebe6f771a4d11e172863c6d2cfd21349c98e9f75dc",
+      "size": 2448,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FolderBreadcrumbBar.qml",
-      "sha256": "9cd370668a53fd32a4b54dbedb99037ce06b14989817197fbb7d6546a9b575dc",
-      "size": 2366,
+      "sha256": "03a617c2e8acb276abdbc60b93ee1c029c42a6a972daa3ec69278ad2972217b8",
+      "size": 2435,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FolderDialog.qml",
-      "sha256": "c73297124a1338397dd0cc458e099de8f83890035df87ded25ad62b0229a5b0e",
-      "size": 3442,
+      "sha256": "28b9bfd72827f25336acebf8bf145104a5682ddf58789f5dd34ab6af26389b79",
+      "size": 3557,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FolderDialogDelegate.qml",
-      "sha256": "fecf288d839a098dff10015a0c202e7dd3a1136ca40ce988d2e4a33e2d3b2b16",
-      "size": 1864,
+      "sha256": "0d7f14aa0aa1eb5da1f27d9f031dbfa50873e653ef2c27bcbdc65a03767dc9f3",
+      "size": 1914,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FolderDialogDelegateLabel.qml",
-      "sha256": "7770bcde29ee008c46fbc5d3aca121765588f40999f2b2a17baebad5730144d1",
-      "size": 1635,
+      "sha256": "606deba7269983f8371effb7e24312b29f967b0d375be91c65df015e30263afe",
+      "size": 1687,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FontDialog.qml",
-      "sha256": "b3250741dda7e1172dd5501bcf3b9da0da41015672e0f882b8a1a1424dac4418",
-      "size": 3672,
+      "sha256": "4c894a6bb6a1d724a0fe27e3ded21cd1c3b9ed62de534d8eba0f7bfc586a77af",
+      "size": 3788,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/FontDialogContent.qml",
-      "sha256": "b29451c5c442e2ea0edf4035f87c4991601442d5c0207b5393cd83497d6bfbcc",
-      "size": 6509,
+      "sha256": "b8d3b3c0c8ec7811e6441c54c950263942c50157dd5668bb117037741d7d4239",
+      "size": 6745,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/HueGradient.qml",
-      "sha256": "66071945a357a67807f2bf04886c6e2f0c9cfa78b934876032b7c555b86920fb",
-      "size": 694,
+      "sha256": "5a3960bb74d1a7411773839a4be7c194a3160f502dc230d8ee772b52eae29e2f",
+      "size": 729,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/MessageDialog.qml",
-      "sha256": "81df6d675af123651530676457a2990634ccfca157a5218eaece8f16e8bc16d5",
-      "size": 4021,
+      "sha256": "e1f8f6279a687d0dcde457cdadd947a20770ee01892a2146db93ddbc08d98b99",
+      "size": 4159,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/PickerHandle.qml",
-      "sha256": "fe70e9c4eefa85f1a9dc1e4872ba173007eb6a1bdb3ddcfbbd8f51cd2810f9ec",
-      "size": 782,
+      "sha256": "cd70570a3f0ef2acb23537c3da959cbea67e56ab8b4e355d2e1df5365c1d17c4",
+      "size": 813,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "bin/qml/QtQuick/Dialogs/quickimpl/qml/SaturationLightnessPicker.qml",
-      "sha256": "4e319295132a1dd2a31fc0ed7e767e95d9367528de9bcb5825536dc294382b8f",
-      "size": 1301,
+      "sha256": "f9b116435d4ddca5af8be58ad6cf9cad3ee10cc76600ef546bdbcb64230458ab",
+      "size": 1339,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92599,8 +92599,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Effects/plugins.qmltypes",
-      "sha256": "7d20140212b2fb4a746c217fb16d6209872cce9a3a140bdac9c2c971685180ae",
-      "size": 8870,
+      "sha256": "2aa76314fd009ad878202914ebf133c74a8f110480b8bbeed4f175db44766e8a",
+      "size": 9166,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92613,8 +92613,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Layouts/plugins.qmltypes",
-      "sha256": "17c3749b9b062d482c960a87803c9ca2b87c74fd8eed43fc8fb070cc09a81176",
-      "size": 20323,
+      "sha256": "8f8696c955f1d3faeb55bb7cabea5f08ccbd0be4786247e1b56fa34024892a99",
+      "size": 20985,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92634,8 +92634,8 @@
     },
     {
       "path": "bin/qml/QtQuick/NativeStyle/plugins.qmltypes",
-      "sha256": "870ca734084247f92607c9f97515b5d32e595037e68f2c86c55f3497c39ba8bd",
-      "size": 10888,
+      "sha256": "a31f330a39173975649110afaa011b401c2a411492c670205d7732d5f3e05d20",
+      "size": 11211,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92655,8 +92655,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Shapes/plugins.qmltypes",
-      "sha256": "e01bc718372e478bf6f8ee3248b7fa684c6629abbdd1cb0ff0e7d74a78e61394",
-      "size": 16470,
+      "sha256": "2fc592cc90979d1d3686ee2e86262682e40638baec3c88bf3f28bc1ab05aa7cc",
+      "size": 17013,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92676,8 +92676,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Templates/plugins.qmltypes",
-      "sha256": "0572aaaa4d8a0cca688eaf507285920a9e8d0a7fafdb11328ebac11f30caa2b7",
-      "size": 249748,
+      "sha256": "e771bb0ab2ffae561fe246beed157466946fad06686af5f94315fae11587b403",
+      "size": 258187,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92704,8 +92704,8 @@
     },
     {
       "path": "bin/qml/QtQuick/Window/quickwindow.qmltypes",
-      "sha256": "a96c7bf5832767bdc9d91e2290a3920aec3abfbf2e3814bce38b49483f16f84a",
-      "size": 215,
+      "sha256": "221ad81d91e3ba19290d29810bb57c732ece097ceb32bb3cc9432a88679fe3d5",
+      "size": 223,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92718,8 +92718,8 @@
     },
     {
       "path": "bin/qml/QtQuick/plugins.qmltypes",
-      "sha256": "cbc89ff8b0001c8598e5f5f4f7ee11e824d2dcf15fb40ed11fb43a890435c3dd",
-      "size": 540121,
+      "sha256": "e32cc398e7ab39beccecadfdba685f3d683388bbae7ce4e6a6f02085c21d8ad1",
+      "size": 558289,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92739,8 +92739,8 @@
     },
     {
       "path": "bin/qml/QtWebChannel/plugins.qmltypes",
-      "sha256": "a347a65fcd6cd51cccb42ff4616d657d7fe98631d067fdc5df47885fb39e095a",
-      "size": 3573,
+      "sha256": "ed4dcd555030afb20d8cb7a0e682f5ff41213506f76f54810b427a905f19fd4c",
+      "size": 3693,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92760,8 +92760,8 @@
     },
     {
       "path": "bin/qml/QtWebEngine/plugins.qmltypes",
-      "sha256": "ed4fb847f3af52df17ebeabf1840cd9c031adaf0afe8c045f960742c2823f8b6",
-      "size": 108689,
+      "sha256": "bae25b4c192b487cc30871e3fba39d21d52c2ce262f34729cc20f9f56b1440d5",
+      "size": 112303,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92865,15 +92865,15 @@
     },
     {
       "path": "conf/clientoptions.json",
-      "sha256": "e80f981def3e94adbd20c4e4220c8a83e9efbe2e0c75d4208996c1289e8d24d0",
-      "size": 158684,
+      "sha256": "1a52ea3d83d88f821f05adda7ee66545c32de29d53d6ab859c17bb62a60fdb82",
+      "size": 163202,
       "managed_by_launcher": true,
       "bootstrap_only": true
     },
     {
       "path": "conf/config.ini",
-      "sha256": "92e3e24504b07c6280dbf2ccbc44f00cc99870e5e35552b8acfbd0fcc9034988",
-      "size": 1989,
+      "sha256": "69bb19fc198fb1a123a8f30c934b0c1a9fdac9a7a50736ee76dd24a5c0922c7f",
+      "size": 2031,
       "managed_by_launcher": true,
       "bootstrap_only": true
     },
