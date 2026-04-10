@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-fa879825297c",
+  "version": "15.23-prod-ade6d525e3ed",
   "tracked_files": [
     {
       "path": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -83317,8 +83317,8 @@
     },
     {
       "path": "bin/client.exe",
-      "sha256": "dbe590d978bc5f3c427879639ffac19556e0c0bb68f9d0dd72e8a4c52492ee9e",
-      "size": 33009608,
+      "sha256": "2768a9b9c1338b7664b37982e7c7982cb35a969052d799b25156be916820780a",
+      "size": 32931272,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },

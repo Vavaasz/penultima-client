@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-fa879825297c",
+  "version": "15.23-prod-ade6d525e3ed",
   "files": [
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -83365,10 +83365,10 @@
     {
       "url": "bin/client.exe.lzma",
       "localfile": "bin/client.exe",
-      "packedhash": "8ecfe94952b0ff7484b8f192a85fbca9884a04edee8ac998be9efb8d4a8f50e8",
-      "packedsize": 17564373,
-      "unpackedhash": "dbe590d978bc5f3c427879639ffac19556e0c0bb68f9d0dd72e8a4c52492ee9e",
-      "unpackedsize": 33009608
+      "packedhash": "01629457272fdabf0527870ee25debd7d475e6689ac76e3523d7ac24665dd56d",
+      "packedsize": 17535955,
+      "unpackedhash": "2768a9b9c1338b7664b37982e7c7982cb35a969052d799b25156be916820780a",
+      "unpackedsize": 32931272
     },
     {
       "url": "bin/client_launcher.exe.lzma",
