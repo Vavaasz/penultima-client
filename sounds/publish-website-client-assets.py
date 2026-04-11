@@ -28,6 +28,9 @@ METADATA_FILE_NAMES = (
     "version.txt",
 )
 VERSION_SUFFIX_PATTERN = re.compile(r"^(.*)-[0-9a-f]{7,40}$", re.IGNORECASE)
+LFS_POINTER_PREFIX = "version https://git-lfs.github.com/spec/v1"
+LFS_POINTER_OID_PATTERN = re.compile(r"^oid sha256:([0-9a-f]{64})$", re.IGNORECASE)
+LFS_POINTER_SIZE_PATTERN = re.compile(r"^size ([0-9]+)$")
 
 
 def parse_args() -> argparse.Namespace:
@@ -106,6 +109,117 @@ def get_sha256_hex(path: Path) -> str:
     return digest.hexdigest()
 
 
+def iter_candidate_tracked_files(source_root: Path):
+    for directory_name in TRACKED_DIRECTORIES:
+        directory_path = source_root / directory_name
+        if not directory_path.exists():
+            continue
+        for file_path in sorted(path for path in directory_path.rglob("*") if path.is_file()):
+            relative_path = file_path.relative_to(source_root).as_posix()
+            if relative_path in EXCLUDED_CLIENT_FILES:
+                continue
+            yield file_path, relative_path
+
+
+def parse_lfs_pointer(path: Path):
+    try:
+        if path.stat().st_size > 1024:
+            return None
+        content = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return None
+
+    lines = [line.strip() for line in content.splitlines() if line.strip()]
+    if not lines or lines[0] != LFS_POINTER_PREFIX:
+        return None
+
+    oid = None
+    size = None
+    for line in lines[1:]:
+        oid_match = LFS_POINTER_OID_PATTERN.match(line)
+        if oid_match:
+            oid = oid_match.group(1).lower()
+            continue
+        size_match = LFS_POINTER_SIZE_PATTERN.match(line)
+        if size_match:
+            size = int(size_match.group(1))
+
+    if not oid or size is None:
+        return None
+
+    return {
+        "oid": oid,
+        "size": size,
+    }
+
+
+def find_lfs_pointer_files(source_root: Path):
+    pointer_files = []
+    for file_path, relative_path in iter_candidate_tracked_files(source_root):
+        pointer_info = parse_lfs_pointer(file_path)
+        if not pointer_info:
+            continue
+        pointer_files.append(
+            {
+                "relative_path": relative_path,
+                "source_path": file_path,
+                "oid": pointer_info["oid"],
+                "size": pointer_info["size"],
+            }
+        )
+    return pointer_files
+
+
+def git_lfs_is_available(repository_root: Path) -> bool:
+    try:
+        subprocess.run(
+            ["git", "-C", str(repository_root), "lfs", "version"],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        return True
+    except (OSError, subprocess.CalledProcessError):
+        return False
+
+
+def ensure_lfs_files_hydrated(source_root: Path) -> None:
+    pointer_files = find_lfs_pointer_files(source_root)
+    if not pointer_files:
+        return
+
+    if git_lfs_is_available(source_root):
+        try:
+            subprocess.run(
+                ["git", "-C", str(source_root), "lfs", "pull", "--exclude="],
+                check=True,
+            )
+        except (OSError, subprocess.CalledProcessError) as error:
+            raise RuntimeError(
+                "Git LFS pointer files were found in the client repository and "
+                f"`git lfs pull` failed in {source_root}: {error}"
+            ) from error
+        pointer_files = find_lfs_pointer_files(source_root)
+        if not pointer_files:
+            return
+
+    affected_files = "\n".join(
+        f"- {pointer_file['relative_path']} "
+        f"(expected {pointer_file['size']} bytes, oid sha256:{pointer_file['oid']})"
+        for pointer_file in pointer_files[:5]
+    )
+    if len(pointer_files) > 5:
+        affected_files += f"\n- ... and {len(pointer_files) - 5} more"
+
+    raise RuntimeError(
+        "Git LFS pointer files were detected in the client repository, so publishing "
+        "would ship broken binaries.\n"
+        f"Install Git LFS on the VPS and run:\n  git -C {source_root} lfs pull\n"
+        "Affected files:\n"
+        f"{affected_files}"
+    )
+
+
 def resolve_publish_version(repository_root: Path, requested_version: str) -> str:
     if requested_version and requested_version != "auto":
         return requested_version.strip()
@@ -165,21 +279,14 @@ def can_use_existing_metadata(source_root: Path, requested_version: str, rebuild
 
 
 def iter_tracked_files(source_root: Path):
-    for directory_name in TRACKED_DIRECTORIES:
-        directory_path = source_root / directory_name
-        if not directory_path.exists():
-            continue
-        for file_path in sorted(path for path in directory_path.rglob("*") if path.is_file()):
-            relative_path = file_path.relative_to(source_root).as_posix()
-            if relative_path in EXCLUDED_CLIENT_FILES:
-                continue
-            yield {
-                "relative_path": relative_path,
-                "sha256": get_sha256_hex(file_path),
-                "size": file_path.stat().st_size,
-                "bootstrap_only": relative_path.startswith("conf/"),
-                "source_path": file_path,
-            }
+    for file_path, relative_path in iter_candidate_tracked_files(source_root):
+        yield {
+            "relative_path": relative_path,
+            "sha256": get_sha256_hex(file_path),
+            "size": file_path.stat().st_size,
+            "bootstrap_only": relative_path.startswith("conf/"),
+            "source_path": file_path,
+        }
 
 
 def get_tracked_files_from_assets_manifest(source_root: Path):
@@ -344,6 +451,7 @@ def main() -> int:
     args = parse_args()
     client_root = Path(args.client_root).resolve()
     ensure_path_exists(client_root, "Client root")
+    ensure_lfs_files_hydrated(client_root)
     website_root = resolve_website_root(client_root, args.website_root)
     downloads_root = website_root / "downloads"
     downloads_root.mkdir(parents=True, exist_ok=True)

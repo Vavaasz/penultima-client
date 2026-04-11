@@ -113,6 +113,124 @@ function Get-Sha256Hex([string]$Path) {
   return ([System.BitConverter]::ToString($hashBytes)).Replace("-", "").ToLowerInvariant()
 }
 
+function Get-LfsPointerInfo([string]$Path) {
+  $item = Get-Item -LiteralPath $Path -ErrorAction Stop
+  if ($item.Length -gt 1024) {
+    return $null
+  }
+
+  $content = [System.IO.File]::ReadAllText($Path, [System.Text.Encoding]::UTF8)
+  $lines = @($content -split "\r?\n" | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+  if ($lines.Count -eq 0 -or $lines[0] -ne "version https://git-lfs.github.com/spec/v1") {
+    return $null
+  }
+
+  $oid = $null
+  $size = $null
+  foreach ($line in $lines) {
+    $oidMatch = [System.Text.RegularExpressions.Regex]::Match(
+      $line,
+      "^oid sha256:([0-9a-f]{64})$",
+      [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+    )
+    if ($oidMatch.Success) {
+      $oid = $oidMatch.Groups[1].Value.ToLowerInvariant()
+      continue
+    }
+
+    $sizeMatch = [System.Text.RegularExpressions.Regex]::Match($line, "^size ([0-9]+)$")
+    if ($sizeMatch.Success) {
+      $size = [int64]$sizeMatch.Groups[1].Value
+    }
+  }
+
+  if ([string]::IsNullOrWhiteSpace($oid) -or $null -eq $size) {
+    return $null
+  }
+
+  return [pscustomobject]@{
+    Oid = $oid
+    Size = $size
+  }
+}
+
+function Get-LfsPointerFiles([string]$SourceRoot) {
+  $pointerFiles = New-Object System.Collections.Generic.List[object]
+
+  foreach ($directoryName in $trackedDirectories) {
+    $directoryPath = Join-Path $SourceRoot $directoryName
+    if (-not (Test-Path -LiteralPath $directoryPath)) {
+      continue
+    }
+
+    Get-ChildItem -LiteralPath $directoryPath -Recurse -File | Sort-Object FullName | ForEach-Object {
+      $relativePath = Get-RelativePath -BasePath $SourceRoot -FullPath $_.FullName
+      if ($excludedRelativePaths -contains $relativePath) {
+        return
+      }
+
+      $pointerInfo = Get-LfsPointerInfo -Path $_.FullName
+      if ($null -eq $pointerInfo) {
+        return
+      }
+
+      $pointerFiles.Add([pscustomobject]@{
+        RelativePath = $relativePath
+        SourcePath = $_.FullName
+        Oid = $pointerInfo.Oid
+        Size = $pointerInfo.Size
+      })
+    }
+  }
+
+  return $pointerFiles
+}
+
+function Test-GitLfsAvailable([string]$RepositoryRoot) {
+  try {
+    & git -C $RepositoryRoot lfs version *> $null
+    return $LASTEXITCODE -eq 0
+  }
+  catch {
+    return $false
+  }
+}
+
+function Ensure-HydratedLfsFiles([string]$SourceRoot) {
+  $pointerFiles = Get-LfsPointerFiles -SourceRoot $SourceRoot
+  if ($pointerFiles.Count -eq 0) {
+    return
+  }
+
+  if (Test-GitLfsAvailable -RepositoryRoot $SourceRoot) {
+    try {
+      & git -C $SourceRoot lfs pull --exclude=""
+      if ($LASTEXITCODE -ne 0) {
+        throw "git lfs pull exited with code $LASTEXITCODE"
+      }
+    }
+    catch {
+      throw "Git LFS pointer files were found in the client repository and `git lfs pull` failed in $SourceRoot. $($_.Exception.Message)"
+    }
+
+    $pointerFiles = Get-LfsPointerFiles -SourceRoot $SourceRoot
+    if ($pointerFiles.Count -eq 0) {
+      return
+    }
+  }
+
+  $sample = $pointerFiles | Select-Object -First 5 | ForEach-Object {
+    "- $($_.RelativePath) (expected $($_.Size) bytes, oid sha256:$($_.Oid))"
+  }
+
+  if ($pointerFiles.Count -gt 5) {
+    $sample += "- ... and $($pointerFiles.Count - 5) more"
+  }
+
+  $details = ($sample -join [Environment]::NewLine)
+  throw "Git LFS pointer files were detected in the client repository, so publishing would ship broken binaries.`nInstall Git LFS and run:`n  git -C `"$SourceRoot`" lfs pull`nAffected files:`n$details"
+}
+
 function Resolve-PublishVersion([string]$RepositoryRoot, [string]$RequestedVersion) {
   if (-not [string]::IsNullOrWhiteSpace($RequestedVersion) -and $RequestedVersion -ne "auto") {
     return $RequestedVersion.Trim()
@@ -422,6 +540,7 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
 
 Assert-PathExists -Path $ClientRoot -Label "Client root"
 Assert-PathExists -Path $WebsiteRoot -Label "Website root"
+Ensure-HydratedLfsFiles -SourceRoot $ClientRoot
 
 $downloadsRoot = Join-Path $WebsiteRoot "downloads"
 New-Item -ItemType Directory -Path $downloadsRoot -Force | Out-Null

@@ -54,12 +54,15 @@ fi
 cat > "$HOOK_PATH" <<EOF
 #!/usr/bin/env sh
 set -eu
-if command -v git-lfs >/dev/null 2>&1; then
-  git lfs post-merge "\$@"
-fi
-
 log_file="$LOG_PATH"
 printf '\n[%s] Running website client publish after post-merge in %s\n' "\$(date '+%Y-%m-%d %H:%M:%S')" "\$(pwd)" >> "\$log_file"
+if git lfs version >/dev/null 2>&1; then
+  git lfs pull --exclude="" >> "\$log_file" 2>&1 || {
+    printf 'git lfs pull failed in %s\n' "\$(pwd)" >> "\$log_file"
+  }
+else
+  printf 'git lfs is not available; publish script will abort if pointer files are present.\n' >> "\$log_file"
+fi
 python3 "$PUBLISH_SCRIPT" --client-root "$CLIENT_ROOT" --website-root "$WEBSITE_ROOT" --rebuild-metadata >> "\$log_file" 2>&1 || {
   printf 'Website client publish failed in %s\n' "\$(pwd)" >> "\$log_file"
 }
