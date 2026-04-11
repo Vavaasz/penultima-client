@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-fa879825297c",
+  "version": "15.23-prod-c184aba57366",
   "files": [
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -94271,6 +94271,34 @@
       "localfile": "sounds/catalog-sound.json",
       "packedhash": "42d737e69b259c0c64477d0207eafb9b76cd5bee58f34584a8a49439b4cb311b",
       "packedsize": 118,
+      "unpack": false
+    },
+    {
+      "url": "sounds/install-vps-client-hook.ps1",
+      "localfile": "sounds/install-vps-client-hook.ps1",
+      "packedhash": "9614eb38081f6064867a0e0fc1dcd94f7061f65821e6315175226c31066c1f09",
+      "packedsize": 1564,
+      "unpack": false
+    },
+    {
+      "url": "sounds/install-vps-client-hook.sh",
+      "localfile": "sounds/install-vps-client-hook.sh",
+      "packedhash": "2299cb0f4718f3dfbc6577fb81704b37b5b398f3558411dfde35fd977843f8f6",
+      "packedsize": 2005,
+      "unpack": false
+    },
+    {
+      "url": "sounds/publish-website-client-assets.ps1",
+      "localfile": "sounds/publish-website-client-assets.ps1",
+      "packedhash": "b92acbe888eafcaaaf391aef16153aefd4898cc4ab3cff4ec7a955810a43f158",
+      "packedsize": 15862,
+      "unpack": false
+    },
+    {
+      "url": "sounds/publish-website-client-assets.py",
+      "localfile": "sounds/publish-website-client-assets.py",
+      "packedhash": "d58dca4f8d010ff781914a2fd1b7260964e65fd034690bf88ccb6ac2d899dd62",
+      "packedsize": 14911,
       "unpack": false
     },
     {
