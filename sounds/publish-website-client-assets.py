@@ -98,7 +98,8 @@ def resolve_website_root(client_root: Path, provided_root: str) -> Path:
 
 def write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8", newline="\n")
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(content)
 
 
 def get_sha256_hex(path: Path) -> str:
