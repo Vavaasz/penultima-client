@@ -61,7 +61,7 @@ if git lfs version >/dev/null 2>&1; then
     printf 'git lfs pull failed in %s\n' "\$(pwd)" >> "\$log_file"
   }
 else
-  printf 'git lfs is not available; publish script will abort if pointer files are present.\n' >> "\$log_file"
+  printf 'git lfs is not available; publish script will try GitHub-authenticated LFS hydration.\n' >> "\$log_file"
 fi
 python3 "$PUBLISH_SCRIPT" --client-root "$CLIENT_ROOT" --website-root "$WEBSITE_ROOT" --rebuild-metadata >> "\$log_file" 2>&1 || {
   printf 'Website client publish failed in %s\n' "\$(pwd)" >> "\$log_file"

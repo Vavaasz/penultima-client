@@ -1,6 +1,20 @@
 {
-  "version": "15.23-prod-6ebbb2babe20",
+  "version": "15.23-prod-1689344c584e",
   "files": [
+    {
+      "url": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
+      "localfile": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
+      "packedhash": "cd816a943c3166e2a3499853dc71bb1614258868b3fb07536c7e104a9a8c1fcd",
+      "packedsize": 5571990,
+      "unpack": false
+    },
+    {
+      "url": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat-bak",
+      "localfile": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat-bak",
+      "packedhash": "79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff",
+      "packedsize": 5572014,
+      "unpack": false
+    },
     {
       "url": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
       "localfile": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
@@ -25,14 +39,14 @@
     {
       "url": "assets/catalog-content.json",
       "localfile": "assets/catalog-content.json",
-      "packedhash": "db703932e0c5778e38ac45e06e2ffee49507080aae536056b5bce9f2e1c4c41c",
+      "packedhash": "50129655e89be6626c26cd82a43bbee268de239f2a89785a5bfac78015bec8fe",
       "packedsize": 2446643,
       "unpack": false
     },
     {
       "url": "assets/catalog-content.json-bak",
       "localfile": "assets/catalog-content.json-bak",
-      "packedhash": "db703932e0c5778e38ac45e06e2ffee49507080aae536056b5bce9f2e1c4c41c",
+      "packedhash": "50129655e89be6626c26cd82a43bbee268de239f2a89785a5bfac78015bec8fe",
       "packedsize": 2446643,
       "unpack": false
     },
@@ -94276,15 +94290,15 @@
     {
       "url": "sounds/install-vps-client-hook.ps1",
       "localfile": "sounds/install-vps-client-hook.ps1",
-      "packedhash": "8873e9038ef6d0c9e8678ed2a6cf2fcf89252e1c1747bf98047d759c3532741d",
-      "packedsize": 1774,
+      "packedhash": "53f3f569dcf31627d2145656ce4b708b3d21c25b5be96d475864f472db9b6f36",
+      "packedsize": 1778,
       "unpack": false
     },
     {
       "url": "sounds/install-vps-client-hook.sh",
       "localfile": "sounds/install-vps-client-hook.sh",
-      "packedhash": "98640f059b2dde0f991bbf55a8e05ecf8b5ec64632884de9ecd7e0b057e073af",
-      "packedsize": 2218,
+      "packedhash": "41e9538501d0835b3f04a5f70adaebb4e84f38db107bf33ff4ef232a144762de",
+      "packedsize": 2222,
       "unpack": false
     },
     {
@@ -94297,8 +94311,8 @@
     {
       "url": "sounds/publish-website-client-assets.py",
       "localfile": "sounds/publish-website-client-assets.py",
-      "packedhash": "ec743dc5fd932c56385f3b4697593c25e90736c839d008586621e8a4c3b1fc6a",
-      "packedsize": 18512,
+      "packedhash": "e8b15ad3c1cbae7be73cb4ceffbedc28706b925d5fe3867fc5267b8d9e2ed5bb",
+      "packedsize": 30908,
       "unpack": false
     },
     {

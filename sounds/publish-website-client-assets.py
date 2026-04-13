@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import base64
 import datetime
 import hashlib
 import json
@@ -9,6 +10,9 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from urllib import error as urllib_error
+from urllib import parse as urllib_parse
+from urllib import request as urllib_request
 from zipfile import ZIP_DEFLATED, ZipFile
 
 
@@ -31,6 +35,8 @@ VERSION_SUFFIX_PATTERN = re.compile(r"^(.*)-[0-9a-f]{7,40}$", re.IGNORECASE)
 LFS_POINTER_PREFIX = "version https://git-lfs.github.com/spec/v1"
 LFS_POINTER_OID_PATTERN = re.compile(r"^oid sha256:([0-9a-f]{64})$", re.IGNORECASE)
 LFS_POINTER_SIZE_PATTERN = re.compile(r"^size ([0-9]+)$")
+GITHUB_HOSTS = {"github.com", "www.github.com"}
+HTTP_DOWNLOAD_TIMEOUT_SECONDS = 30 * 60
 
 
 def parse_args() -> argparse.Namespace:
@@ -184,6 +190,318 @@ def git_lfs_is_available(repository_root: Path) -> bool:
         return False
 
 
+def get_git_remote_url(repository_root: Path, remote_name: str = "origin") -> str:
+    try:
+        return subprocess.check_output(
+            ["git", "-C", str(repository_root), "remote", "get-url", remote_name],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except (OSError, subprocess.CalledProcessError) as error:
+        raise RuntimeError(
+            f"Unable to resolve git remote '{remote_name}' in {repository_root}: {error}"
+        ) from error
+
+
+def parse_github_remote(remote_url: str):
+    remote_url = remote_url.strip()
+    ssh_match = re.match(r"^(?P<user>[^@]+)@(?P<host>[^:]+):(?P<path>.+)$", remote_url)
+    if ssh_match:
+        host = ssh_match.group("host").lower()
+        if host not in GITHUB_HOSTS:
+            raise RuntimeError(f"Unsupported SSH git host for LFS hydration: {host}")
+        repo_path = ssh_match.group("path").lstrip("/")
+        if not repo_path.endswith(".git"):
+            repo_path += ".git"
+        return {
+            "transport": "ssh",
+            "host": host,
+            "user": ssh_match.group("user"),
+            "repo_path": repo_path,
+        }
+
+    parsed = urllib_parse.urlparse(remote_url)
+    if parsed.scheme in {"ssh", "git+ssh"}:
+        host = (parsed.hostname or "").lower()
+        if host not in GITHUB_HOSTS:
+            raise RuntimeError(f"Unsupported SSH git host for LFS hydration: {host}")
+        repo_path = parsed.path.lstrip("/")
+        if not repo_path.endswith(".git"):
+            repo_path += ".git"
+        return {
+            "transport": "ssh",
+            "host": host,
+            "user": parsed.username or "git",
+            "repo_path": repo_path,
+        }
+
+    if parsed.scheme in {"https", "http"}:
+        host = (parsed.hostname or "").lower()
+        if host not in GITHUB_HOSTS:
+            raise RuntimeError(f"Unsupported HTTPS git host for LFS hydration: {host}")
+        repo_path = parsed.path.lstrip("/")
+        if not repo_path.endswith(".git"):
+            repo_path += ".git"
+        return {
+            "transport": "https",
+            "host": host,
+            "repo_path": repo_path,
+            "username": urllib_parse.unquote(parsed.username or ""),
+            "password": urllib_parse.unquote(parsed.password or ""),
+        }
+
+    raise RuntimeError(f"Unsupported git remote format for LFS hydration: {remote_url}")
+
+
+def get_git_credentials_via_helper(remote_info, repository_root: Path):
+    if remote_info["transport"] != "https":
+        return None
+
+    if remote_info.get("username") and remote_info.get("password"):
+        return remote_info["username"], remote_info["password"]
+
+    credential_input = (
+        f"url=https://{remote_info['host']}/{remote_info['repo_path']}\n\n"
+    ).encode("utf-8")
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repository_root), "credential", "fill"],
+            input=credential_input,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+    username = ""
+    password = ""
+    for line in result.stdout.decode("utf-8", errors="replace").splitlines():
+        if "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key == "username":
+            username = value
+        elif key == "password":
+            password = value
+
+    if username and password:
+        return username, password
+    return None
+
+
+def build_authorization_headers(remote_info, repository_root: Path):
+    if remote_info["transport"] != "https":
+        return None
+
+    credentials = get_git_credentials_via_helper(remote_info, repository_root)
+    if not credentials:
+        return None
+
+    username, password = credentials
+    token_bytes = f"{username}:{password}".encode("utf-8")
+    return {
+        "Authorization": "Basic "
+        + base64.b64encode(token_bytes).decode("ascii"),
+    }
+
+
+def request_json(url: str, body: dict, headers=None):
+    data = json.dumps(body).encode("utf-8")
+    request_headers = {
+        "Accept": "application/vnd.git-lfs+json",
+        "Content-Type": "application/vnd.git-lfs+json",
+    }
+    if headers:
+        request_headers.update(headers)
+    request = urllib_request.Request(url, data=data, headers=request_headers, method="POST")
+    with urllib_request.urlopen(request, timeout=HTTP_DOWNLOAD_TIMEOUT_SECONDS) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def authenticate_github_lfs_over_ssh(remote_info):
+    command = [
+        "ssh",
+        "-o",
+        "BatchMode=yes",
+        f"{remote_info['user']}@{remote_info['host']}",
+        "git-lfs-authenticate",
+        remote_info["repo_path"],
+        "download",
+    ]
+    try:
+        output = subprocess.check_output(
+            command,
+            text=True,
+            stderr=subprocess.STDOUT,
+        ).strip()
+    except (OSError, subprocess.CalledProcessError) as error:
+        details = ""
+        if isinstance(error, subprocess.CalledProcessError) and error.output:
+            details = error.output.strip()
+        if details:
+            details = f" {details}"
+        raise RuntimeError(
+            "Unable to authenticate GitHub LFS over SSH."
+            f"{details}"
+        ) from error
+
+    try:
+        payload = json.loads(output)
+    except json.JSONDecodeError as error:
+        raise RuntimeError(
+            f"GitHub SSH LFS authentication returned invalid JSON: {output}"
+        ) from error
+
+    href = payload.get("href", "").rstrip("/")
+    if not href:
+        raise RuntimeError("GitHub SSH LFS authentication did not return an href.")
+    return href, payload.get("header") or {}
+
+
+def build_lfs_batch_endpoint_candidates(auth_href: str, remote_info):
+    candidates = []
+    if auth_href.endswith("/objects/batch"):
+        candidates.append(auth_href)
+    else:
+        candidates.append(auth_href + "/objects/batch")
+        candidates.append(auth_href + "/info/lfs/objects/batch")
+        candidates.append(auth_href + ".git/info/lfs/objects/batch")
+
+    repo_https_base = f"https://{remote_info['host']}/{remote_info['repo_path']}"
+    candidates.append(repo_https_base + "/info/lfs/objects/batch")
+
+    deduplicated = []
+    seen = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        deduplicated.append(candidate)
+    return deduplicated
+
+
+def fetch_lfs_batch_response(pointer_files, repository_root: Path):
+    remote_info = parse_github_remote(get_git_remote_url(repository_root))
+    body = {
+        "operation": "download",
+        "transfer": ["basic"],
+        "objects": [
+            {"oid": pointer_file["oid"], "size": pointer_file["size"]}
+            for pointer_file in pointer_files
+        ],
+    }
+
+    errors = []
+
+    if remote_info["transport"] == "ssh":
+        auth_href, auth_headers = authenticate_github_lfs_over_ssh(remote_info)
+        for batch_endpoint in build_lfs_batch_endpoint_candidates(auth_href, remote_info):
+            try:
+                return request_json(batch_endpoint, body, auth_headers)
+            except urllib_error.HTTPError as error:
+                errors.append(f"{batch_endpoint} -> HTTP {error.code}")
+            except urllib_error.URLError as error:
+                errors.append(f"{batch_endpoint} -> {error.reason}")
+        raise RuntimeError(
+            "GitHub SSH LFS authentication succeeded, but all batch API endpoints failed:\n"
+            + "\n".join(f"- {detail}" for detail in errors)
+        )
+
+    auth_headers = build_authorization_headers(remote_info, repository_root)
+    if auth_headers:
+        try:
+            endpoint = f"https://{remote_info['host']}/{remote_info['repo_path']}/info/lfs/objects/batch"
+            return request_json(endpoint, body, auth_headers)
+        except urllib_error.HTTPError as error:
+            errors.append(f"https batch endpoint -> HTTP {error.code}")
+        except urllib_error.URLError as error:
+            errors.append(f"https batch endpoint -> {error.reason}")
+
+    raise RuntimeError(
+        "Git LFS pointer files were found, but the repository could not authenticate to GitHub "
+        "without git-lfs. Configure an SSH remote or install git-lfs.\n"
+        + ("\n".join(f"- {detail}" for detail in errors) if errors else "")
+    )
+
+
+def download_lfs_object(target_path: Path, download_url: str, headers: dict, expected_size: int, expected_oid: str):
+    request = urllib_request.Request(download_url, headers=headers or {})
+    with tempfile.NamedTemporaryFile(prefix="penultima-lfs-", delete=False) as temporary_file:
+        temp_path = Path(temporary_file.name)
+
+    digest = hashlib.sha256()
+    total_size = 0
+    try:
+        with urllib_request.urlopen(request, timeout=HTTP_DOWNLOAD_TIMEOUT_SECONDS) as response:
+            with temp_path.open("wb") as output_handle:
+                while True:
+                    chunk = response.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    output_handle.write(chunk)
+                    digest.update(chunk)
+                    total_size += len(chunk)
+
+        if total_size != expected_size:
+            raise RuntimeError(
+                f"Downloaded Git LFS object has incorrect size for {target_path}: "
+                f"expected {expected_size}, got {total_size}"
+            )
+
+        actual_oid = digest.hexdigest()
+        if actual_oid != expected_oid:
+            raise RuntimeError(
+                f"Downloaded Git LFS object has incorrect sha256 for {target_path}: "
+                f"expected {expected_oid}, got {actual_oid}"
+            )
+
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        temp_path.replace(target_path)
+    finally:
+        if temp_path.exists():
+            temp_path.unlink()
+
+
+def hydrate_lfs_pointer_files(repository_root: Path, pointer_files) -> None:
+    print(
+        f"Hydrating {len(pointer_files)} Git LFS file(s) from GitHub before publishing...",
+        flush=True,
+    )
+    batch_response = fetch_lfs_batch_response(pointer_files, repository_root)
+
+    pointer_files_by_oid = {}
+    for pointer_file in pointer_files:
+        pointer_files_by_oid.setdefault(pointer_file["oid"], []).append(pointer_file)
+
+    for object_info in batch_response.get("objects", []):
+        oid = (object_info.get("oid") or "").lower()
+        if oid not in pointer_files_by_oid:
+            continue
+        if object_info.get("error"):
+            raise RuntimeError(
+                f"GitHub LFS batch request failed for oid {oid}: {object_info['error']}"
+            )
+
+        download_info = (object_info.get("actions") or {}).get("download")
+        if not download_info:
+            raise RuntimeError(f"GitHub LFS batch response did not include a download action for {oid}.")
+
+        download_url = download_info.get("href")
+        if not download_url:
+            raise RuntimeError(f"GitHub LFS download action missing href for {oid}.")
+
+        download_headers = download_info.get("header") or {}
+        for pointer_file in pointer_files_by_oid[oid]:
+            download_lfs_object(
+                pointer_file["source_path"],
+                download_url,
+                download_headers,
+                pointer_file["size"],
+                pointer_file["oid"],
+            )
+
+
 def ensure_lfs_files_hydrated(source_root: Path) -> None:
     pointer_files = find_lfs_pointer_files(source_root)
     if not pointer_files:
@@ -204,6 +522,19 @@ def ensure_lfs_files_hydrated(source_root: Path) -> None:
         if not pointer_files:
             return
 
+    try:
+        hydrate_lfs_pointer_files(source_root, pointer_files)
+    except RuntimeError:
+        raise
+    except Exception as error:
+        raise RuntimeError(
+            f"Automatic Git LFS hydration failed in {source_root}: {error}"
+        ) from error
+
+    pointer_files = find_lfs_pointer_files(source_root)
+    if not pointer_files:
+        return
+
     affected_files = "\n".join(
         f"- {pointer_file['relative_path']} "
         f"(expected {pointer_file['size']} bytes, oid sha256:{pointer_file['oid']})"
@@ -214,7 +545,7 @@ def ensure_lfs_files_hydrated(source_root: Path) -> None:
 
     raise RuntimeError(
         "Git LFS pointer files were detected in the client repository, so publishing "
-        "would ship broken binaries.\n"
+        "would ship broken binaries even after the automatic hydration attempt.\n"
         f"Install Git LFS on the VPS and run:\n  git -C {source_root} lfs pull\n"
         "Affected files:\n"
         f"{affected_files}"

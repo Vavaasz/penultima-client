@@ -1,6 +1,20 @@
 {
-  "version": "15.23-prod-6ebbb2babe20",
+  "version": "15.23-prod-1689344c584e",
   "tracked_files": [
+    {
+      "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
+      "sha256": "cd816a943c3166e2a3499853dc71bb1614258868b3fb07536c7e104a9a8c1fcd",
+      "size": 5571990,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat-bak",
+      "sha256": "79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff",
+      "size": 5572014,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
     {
       "path": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
       "sha256": "0f3dd52832552c8eb3a6945687c0d4a2910d2771ac7fbfc432c6d79b685a38ba",
@@ -24,14 +38,14 @@
     },
     {
       "path": "assets/catalog-content.json",
-      "sha256": "db703932e0c5778e38ac45e06e2ffee49507080aae536056b5bce9f2e1c4c41c",
+      "sha256": "50129655e89be6626c26cd82a43bbee268de239f2a89785a5bfac78015bec8fe",
       "size": 2446643,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "assets/catalog-content.json-bak",
-      "sha256": "db703932e0c5778e38ac45e06e2ffee49507080aae536056b5bce9f2e1c4c41c",
+      "sha256": "50129655e89be6626c26cd82a43bbee268de239f2a89785a5bfac78015bec8fe",
       "size": 2446643,
       "managed_by_launcher": true,
       "bootstrap_only": false
@@ -92865,15 +92879,15 @@
     },
     {
       "path": "sounds/install-vps-client-hook.ps1",
-      "sha256": "8873e9038ef6d0c9e8678ed2a6cf2fcf89252e1c1747bf98047d759c3532741d",
-      "size": 1774,
+      "sha256": "53f3f569dcf31627d2145656ce4b708b3d21c25b5be96d475864f472db9b6f36",
+      "size": 1778,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "sounds/install-vps-client-hook.sh",
-      "sha256": "98640f059b2dde0f991bbf55a8e05ecf8b5ec64632884de9ecd7e0b057e073af",
-      "size": 2218,
+      "sha256": "41e9538501d0835b3f04a5f70adaebb4e84f38db107bf33ff4ef232a144762de",
+      "size": 2222,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -92886,8 +92900,8 @@
     },
     {
       "path": "sounds/publish-website-client-assets.py",
-      "sha256": "ec743dc5fd932c56385f3b4697593c25e90736c839d008586621e8a4c3b1fc6a",
-      "size": 18512,
+      "sha256": "e8b15ad3c1cbae7be73cb4ceffbedc28706b925d5fe3867fc5267b8d9e2ed5bb",
+      "size": 30908,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
