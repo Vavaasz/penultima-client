@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-1689344c584e",
+  "version": "15.23-prod-f652a9fc1965",
   "tracked_files": [
     {
       "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
@@ -83340,6 +83340,13 @@
       "path": "bin/client_launcher.exe",
       "sha256": "0912b79762cab916ff5d59977efa148e87c64a5e0ba711f2000cdb8b2a02476e",
       "size": 1316104,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "bin/crash-report-2026-04-13_15-37-47.dmp",
+      "sha256": "666a6d0748b939f581e931280040e99484832f66ad2b50cd837bd9f452eccd79",
+      "size": 1492100,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
