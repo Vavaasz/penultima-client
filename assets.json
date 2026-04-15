@@ -1,17 +1,17 @@
 {
-  "version": "15.23-prod-6170c51125e6",
+  "version": "15.23-prod-b7afd60d9b45",
   "tracked_files": [
     {
       "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
-      "sha256": "ae40a772bd103194ec34b4678a117d680cd89c6838982521ea8377c77d04127a",
-      "size": 5571892,
+      "sha256": "a2f3e22b07b912fd5c52c3d1fcc18c5b1814c1b467f3b051def7daff7da3be34",
+      "size": 5571939,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat-bak",
-      "sha256": "cd816a943c3166e2a3499853dc71bb1614258868b3fb07536c7e104a9a8c1fcd",
-      "size": 5571990,
+      "sha256": "ae40a772bd103194ec34b4678a117d680cd89c6838982521ea8377c77d04127a",
+      "size": 5571892,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
