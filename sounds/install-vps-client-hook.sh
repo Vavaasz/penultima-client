@@ -59,12 +59,16 @@ printf '\n[%s] Running website client publish after post-merge in %s\n' "\$(date
 if git lfs version >/dev/null 2>&1; then
   git lfs pull --exclude="" >> "\$log_file" 2>&1 || {
     printf 'git lfs pull failed in %s\n' "\$(pwd)" >> "\$log_file"
+    printf >&2 'git lfs pull failed in %s. See %s\n' "\$(pwd)" "\$log_file"
+    exit 1
   }
 else
   printf 'git lfs is not available; publish script will try GitHub-authenticated LFS hydration.\n' >> "\$log_file"
 fi
 python3 "$PUBLISH_SCRIPT" --client-root "$CLIENT_ROOT" --website-root "$WEBSITE_ROOT" --rebuild-metadata >> "\$log_file" 2>&1 || {
   printf 'Website client publish failed in %s\n' "\$(pwd)" >> "\$log_file"
+  printf >&2 'Website client publish failed in %s. See %s\n' "\$(pwd)" "\$log_file"
+  exit 1
 }
 EOF
 

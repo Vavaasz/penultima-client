@@ -12,8 +12,9 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
 $trackedDirectories = @("assets", "bin", "conf", "sounds")
-$portableDirectories = @("3rdpartylicences", "assets", "bin", "conf", "sounds")
 $excludedRelativePaths = @(
+  "conf/clientoptions.json",
+  "conf/gpublacklist.json",
   "sounds/install-vps-client-hook.ps1",
   "sounds/install-vps-client-hook.sh",
   "sounds/publish-website-client-assets.ps1",
@@ -56,30 +57,32 @@ function Write-Utf8NoBom([string]$Path, [string]$Content) {
   [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
 }
 
-function Copy-DirectoryContents([string]$SourceRoot, [string]$DestinationRoot) {
-  if (-not (Test-Path -LiteralPath $SourceRoot)) {
-    return
-  }
-
-  Copy-Item -LiteralPath $SourceRoot -Destination $DestinationRoot -Recurse -Force
-}
-
 function New-ZipFromDirectory([string]$SourceDirectory, [string]$ZipPath) {
-  if (Test-Path -LiteralPath $ZipPath) {
-    Remove-Item -LiteralPath $ZipPath -Force
-  }
-
   $zipParent = Split-Path -Parent $ZipPath
   if ($zipParent) {
     New-Item -ItemType Directory -Path $zipParent -Force | Out-Null
   }
 
-  [System.IO.Compression.ZipFile]::CreateFromDirectory(
-    $SourceDirectory,
-    $ZipPath,
-    [System.IO.Compression.CompressionLevel]::Optimal,
-    $false
-  )
+  $tempZipPath = "$ZipPath.tmp"
+  if (Test-Path -LiteralPath $tempZipPath) {
+    Remove-Item -LiteralPath $tempZipPath -Force
+  }
+
+  try {
+    [System.IO.Compression.ZipFile]::CreateFromDirectory(
+      $SourceDirectory,
+      $tempZipPath,
+      [System.IO.Compression.CompressionLevel]::Optimal,
+      $false
+    )
+    Assert-NonEmptyFile -Path $tempZipPath -Label "Generated ZIP"
+    Move-Item -LiteralPath $tempZipPath -Destination $ZipPath -Force
+  }
+  finally {
+    if (Test-Path -LiteralPath $tempZipPath) {
+      Remove-Item -LiteralPath $tempZipPath -Force -ErrorAction SilentlyContinue
+    }
+  }
 }
 
 function Get-RelativePath([string]$BasePath, [string]$FullPath) {
@@ -93,6 +96,19 @@ function Get-RelativePath([string]$BasePath, [string]$FullPath) {
   $baseUri = New-Object System.Uri(($resolvedBase.Replace('\', '/') + '/'))
   $fullUri = New-Object System.Uri($resolvedFull.Replace('\', '/'))
   return [System.Uri]::UnescapeDataString($baseUri.MakeRelativeUri($fullUri).ToString()).Replace('\', '/')
+}
+
+function Test-IsExcludedClientFile([string]$RelativePath) {
+  if ($excludedRelativePaths -contains $RelativePath) {
+    return $true
+  }
+
+  if ($RelativePath.StartsWith("conf/", [System.StringComparison]::OrdinalIgnoreCase) -and
+      -not $RelativePath.Equals("conf/config.ini", [System.StringComparison]::OrdinalIgnoreCase)) {
+    return $true
+  }
+
+  return $false
 }
 
 function Get-Sha256Hex([string]$Path) {
@@ -111,6 +127,82 @@ function Get-Sha256Hex([string]$Path) {
   }
 
   return ([System.BitConverter]::ToString($hashBytes)).Replace("-", "").ToLowerInvariant()
+}
+
+function Get-ZipEntrySha256Hex([string]$ZipPath, [string]$EntryFileName) {
+  $archive = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
+  try {
+    $entry = $archive.Entries |
+      Where-Object { -not [string]::IsNullOrEmpty($_.Name) -and $_.Name.Equals($EntryFileName, [System.StringComparison]::OrdinalIgnoreCase) } |
+      Select-Object -First 1
+
+    if (-not $entry) {
+      return $null
+    }
+
+    $stream = $entry.Open()
+    try {
+      $sha256 = [System.Security.Cryptography.SHA256]::Create()
+      try {
+        $hashBytes = $sha256.ComputeHash($stream)
+      }
+      finally {
+        $sha256.Dispose()
+      }
+    }
+    finally {
+      $stream.Dispose()
+    }
+
+    return ([System.BitConverter]::ToString($hashBytes)).Replace("-", "").ToLowerInvariant()
+  }
+  finally {
+    $archive.Dispose()
+  }
+}
+
+function Assert-NonEmptyFile([string]$Path, [string]$Label) {
+  if (-not (Test-Path -LiteralPath $Path)) {
+    throw "$Label not found: $Path"
+  }
+
+  $length = (Get-Item -LiteralPath $Path).Length
+  if ($length -le 0) {
+    throw "$Label is empty: $Path"
+  }
+}
+
+function Copy-SynchronizedClientZip([string]$SourceZipPath, [string]$DestinationZipPath) {
+  Assert-NonEmptyFile -Path $SourceZipPath -Label "Launcher feed ZIP"
+
+  $tempZipPath = "$DestinationZipPath.tmp"
+  if (Test-Path -LiteralPath $tempZipPath) {
+    Remove-Item -LiteralPath $tempZipPath -Force
+  }
+
+  try {
+    Copy-Item -LiteralPath $SourceZipPath -Destination $tempZipPath -Force
+    Assert-NonEmptyFile -Path $tempZipPath -Label "Portable client ZIP"
+
+    $sourceItem = Get-Item -LiteralPath $SourceZipPath
+    $destinationItem = Get-Item -LiteralPath $tempZipPath
+    if ($sourceItem.Length -ne $destinationItem.Length) {
+      throw "Portable client ZIP size does not match the launcher feed ZIP after copy."
+    }
+
+    $sourceHash = Get-Sha256Hex -Path $SourceZipPath
+    $destinationHash = Get-Sha256Hex -Path $tempZipPath
+    if ($sourceHash -ne $destinationHash) {
+      throw "Portable client ZIP hash does not match the launcher feed ZIP after copy."
+    }
+
+    Move-Item -LiteralPath $tempZipPath -Destination $DestinationZipPath -Force
+  }
+  finally {
+    if (Test-Path -LiteralPath $tempZipPath) {
+      Remove-Item -LiteralPath $tempZipPath -Force -ErrorAction SilentlyContinue
+    }
+  }
 }
 
 function Get-LfsPointerInfo([string]$Path) {
@@ -165,7 +257,7 @@ function Get-LfsPointerFiles([string]$SourceRoot) {
 
     Get-ChildItem -LiteralPath $directoryPath -Recurse -File | Sort-Object FullName | ForEach-Object {
       $relativePath = Get-RelativePath -BasePath $SourceRoot -FullPath $_.FullName
-      if ($excludedRelativePaths -contains $relativePath) {
+      if (Test-IsExcludedClientFile -RelativePath $relativePath) {
         return
       }
 
@@ -328,7 +420,7 @@ function Get-TrackedClientFiles([string]$SourceRoot) {
 
     Get-ChildItem -LiteralPath $directoryPath -Recurse -File | Sort-Object FullName | ForEach-Object {
       $relativePath = Get-RelativePath -BasePath $SourceRoot -FullPath $_.FullName
-      if ($excludedRelativePaths -contains $relativePath) {
+      if (Test-IsExcludedClientFile -RelativePath $relativePath) {
         return
       }
       $hash = Get-Sha256Hex -Path $_.FullName
@@ -353,7 +445,7 @@ function Get-TrackedClientFilesFromAssetsManifest([string]$SourceRoot) {
   $files = New-Object System.Collections.Generic.List[object]
 
   foreach ($trackedFile in $assetsManifest.tracked_files) {
-    if ($excludedRelativePaths -contains $trackedFile.path) {
+    if (Test-IsExcludedClientFile -RelativePath $trackedFile.path) {
       continue
     }
     $sourcePath = Join-Path $SourceRoot ($trackedFile.path -replace '/', '\')
@@ -392,6 +484,100 @@ function Copy-TrackedFilesToFeed(
 function Copy-ExistingMetadataFilesToFeed([string]$SourceRoot, [string]$FeedRoot) {
   foreach ($fileName in $metadataFileNames) {
     Copy-Item -LiteralPath (Join-Path $SourceRoot $fileName) -Destination (Join-Path $FeedRoot $fileName) -Force
+  }
+}
+
+function Assert-RequiredPublishedFiles([System.Collections.Generic.List[object]]$TrackedFiles) {
+  $requiredRelativePaths = @(
+    "bin/client.exe",
+    "conf/config.ini"
+  )
+
+  $trackedPathSet = @{}
+  foreach ($file in $TrackedFiles) {
+    $trackedPathSet[$file.RelativePath.ToLowerInvariant()] = $true
+  }
+
+  $missing = @()
+  foreach ($relativePath in $requiredRelativePaths) {
+    if (-not $trackedPathSet.ContainsKey($relativePath.ToLowerInvariant())) {
+      $missing += $relativePath
+    }
+  }
+
+  if ($missing.Count -gt 0) {
+    throw "Refusing to publish an incomplete client feed. Missing required files:`n- $($missing -join "`n- ")"
+  }
+
+  $nonBootstrapConfFiles = @(
+    $TrackedFiles | Where-Object {
+      $_.RelativePath.StartsWith("conf/", [System.StringComparison]::OrdinalIgnoreCase) -and -not $_.BootstrapOnly
+    } | ForEach-Object { $_.RelativePath }
+  )
+  if ($nonBootstrapConfFiles.Count -gt 0) {
+    throw "Refusing to publish conf files that are not marked bootstrap-only:`n- $($nonBootstrapConfFiles -join "`n- ")"
+  }
+}
+
+function Get-IniValue([string]$Path, [string]$SectionName, [string]$KeyName) {
+  $currentSection = ""
+  foreach ($line in [System.IO.File]::ReadLines($Path)) {
+    $trimmed = $line.Trim()
+    if ([string]::IsNullOrWhiteSpace($trimmed) -or $trimmed.StartsWith(";")) {
+      continue
+    }
+
+    if ($trimmed.StartsWith("[") -and $trimmed.EndsWith("]")) {
+      $currentSection = $trimmed.Substring(1, $trimmed.Length - 2)
+      continue
+    }
+
+    if (-not $currentSection.Equals($SectionName, [System.StringComparison]::OrdinalIgnoreCase)) {
+      continue
+    }
+
+    $separatorIndex = $trimmed.IndexOf("=")
+    if ($separatorIndex -lt 0) {
+      continue
+    }
+
+    $key = $trimmed.Substring(0, $separatorIndex).Trim()
+    if ($key.Equals($KeyName, [System.StringComparison]::OrdinalIgnoreCase)) {
+      return $trimmed.Substring($separatorIndex + 1).Trim()
+    }
+  }
+
+  return ""
+}
+
+function Test-IsLoopbackUrl([string]$Value) {
+  if ([string]::IsNullOrWhiteSpace($Value)) {
+    return $false
+  }
+
+  try {
+    $uri = [System.Uri]$Value.Trim()
+    $host = $uri.Host.ToLowerInvariant()
+    return $host -eq "localhost" -or $host -eq "127.0.0.1" -or $host -eq "::1"
+  }
+  catch {
+    return $Value.Trim() -match '^(?i:https?://)?(?:localhost|127\.0\.0\.1|\[::1\])(?::|/|$)'
+  }
+}
+
+function Assert-PublicClientConfig([string]$SourceRoot) {
+  $configPath = Join-Path $SourceRoot "conf\config.ini"
+  Assert-PathExists -Path $configPath -Label "Client config"
+
+  foreach ($key in @("loginWebService", "clientWebService")) {
+    $value = Get-IniValue -Path $configPath -SectionName "URLS" -KeyName $key
+    if ([string]::IsNullOrWhiteSpace($value)) {
+      throw "Refusing to publish a client package without URLS/$key in $configPath"
+    }
+
+    if (Test-IsLoopbackUrl -Value $value) {
+      throw "Refusing to publish a public client package with URLS/$key pointing to loopback: $value"
+    }
   }
 }
 
@@ -446,38 +632,8 @@ function Write-FeedMetadataFiles(
   Write-Utf8NoBom -Path $assetsHashPath -Content ((Get-Sha256Hex -Path $assetsJsonPath) + "`n")
 }
 
-function Build-PortableRoot(
-  [string]$ClientRoot,
-  [string]$FeedRoot,
-  [string]$PortableRoot
-) {
-  foreach ($directoryName in $portableDirectories) {
-    $sourceDirectory = if ($trackedDirectories -contains $directoryName) {
-      Join-Path $FeedRoot $directoryName
-    } else {
-      Join-Path $ClientRoot $directoryName
-    }
-
-    if (-not (Test-Path -LiteralPath $sourceDirectory)) {
-      continue
-    }
-
-    Copy-DirectoryContents -SourceRoot $sourceDirectory -DestinationRoot (Join-Path $PortableRoot $directoryName)
-  }
-
-  foreach ($metadataFileName in $metadataFileNames) {
-    $sourceFile = Join-Path $FeedRoot $metadataFileName
-    if (-not (Test-Path -LiteralPath $sourceFile)) {
-      continue
-    }
-
-    Copy-Item -LiteralPath $sourceFile -Destination (Join-Path $PortableRoot $metadataFileName) -Force
-  }
-}
-
 function Publish-StagingToWebsite(
   [string]$FeedStagingRoot,
-  [string]$PortableStagingRoot,
   [string]$DownloadsRoot
 ) {
   $feedRoot = Join-Path $DownloadsRoot "client-feed"
@@ -490,7 +646,7 @@ function Publish-StagingToWebsite(
 
   Copy-Item -LiteralPath $FeedStagingRoot -Destination $feedRoot -Recurse -Force
   New-ZipFromDirectory -SourceDirectory $FeedStagingRoot -ZipPath $bootstrapZipPath
-  New-ZipFromDirectory -SourceDirectory $PortableStagingRoot -ZipPath $portableZipPath
+  Copy-SynchronizedClientZip -SourceZipPath $bootstrapZipPath -DestinationZipPath $portableZipPath
 }
 
 function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion) {
@@ -499,18 +655,52 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
   $portableZipPath = Join-Path $DownloadsRoot "Penultima-Client-Portable.zip"
   $bootstrapZipPath = Join-Path $DownloadsRoot "Penultima-Client-Feed.zip"
 
-  $launcherMetadata = $null
-  if (Test-Path -LiteralPath $launcherZipPath) {
-    $launcherMetadata = [ordered]@{
-      zip = "downloads/Penultima-Launcher.zip"
-      sha256 = Get-Sha256Hex -Path $launcherZipPath
-      size = (Get-Item -LiteralPath $launcherZipPath).Length
+  $existingLauncherMetadata = $null
+  if (Test-Path -LiteralPath $metadataPath) {
+    try {
+      $existingMetadata = Get-Content -LiteralPath $metadataPath -Raw | ConvertFrom-Json
+      $existingLauncherMetadata = $existingMetadata.launcher
+    } catch {
+      $existingLauncherMetadata = $null
     }
   }
 
-  $portableMetadata = $null
-  if (Test-Path -LiteralPath $portableZipPath) {
-    $portableMetadata = [ordered]@{
+  $launcherMetadata = $null
+  if (Test-Path -LiteralPath $launcherZipPath) {
+    $launcherHash = Get-Sha256Hex -Path $launcherZipPath
+    $launcherSize = (Get-Item -LiteralPath $launcherZipPath).Length
+    $launcherExeHash = Get-ZipEntrySha256Hex -ZipPath $launcherZipPath -EntryFileName "penultima-launcher.exe"
+    $launcherMetadata = [ordered]@{
+      zip = "downloads/Penultima-Launcher.zip"
+      sha256 = $launcherHash
+      size = $launcherSize
+    }
+
+    if (
+      $null -ne $existingLauncherMetadata -and
+      "$($existingLauncherMetadata.sha256)".ToLowerInvariant() -eq $launcherHash.ToLowerInvariant() -and
+      [int64]$existingLauncherMetadata.size -eq $launcherSize
+    ) {
+      foreach ($key in @("version", "signed", "signature_status")) {
+        if ($existingLauncherMetadata.PSObject.Properties.Name -contains $key) {
+          $launcherMetadata[$key] = $existingLauncherMetadata.$key
+        }
+      }
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($launcherExeHash)) {
+      $launcherMetadata["exe_sha256"] = $launcherExeHash
+    } elseif (
+      $null -ne $existingLauncherMetadata -and
+      $existingLauncherMetadata.PSObject.Properties.Name -contains "exe_sha256"
+    ) {
+      $launcherMetadata["exe_sha256"] = $existingLauncherMetadata.exe_sha256
+    }
+  }
+
+$portableMetadata = $null
+if (Test-Path -LiteralPath $portableZipPath) {
+  $portableMetadata = [ordered]@{
       zip = "downloads/Penultima-Client-Portable.zip"
       sha256 = Get-Sha256Hex -Path $portableZipPath
       size = (Get-Item -LiteralPath $portableZipPath).Length
@@ -541,17 +731,16 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
 Assert-PathExists -Path $ClientRoot -Label "Client root"
 Assert-PathExists -Path $WebsiteRoot -Label "Website root"
 Ensure-HydratedLfsFiles -SourceRoot $ClientRoot
+Assert-PublicClientConfig -SourceRoot $ClientRoot
 
 $downloadsRoot = Join-Path $WebsiteRoot "downloads"
 New-Item -ItemType Directory -Path $downloadsRoot -Force | Out-Null
 
 $tempRoot = New-TemporaryDirectory -Prefix "penultima-client-website-"
 $feedStagingRoot = Join-Path $tempRoot "client-feed"
-$portableStagingRoot = Join-Path $tempRoot "Penultima-Client-Portable"
 
 try {
   New-EmptyDirectory -Path $feedStagingRoot
-  New-EmptyDirectory -Path $portableStagingRoot
 
   if (Test-CanUseExistingMetadata -SourceRoot $ClientRoot -RequestedVersion $Version -ForceRebuild:$RebuildMetadata) {
     $publishVersion = Get-ExistingMetadataVersion -SourceRoot $ClientRoot
@@ -568,9 +757,9 @@ try {
   if ($trackedFiles.Count -eq 0) {
     throw "No tracked client files found in assets, bin, conf, or sounds under $ClientRoot"
   }
+  Assert-RequiredPublishedFiles -TrackedFiles $trackedFiles
 
-  Build-PortableRoot -ClientRoot $ClientRoot -FeedRoot $feedStagingRoot -PortableRoot $portableStagingRoot
-  Publish-StagingToWebsite -FeedStagingRoot $feedStagingRoot -PortableStagingRoot $portableStagingRoot -DownloadsRoot $downloadsRoot
+  Publish-StagingToWebsite -FeedStagingRoot $feedStagingRoot -DownloadsRoot $downloadsRoot
   Write-DownloadsMetadata -DownloadsRoot $downloadsRoot -PublishVersion $publishVersion
 
   Write-Host "Published website client assets to $downloadsRoot"

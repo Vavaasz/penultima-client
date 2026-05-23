@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import base64
+import configparser
 import datetime
 import hashlib
 import json
@@ -17,13 +18,18 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 
 TRACKED_DIRECTORIES = ("assets", "bin", "conf", "sounds")
-PORTABLE_DIRECTORIES = ("3rdpartylicences", "assets", "bin", "conf", "sounds")
 EXCLUDED_CLIENT_FILES = {
+    "conf/clientoptions.json",
+    "conf/gpublacklist.json",
     "sounds/install-vps-client-hook.ps1",
     "sounds/install-vps-client-hook.sh",
     "sounds/publish-website-client-assets.ps1",
     "sounds/publish-website-client-assets.py",
 }
+REQUIRED_PUBLISHED_FILES = (
+    "bin/client.exe",
+    "conf/config.ini",
+)
 METADATA_FILE_NAMES = (
     "package.json",
     "package.json.version",
@@ -37,6 +43,8 @@ LFS_POINTER_OID_PATTERN = re.compile(r"^oid sha256:([0-9a-f]{64})$", re.IGNORECA
 LFS_POINTER_SIZE_PATTERN = re.compile(r"^size ([0-9]+)$")
 GITHUB_HOSTS = {"github.com", "www.github.com"}
 HTTP_DOWNLOAD_TIMEOUT_SECONDS = 30 * 60
+PUBLIC_DIRECTORY_MODE = 0o755
+PUBLIC_FILE_MODE = 0o644
 
 
 def parse_args() -> argparse.Namespace:
@@ -106,6 +114,30 @@ def write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(content)
+    make_public_file(path)
+
+
+def make_public_file(path: Path) -> None:
+    try:
+        path.chmod(PUBLIC_FILE_MODE)
+    except OSError as error:
+        raise RuntimeError(f"Unable to make published file web-readable: {path}") from error
+
+
+def make_public_directory(path: Path) -> None:
+    try:
+        path.chmod(PUBLIC_DIRECTORY_MODE)
+    except OSError as error:
+        raise RuntimeError(f"Unable to make published directory web-readable: {path}") from error
+
+
+def make_public_tree(root: Path) -> None:
+    make_public_directory(root)
+    for path in root.rglob("*"):
+        if path.is_dir():
+            make_public_directory(path)
+        elif path.is_file():
+            make_public_file(path)
 
 
 def get_sha256_hex(path: Path) -> str:
@@ -116,6 +148,21 @@ def get_sha256_hex(path: Path) -> str:
     return digest.hexdigest()
 
 
+def get_zip_entry_sha256_hex(zip_path: Path, entry_file_name: str) -> str | None:
+    with ZipFile(zip_path) as archive:
+        for entry in archive.infolist():
+            if Path(entry.filename).name.lower() != entry_file_name.lower():
+                continue
+
+            digest = hashlib.sha256()
+            with archive.open(entry) as handle:
+                for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                    digest.update(chunk)
+            return digest.hexdigest()
+
+    return None
+
+
 def iter_candidate_tracked_files(source_root: Path):
     for directory_name in TRACKED_DIRECTORIES:
         directory_path = source_root / directory_name
@@ -123,9 +170,17 @@ def iter_candidate_tracked_files(source_root: Path):
             continue
         for file_path in sorted(path for path in directory_path.rglob("*") if path.is_file()):
             relative_path = file_path.relative_to(source_root).as_posix()
-            if relative_path in EXCLUDED_CLIENT_FILES:
+            if is_excluded_client_file(relative_path):
                 continue
             yield file_path, relative_path
+
+
+def is_excluded_client_file(relative_path: str) -> bool:
+    if relative_path in EXCLUDED_CLIENT_FILES:
+        return True
+    if relative_path.startswith("conf/") and relative_path != "conf/config.ini":
+        return True
+    return False
 
 
 def parse_lfs_pointer(path: Path):
@@ -584,7 +639,7 @@ def resolve_publish_version(repository_root: Path, requested_version: str) -> st
         git_short_commit = ""
 
     if not git_short_commit:
-        timestamp = datetime.datetime.utcnow().strftime("%Y%m%d%H%M%S")
+        timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M%S")
         return f"{version_prefix}-{timestamp}"
 
     return f"{version_prefix}-{git_short_commit}"
@@ -625,7 +680,7 @@ def get_tracked_files_from_assets_manifest(source_root: Path):
     assets_manifest = json.loads((source_root / "assets.json").read_text(encoding="utf-8"))
     tracked_files = []
     for tracked_file in assets_manifest.get("tracked_files", []):
-        if tracked_file["path"] in EXCLUDED_CLIENT_FILES:
+        if is_excluded_client_file(tracked_file["path"]):
             continue
         source_path = source_root / Path(tracked_file["path"])
         if not source_path.is_file():
@@ -647,11 +702,65 @@ def copy_tracked_files_to_feed(tracked_files, feed_root: Path) -> None:
         destination = feed_root / Path(tracked_file["relative_path"])
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(tracked_file["source_path"], destination)
+        make_public_file(destination)
 
 
 def copy_existing_metadata_files_to_feed(source_root: Path, feed_root: Path) -> None:
     for file_name in METADATA_FILE_NAMES:
-        shutil.copy2(source_root / file_name, feed_root / file_name)
+        destination = feed_root / file_name
+        shutil.copy2(source_root / file_name, destination)
+        make_public_file(destination)
+
+
+def ensure_required_published_files(tracked_files) -> None:
+    tracked_by_path = {
+        tracked_file["relative_path"]: tracked_file
+        for tracked_file in tracked_files
+    }
+    missing_files = [
+        relative_path
+        for relative_path in REQUIRED_PUBLISHED_FILES
+        if relative_path not in tracked_by_path
+    ]
+    if missing_files:
+        raise RuntimeError(
+            "Refusing to publish an incomplete client package. Missing required files:\n"
+            + "\n".join(f"- {relative_path}" for relative_path in missing_files)
+        )
+
+    non_bootstrap_conf_files = [
+        relative_path
+        for relative_path, tracked_file in tracked_by_path.items()
+        if relative_path.startswith("conf/")
+        and not tracked_file["bootstrap_only"]
+    ]
+    if non_bootstrap_conf_files:
+        raise RuntimeError(
+            "Refusing to publish conf files that are not marked bootstrap-only:\n"
+            + "\n".join(f"- {relative_path}" for relative_path in non_bootstrap_conf_files)
+        )
+
+
+def assert_public_client_config(source_root: Path) -> None:
+    config_path = source_root / "conf" / "config.ini"
+    ensure_path_exists(config_path, "Client config")
+
+    parser = configparser.ConfigParser(strict=False, interpolation=None)
+    parser.read(config_path, encoding="utf-8")
+    for key in ("loginWebService", "clientWebService"):
+        value = parser.get("URLS", key, fallback="").strip()
+        if not value:
+            raise RuntimeError(
+                f"Refusing to publish a client package without URLS/{key} in {config_path}"
+            )
+
+        parsed = urllib_parse.urlparse(value)
+        host = (parsed.hostname or "").lower()
+        if host in {"localhost", "127.0.0.1", "::1"}:
+            raise RuntimeError(
+                f"Refusing to publish a public client package with URLS/{key} "
+                f"pointing to loopback: {value}"
+            )
 
 
 def write_feed_metadata_files(tracked_files, feed_root: Path, publish_version: str) -> None:
@@ -691,41 +800,71 @@ def write_feed_metadata_files(tracked_files, feed_root: Path, publish_version: s
     write_text(feed_root / "assets.json.sha256", get_sha256_hex(assets_json_path) + "\n")
 
 
-def copy_directory_contents(source_root: Path, destination_root: Path) -> None:
-    if not source_root.exists():
-        return
-    if source_root.is_file():
-        destination_root.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source_root, destination_root)
-        return
-    shutil.copytree(source_root, destination_root, dirs_exist_ok=True)
-
-
-def build_portable_root(client_root: Path, feed_root: Path, portable_root: Path) -> None:
-    for directory_name in PORTABLE_DIRECTORIES:
-        if directory_name in TRACKED_DIRECTORIES:
-            source_directory = feed_root / directory_name
-        else:
-            source_directory = client_root / directory_name
-        destination_directory = portable_root / directory_name
-        copy_directory_contents(source_directory, destination_directory)
-
-    for file_name in METADATA_FILE_NAMES:
-        source_file = feed_root / file_name
-        if source_file.is_file():
-            shutil.copy2(source_file, portable_root / file_name)
-
-
 def create_zip_from_directory(source_directory: Path, zip_path: Path) -> None:
-    if zip_path.exists():
-        zip_path.unlink()
     zip_path.parent.mkdir(parents=True, exist_ok=True)
-    with ZipFile(zip_path, "w", compression=ZIP_DEFLATED) as archive:
-        for file_path in sorted(path for path in source_directory.rglob("*") if path.is_file()):
-            archive.write(file_path, file_path.relative_to(source_directory).as_posix())
+    with tempfile.NamedTemporaryFile(
+        prefix=f"{zip_path.name}.",
+        suffix=".tmp",
+        dir=zip_path.parent,
+        delete=False,
+    ) as temporary_file:
+        temp_zip_path = Path(temporary_file.name)
+
+    try:
+        with ZipFile(temp_zip_path, "w", compression=ZIP_DEFLATED) as archive:
+            for file_path in sorted(path for path in source_directory.rglob("*") if path.is_file()):
+                archive.write(file_path, file_path.relative_to(source_directory).as_posix())
+
+        ensure_non_empty_file(temp_zip_path, "Generated ZIP")
+        temp_zip_path.replace(zip_path)
+        make_public_file(zip_path)
+    finally:
+        if temp_zip_path.exists():
+            temp_zip_path.unlink()
 
 
-def publish_staging_to_website(feed_staging_root: Path, portable_staging_root: Path, downloads_root: Path) -> None:
+def ensure_non_empty_file(path: Path, label: str) -> None:
+    if not path.is_file():
+        raise RuntimeError(f"{label} was not created: {path}")
+    if path.stat().st_size <= 0:
+        raise RuntimeError(f"{label} is empty: {path}")
+
+
+def copy_synchronized_client_zip(source_zip_path: Path, destination_zip_path: Path) -> None:
+    ensure_non_empty_file(source_zip_path, "Launcher feed ZIP")
+    destination_zip_path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(
+        prefix=f"{destination_zip_path.name}.",
+        suffix=".tmp",
+        dir=destination_zip_path.parent,
+        delete=False,
+    ) as temporary_file:
+        temp_zip_path = Path(temporary_file.name)
+
+    try:
+        shutil.copy2(source_zip_path, temp_zip_path)
+        ensure_non_empty_file(temp_zip_path, "Portable client ZIP")
+
+        if source_zip_path.stat().st_size != temp_zip_path.stat().st_size:
+            raise RuntimeError(
+                "Portable client ZIP size does not match the launcher feed ZIP after copy."
+            )
+
+        source_hash = get_sha256_hex(source_zip_path)
+        destination_hash = get_sha256_hex(temp_zip_path)
+        if source_hash != destination_hash:
+            raise RuntimeError(
+                "Portable client ZIP hash does not match the launcher feed ZIP after copy."
+            )
+
+        temp_zip_path.replace(destination_zip_path)
+        make_public_file(destination_zip_path)
+    finally:
+        if temp_zip_path.exists():
+            temp_zip_path.unlink()
+
+
+def publish_staging_to_website(feed_staging_root: Path, downloads_root: Path) -> None:
     feed_root = downloads_root / "client-feed"
     bootstrap_zip_path = downloads_root / "Penultima-Client-Feed.zip"
     portable_zip_path = downloads_root / "Penultima-Client-Portable.zip"
@@ -733,9 +872,10 @@ def publish_staging_to_website(feed_staging_root: Path, portable_staging_root: P
     if feed_root.exists():
         shutil.rmtree(feed_root)
     shutil.copytree(feed_staging_root, feed_root)
+    make_public_tree(feed_root)
 
     create_zip_from_directory(feed_staging_root, bootstrap_zip_path)
-    create_zip_from_directory(portable_staging_root, portable_zip_path)
+    copy_synchronized_client_zip(bootstrap_zip_path, portable_zip_path)
 
 
 def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None:
@@ -744,13 +884,41 @@ def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None
     portable_zip_path = downloads_root / "Penultima-Client-Portable.zip"
     bootstrap_zip_path = downloads_root / "Penultima-Client-Feed.zip"
 
+    existing_launcher_metadata = {}
+    if metadata_path.is_file():
+        try:
+            existing_metadata = json.loads(metadata_path.read_text(encoding="utf-8-sig"))
+            existing_launcher = existing_metadata.get("launcher")
+            if isinstance(existing_launcher, dict):
+                existing_launcher_metadata = existing_launcher
+        except (OSError, json.JSONDecodeError):
+            existing_launcher_metadata = {}
+
     launcher_metadata = None
     if launcher_zip_path.is_file():
+        launcher_hash = get_sha256_hex(launcher_zip_path)
+        launcher_size = launcher_zip_path.stat().st_size
+        launcher_exe_hash = get_zip_entry_sha256_hex(
+            launcher_zip_path, "penultima-launcher.exe"
+        )
         launcher_metadata = {
             "zip": "downloads/Penultima-Launcher.zip",
-            "sha256": get_sha256_hex(launcher_zip_path),
-            "size": launcher_zip_path.stat().st_size,
+            "sha256": launcher_hash,
+            "size": launcher_size,
         }
+        metadata_matches_existing_zip = (
+            str(existing_launcher_metadata.get("sha256", "")).lower()
+            == launcher_hash.lower()
+            and existing_launcher_metadata.get("size") == launcher_size
+        )
+        if metadata_matches_existing_zip:
+            for key in ("version", "signed", "signature_status"):
+                if key in existing_launcher_metadata:
+                    launcher_metadata[key] = existing_launcher_metadata[key]
+        if launcher_exe_hash:
+            launcher_metadata["exe_sha256"] = launcher_exe_hash
+        elif metadata_matches_existing_zip and "exe_sha256" in existing_launcher_metadata:
+            launcher_metadata["exe_sha256"] = existing_launcher_metadata["exe_sha256"]
 
     portable_metadata = None
     if portable_zip_path.is_file():
@@ -771,7 +939,9 @@ def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None
         }
 
     metadata = {
-        "generated_at_utc": datetime.datetime.utcnow().isoformat() + "Z",
+        "generated_at_utc": datetime.datetime.now(datetime.timezone.utc)
+        .isoformat()
+        .replace("+00:00", "Z"),
         "launcher": launcher_metadata,
         "portable_client": portable_metadata,
         "client_feed": client_feed_metadata,
@@ -784,16 +954,16 @@ def main() -> int:
     client_root = Path(args.client_root).resolve()
     ensure_path_exists(client_root, "Client root")
     ensure_lfs_files_hydrated(client_root)
+    assert_public_client_config(client_root)
     website_root = resolve_website_root(client_root, args.website_root)
     downloads_root = website_root / "downloads"
     downloads_root.mkdir(parents=True, exist_ok=True)
+    make_public_directory(downloads_root)
 
     with tempfile.TemporaryDirectory(prefix="penultima-client-website-") as temp_dir:
         temp_root = Path(temp_dir)
         feed_staging_root = temp_root / "client-feed"
-        portable_staging_root = temp_root / "Penultima-Client-Portable"
         feed_staging_root.mkdir(parents=True, exist_ok=True)
-        portable_staging_root.mkdir(parents=True, exist_ok=True)
 
         if can_use_existing_metadata(client_root, args.version, args.rebuild_metadata):
             publish_version = get_existing_metadata_version(client_root)
@@ -812,8 +982,8 @@ def main() -> int:
                 "assets, bin, conf, or sounds."
             )
 
-        build_portable_root(client_root, feed_staging_root, portable_staging_root)
-        publish_staging_to_website(feed_staging_root, portable_staging_root, downloads_root)
+        ensure_required_published_files(tracked_files)
+        publish_staging_to_website(feed_staging_root, downloads_root)
         write_downloads_metadata(downloads_root, publish_version)
         print(f"Published website client assets to {downloads_root}")
         return 0
