@@ -1,6 +1,20 @@
 {
-  "version": "15.23-prod-d10c6f61b3f4",
+  "version": "15.23-prod-fd041912dbb8",
   "tracked_files": [
+    {
+      "path": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
+      "sha256": "24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02",
+      "size": 5610949,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat-bak",
+      "sha256": "24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02",
+      "size": 5610949,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
     {
       "path": "assets/appearances-4686094df43277c825f376b58b45c2430f722dc2c7c51258e85fa801aee7e600.dat",
       "sha256": "4686094df43277c825f376b58b45c2430f722dc2c7c51258e85fa801aee7e600",
@@ -9,9 +23,23 @@
       "bootstrap_only": false
     },
     {
-      "path": "assets/appearances-79f65cfe4635dd0519839a5d7ded90242c14516ac3e78d9a1e62a46386a146ff.dat",
-      "sha256": "f0033e5a2e85be2f30e60c93ecdbc858e3584646b1e611dc68c0572ffc34d3c4",
-      "size": 5600983,
+      "path": "assets/appearances-4686094df43277c825f376b58b45c2430f722dc2c7c51258e85fa801aee7e600.dat-bak",
+      "sha256": "4686094df43277c825f376b58b45c2430f722dc2c7c51258e85fa801aee7e600",
+      "size": 5612139,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-6759c3b30dbadb8ffb1b97a3ce1e87cbaddd47452d6f75ca6c7beb4ed3da1de7.dat",
+      "sha256": "6759c3b30dbadb8ffb1b97a3ce1e87cbaddd47452d6f75ca6c7beb4ed3da1de7",
+      "size": 5611541,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-6759c3b30dbadb8ffb1b97a3ce1e87cbaddd47452d6f75ca6c7beb4ed3da1de7.dat-bak",
+      "sha256": "6759c3b30dbadb8ffb1b97a3ce1e87cbaddd47452d6f75ca6c7beb4ed3da1de7",
+      "size": 5611541,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -26,6 +54,20 @@
       "path": "assets/appearances-7d665e10196ed6693ed146182dcc8f077a575aacb68b12da37a0c2b3057c2917.dat-bak",
       "sha256": "0f3dd52832552c8eb3a6945687c0d4a2910d2771ac7fbfc432c6d79b685a38ba",
       "size": 5561854,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-8dd0d0c1b7b824fcd902c31d7182441399a7bdc679643e55a332110b5bc7c4e9.dat",
+      "sha256": "8dd0d0c1b7b824fcd902c31d7182441399a7bdc679643e55a332110b5bc7c4e9",
+      "size": 5605919,
+      "managed_by_launcher": true,
+      "bootstrap_only": false
+    },
+    {
+      "path": "assets/appearances-8dd0d0c1b7b824fcd902c31d7182441399a7bdc679643e55a332110b5bc7c4e9.dat-bak",
+      "sha256": "8dd0d0c1b7b824fcd902c31d7182441399a7bdc679643e55a332110b5bc7c4e9",
+      "size": 5605919,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -88063,29 +88105,29 @@
     },
     {
       "path": "assets/staticdata-2be3db00549bfbd26b40cc98000aa2a5dc300adf0921decea008ae00745fc77a.dat",
-      "sha256": "e5447a048fef346274c2e0bee0a960939b1eab816201a42dce279bfb317d2db8",
-      "size": 179042,
+      "sha256": "2be3db00549bfbd26b40cc98000aa2a5dc300adf0921decea008ae00745fc77a",
+      "size": 178614,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "assets/staticdata-2be3db00549bfbd26b40cc98000aa2a5dc300adf0921decea008ae00745fc77a.dat.lzma",
-      "sha256": "4bc763d0f7d5146db17f7ca5145abb967e5f249fcaccec3f2ccca86234d3bc34",
-      "size": 53590,
+      "sha256": "3f40fc7c1cc379b8fad0ce78b5106c558ef82336837a5cc10feeffb4a1f853c4",
+      "size": 53162,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "assets/staticmapdata-dd4f19cf32aacffad1818e9a056a13ef9cd8088a9ee8040129e921dcc082cefe.dat",
-      "sha256": "5a40eafcb14c3cd8b275ba09384416d8abba15ef958b665352122c66792d0ca8",
-      "size": 1417644,
+      "sha256": "dd4f19cf32aacffad1818e9a056a13ef9cd8088a9ee8040129e921dcc082cefe",
+      "size": 1496556,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
     {
       "path": "assets/staticmapdata-dd4f19cf32aacffad1818e9a056a13ef9cd8088a9ee8040129e921dcc082cefe.dat.lzma",
-      "sha256": "1c0a16b0710bc297d74ed8868801c2ec66a13870a88fc4714471ea89dbc503e0",
-      "size": 139692,
+      "sha256": "37338f076eb429bf2b82c91364b518b8290b55f8c9f25f5c704876e30d5529f2",
+      "size": 141119,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
