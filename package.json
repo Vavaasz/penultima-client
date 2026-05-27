@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-11553f6b66c4",
+  "version": "15.23-prod-11553f6b66c4-battleye1",
   "files": [
     {
       "url": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
@@ -89924,9 +89924,9 @@
     {
       "url": "bin/client.exe.lzma",
       "localfile": "bin/client.exe",
-      "packedhash": "271127e44c15cfc49035a72e89e47f47ac6dcc5f64272efe9d9322f600e2abf9",
+      "packedhash": "9eb1dfb151e02e6a6b0db9f8121ecc666026c84d4e808719d682a784b1f68baa",
       "packedsize": 17564373,
-      "unpackedhash": "234f2174144f8a4a726a6e3c15bea0961e6a8e60ee6536b678606b390c52ccc9",
+      "unpackedhash": "52449e00ebae67f433333ac86708e85721c0a762cd2ebf2c6271d2ab8c9dbc98",
       "unpackedsize": 33009608
     },
     {

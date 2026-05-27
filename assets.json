@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-11553f6b66c4",
+  "version": "15.23-prod-11553f6b66c4-battleye1",
   "tracked_files": [
     {
       "path": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
@@ -89876,7 +89876,7 @@
     },
     {
       "path": "bin/client.exe",
-      "sha256": "234f2174144f8a4a726a6e3c15bea0961e6a8e60ee6536b678606b390c52ccc9",
+      "sha256": "52449e00ebae67f433333ac86708e85721c0a762cd2ebf2c6271d2ab8c9dbc98",
       "size": 33009608,
       "managed_by_launcher": true,
       "bootstrap_only": false
