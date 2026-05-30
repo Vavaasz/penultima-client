@@ -656,12 +656,17 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
   $bootstrapZipPath = Join-Path $DownloadsRoot "Penultima-Client-Feed.zip"
 
   $existingLauncherMetadata = $null
+  $existingFullMinimapMetadata = $null
   if (Test-Path -LiteralPath $metadataPath) {
     try {
       $existingMetadata = Get-Content -LiteralPath $metadataPath -Raw | ConvertFrom-Json
       $existingLauncherMetadata = $existingMetadata.launcher
+      if ($existingMetadata.PSObject.Properties.Name -contains "full_minimap") {
+        $existingFullMinimapMetadata = $existingMetadata.full_minimap
+      }
     } catch {
       $existingLauncherMetadata = $null
+      $existingFullMinimapMetadata = $null
     }
   }
 
@@ -676,12 +681,14 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
       size = $launcherSize
     }
 
-    if (
+    $sameLauncherPayload = (
       $null -ne $existingLauncherMetadata -and
       "$($existingLauncherMetadata.sha256)".ToLowerInvariant() -eq $launcherHash.ToLowerInvariant() -and
       [int64]$existingLauncherMetadata.size -eq $launcherSize
-    ) {
-      foreach ($key in @("version", "signed", "signature_status")) {
+    )
+
+    if ($sameLauncherPayload) {
+      foreach ($key in @("version", "zip", "sha256", "signed", "signature_status", "exe_sha256")) {
         if ($existingLauncherMetadata.PSObject.Properties.Name -contains $key) {
           $launcherMetadata[$key] = $existingLauncherMetadata.$key
         }
@@ -700,20 +707,22 @@ function Write-DownloadsMetadata([string]$DownloadsRoot, [string]$PublishVersion
 
 $portableMetadata = $null
 if (Test-Path -LiteralPath $portableZipPath) {
+  $portableHash = Get-Sha256Hex -Path $portableZipPath
   $portableMetadata = [ordered]@{
-      zip = "downloads/Penultima-Client-Portable.zip"
-      sha256 = Get-Sha256Hex -Path $portableZipPath
+      zip = "downloads/Penultima-Client-Portable.zip?sha256=$($portableHash.Substring(0, 12))"
+      sha256 = $portableHash
       size = (Get-Item -LiteralPath $portableZipPath).Length
     }
   }
 
   $clientFeedMetadata = $null
   if (Test-Path -LiteralPath $bootstrapZipPath) {
+    $bootstrapHash = Get-Sha256Hex -Path $bootstrapZipPath
     $clientFeedMetadata = [ordered]@{
       version = $PublishVersion
       root = "downloads/client-feed"
-      bootstrap_zip = "downloads/Penultima-Client-Feed.zip"
-      bootstrap_sha256 = Get-Sha256Hex -Path $bootstrapZipPath
+      bootstrap_zip = "downloads/Penultima-Client-Feed.zip?sha256=$($bootstrapHash.Substring(0, 12))"
+      bootstrap_sha256 = $bootstrapHash
       bootstrap_size = (Get-Item -LiteralPath $bootstrapZipPath).Length
     }
   }
@@ -723,6 +732,10 @@ if (Test-Path -LiteralPath $portableZipPath) {
     launcher = $launcherMetadata
     portable_client = $portableMetadata
     client_feed = $clientFeedMetadata
+  }
+
+  if ($null -ne $existingFullMinimapMetadata) {
+    $metadata["full_minimap"] = $existingFullMinimapMetadata
   }
 
   Write-Utf8NoBom -Path $metadataPath -Content ($metadata | ConvertTo-Json -Depth 6)
