@@ -73,8 +73,8 @@
     },
     {
       "path": "assets/appearances-93ee188fb658cc6cf15fa605c36a4f75b1bfe0b0d6bd03d3e968b0da1bb9cfcf.dat",
-      "sha256": "985d8a5f8585d651773d9dd44131b70faad87973c4d565d607b519def4259a3b",
-      "size": 5619494,
+      "sha256": "4b3f2ec781b6dae6ca577bbcf820bebf02fce358427726a41b0837ce6a97ea38",
+      "size": 5619529,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
@@ -1487,8 +1487,8 @@
     },
     {
       "path": "assets/proficiencies-86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca.json",
-      "sha256": "8eb85d600be2357fa063126d80e7aa4fa33c1f598e15780e439a90d810efefc1",
-      "size": 1480728,
+      "sha256": "41c1c27367c336ab90e6c3d6e78e3ceca9989220a1b1ae3a1345ae1f85ea01c0",
+      "size": 1487050,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },

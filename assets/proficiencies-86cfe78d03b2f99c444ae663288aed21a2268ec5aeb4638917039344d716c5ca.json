@@ -26303,7 +26303,7 @@
                                              "Value":  0.05
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.12
                                          }
                                      ]
@@ -26312,7 +26312,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.1
                                          },
                                          {
@@ -26323,7 +26323,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.06
                                          }
                                      ]
@@ -26350,7 +26350,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.15
                                          },
                                          {
@@ -26358,7 +26358,7 @@
                                              "Value":  1
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.16
                                          }
                                      ]
@@ -26371,7 +26371,7 @@
                                              "Value":  3.5
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.2
                                          }
                                      ]
@@ -26380,12 +26380,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.2
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.08
                                          }
                                      ]
@@ -26420,7 +26420,7 @@
                                              "Value":  0.05
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.12
                                          }
                                      ]
@@ -26429,7 +26429,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.1
                                          },
                                          {
@@ -26440,7 +26440,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.06
                                          }
                                      ]
@@ -26467,7 +26467,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.15
                                          },
                                          {
@@ -26475,7 +26475,7 @@
                                              "Value":  1
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.16
                                          }
                                      ]
@@ -26488,7 +26488,7 @@
                                              "Value":  3.5
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.2
                                          }
                                      ]
@@ -26497,12 +26497,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.2
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.08
                                          }
                                      ]
@@ -26537,7 +26537,7 @@
                                              "Value":  0.05
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.12
                                          }
                                      ]
@@ -26546,7 +26546,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.1
                                          },
                                          {
@@ -26557,7 +26557,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.06
                                          }
                                      ]
@@ -26584,7 +26584,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.15
                                          },
                                          {
@@ -26592,7 +26592,7 @@
                                              "Value":  1
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.16
                                          }
                                      ]
@@ -26605,7 +26605,7 @@
                                              "Value":  3.5
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.2
                                          }
                                      ]
@@ -26614,12 +26614,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.2
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.08
                                          }
                                      ]
@@ -26634,7 +26634,7 @@
                        {
                            "Perks":  [
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.15
                                          }
                                      ]
@@ -26653,7 +26653,7 @@
                                              "Value":  0.05
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.2
                                          }
                                      ]
@@ -26672,7 +26672,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.08
                                          }
                                      ]
@@ -26715,7 +26715,7 @@
                                              "Value":  0.1
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.25
                                          }
                                      ]
@@ -26724,7 +26724,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.12
                                          }
                                      ]
@@ -26768,7 +26768,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.02
                                          },
                                          {
@@ -26776,7 +26776,7 @@
                                              "Value":  1
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.04
                                          }
                                      ]
@@ -26803,11 +26803,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.03
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.06
                                          }
                                      ]
@@ -26829,11 +26829,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.05
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.1
                                          }
                                      ]
@@ -26848,7 +26848,7 @@
                        {
                            "Perks":  [
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  1.0
                                          }
                                      ]
@@ -26875,7 +26875,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.4
                                          },
                                          {
@@ -26908,7 +26908,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.02
                                          },
                                          {
@@ -26946,7 +26946,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.04
                                          },
                                          {
@@ -26970,7 +26970,7 @@
                        {
                            "Perks":  [
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  1.0
                                          }
                                      ]
@@ -26997,7 +26997,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.4
                                          },
                                          {
@@ -27030,7 +27030,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.02
                                          },
                                          {
@@ -27068,7 +27068,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.04
                                          },
                                          {
@@ -30695,7 +30695,7 @@
                        {
                            "Perks":  [
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.180
                                          }
                                      ]
@@ -30714,7 +30714,7 @@
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.24
                                          }
                                      ]
@@ -30733,7 +30733,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.096
                                          }
                                      ]
@@ -30776,7 +30776,7 @@
                                              "Value":  0.12
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.300
                                          }
                                      ]
@@ -30785,7 +30785,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.144
                                          }
                                      ]
@@ -31030,7 +31030,7 @@
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.144
                                          }
                                      ]
@@ -31039,7 +31039,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.12
                                          },
                                          {
@@ -31050,7 +31050,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.072
                                          }
                                      ]
@@ -31077,7 +31077,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.180
                                          },
                                          {
@@ -31085,7 +31085,7 @@
                                              "Value":  1.2
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.192
                                          }
                                      ]
@@ -31098,7 +31098,7 @@
                                              "Value":  4.20
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.24
                                          }
                                      ]
@@ -31107,12 +31107,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  16,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.24
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.096
                                          }
                                      ]
@@ -31381,7 +31381,7 @@
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.144
                                          }
                                      ]
@@ -31390,7 +31390,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.12
                                          },
                                          {
@@ -31401,7 +31401,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.072
                                          }
                                      ]
@@ -31428,7 +31428,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.180
                                          },
                                          {
@@ -31436,7 +31436,7 @@
                                              "Value":  1.2
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.192
                                          }
                                      ]
@@ -31449,7 +31449,7 @@
                                              "Value":  4.20
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.24
                                          }
                                      ]
@@ -31458,12 +31458,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.24
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.096
                                          }
                                      ]
@@ -31732,7 +31732,7 @@
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.144
                                          }
                                      ]
@@ -31741,7 +31741,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.12
                                          },
                                          {
@@ -31752,7 +31752,7 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.072
                                          }
                                      ]
@@ -31779,7 +31779,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.180
                                          },
                                          {
@@ -31787,7 +31787,7 @@
                                              "Value":  1.2
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.192
                                          }
                                      ]
@@ -31800,7 +31800,7 @@
                                              "Value":  4.20
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.24
                                          }
                                      ]
@@ -31809,12 +31809,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  8,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.24
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.096
                                          }
                                      ]
@@ -32063,7 +32063,7 @@
                        {
                            "Perks":  [
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  1.20
                                          }
                                      ]
@@ -32072,6 +32072,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
+                                             "Type":  13,
+                                             "Value":  0.0900
+                                         },
+                                         {
+                                             "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.0900
                                          },
@@ -32090,12 +32095,18 @@
                                          },
                                          {
                                              "ElementId":  1,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.48
                                          },
                                          {
                                              "AugmentType":  15,
                                              "SpellId":  119,
+                                             "Type":  5,
+                                             "Value":  0.420
+                                         },
+                                         {
+                                             "AugmentType":  15,
+                                             "SpellId":  56,
                                              "Type":  5,
                                              "Value":  0.420
                                          }
@@ -32123,7 +32134,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.024
                                          },
                                          {
@@ -32133,6 +32144,17 @@
                                          {
                                              "AugmentType":  14,
                                              "SpellId":  119,
+                                             "Type":  5,
+                                             "Value":  0.60
+                                         },
+                                         {
+                                             "ElementId":  16,
+                                             "Type":  31,
+                                             "Value":  0.024
+                                         },
+                                         {
+                                             "AugmentType":  14,
+                                             "SpellId":  56,
                                              "Type":  5,
                                              "Value":  0.60
                                          }
@@ -32154,6 +32176,17 @@
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
+                                         },
+                                         {
+                                             "DamageType":  1048576,
+                                             "Type":  4,
+                                             "Value":  2.4
+                                         },
+                                         {
+                                             "AugmentType":  2,
+                                             "SpellId":  56,
+                                             "Type":  5,
+                                             "Value":  0.18
                                          }
                                      ]
                        },
@@ -32161,7 +32194,12 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
-                                             "Type":  13,
+                                             "Type":  31,
+                                             "Value":  0.048
+                                         },
+                                         {
+                                             "ElementId":  16,
+                                             "Type":  31,
                                              "Value":  0.048
                                          },
                                          {
@@ -32178,7 +32216,7 @@
                    ],
         "Name":  "UnderCrypt GreatStaff Proficiency",
         "ProficiencyId":  479,
-        "Version":  4
+        "Version":  5
     },
     {
         "Levels":  [
@@ -32198,6 +32236,11 @@
                                              "Value":  0.0900
                                          },
                                          {
+                                             "ElementId":  16,
+                                             "Type":  13,
+                                             "Value":  0.0900
+                                         },
+                                         {
                                              "SkillId":  1,
                                              "Type":  3,
                                              "Value":  1.2
@@ -32218,6 +32261,12 @@
                                          {
                                              "AugmentType":  15,
                                              "SpellId":  119,
+                                             "Type":  5,
+                                             "Value":  0.420
+                                         },
+                                         {
+                                             "AugmentType":  15,
+                                             "SpellId":  56,
                                              "Type":  5,
                                              "Value":  0.420
                                          }
@@ -32257,6 +32306,17 @@
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.60
+                                         },
+                                         {
+                                             "ElementId":  16,
+                                             "Type":  13,
+                                             "Value":  0.024
+                                         },
+                                         {
+                                             "AugmentType":  14,
+                                             "SpellId":  56,
+                                             "Type":  5,
+                                             "Value":  0.60
                                          }
                                      ]
                        },
@@ -32276,6 +32336,17 @@
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
+                                         },
+                                         {
+                                             "DamageType":  1048576,
+                                             "Type":  4,
+                                             "Value":  2.4
+                                         },
+                                         {
+                                             "AugmentType":  2,
+                                             "SpellId":  56,
+                                             "Type":  5,
+                                             "Value":  0.18
                                          }
                                      ]
                        },
@@ -32283,6 +32354,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
+                                             "Type":  13,
+                                             "Value":  0.048
+                                         },
+                                         {
+                                             "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.048
                                          },
@@ -32300,7 +32376,7 @@
                    ],
         "Name":  "Master UnderCrypt GreatStaff Proficiency",
         "ProficiencyId":  10479,
-        "Version":  4
+        "Version":  5
     },
     {
         "Levels":  [
@@ -32316,6 +32392,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
+                                             "Type":  13,
+                                             "Value":  0.0900
+                                         },
+                                         {
+                                             "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.0900
                                          },
@@ -32340,6 +32421,12 @@
                                          {
                                              "AugmentType":  15,
                                              "SpellId":  119,
+                                             "Type":  5,
+                                             "Value":  0.420
+                                         },
+                                         {
+                                             "AugmentType":  15,
+                                             "SpellId":  56,
                                              "Type":  5,
                                              "Value":  0.420
                                          }
@@ -32379,6 +32466,17 @@
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.60
+                                         },
+                                         {
+                                             "ElementId":  16,
+                                             "Type":  13,
+                                             "Value":  0.024
+                                         },
+                                         {
+                                             "AugmentType":  14,
+                                             "SpellId":  56,
+                                             "Type":  5,
+                                             "Value":  0.60
                                          }
                                      ]
                        },
@@ -32398,6 +32496,17 @@
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
+                                         },
+                                         {
+                                             "DamageType":  1048576,
+                                             "Type":  4,
+                                             "Value":  2.4
+                                         },
+                                         {
+                                             "AugmentType":  2,
+                                             "SpellId":  56,
+                                             "Type":  5,
+                                             "Value":  0.18
                                          }
                                      ]
                        },
@@ -32405,6 +32514,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  32,
+                                             "Type":  13,
+                                             "Value":  0.048
+                                         },
+                                         {
+                                             "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.048
                                          },
@@ -32422,7 +32536,7 @@
                    ],
         "Name":  "Penultima UnderCrypt GreatStaff Proficiency",
         "ProficiencyId":  20479,
-        "Version":  4
+        "Version":  5
     },
     {
         "Levels":  [
@@ -32458,7 +32572,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.024
                                          },
                                          {
@@ -32466,7 +32580,7 @@
                                              "Value":  1.2
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.048
                                          }
                                      ]
@@ -32493,11 +32607,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.036
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.072
                                          }
                                      ]
@@ -32519,11 +32633,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.12
                                          }
                                      ]
@@ -32785,7 +32899,7 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.024
                                          },
                                          {
@@ -32793,7 +32907,7 @@
                                              "Value":  1.2
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.048
                                          }
                                      ]
@@ -32820,11 +32934,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.036
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.072
                                          }
                                      ]
@@ -32846,11 +32960,11 @@
                            "Perks":  [
                                          {
                                              "ElementId":  128,
-                                             "Type":  13,
+                                             "Type":  31,
                                              "Value":  0.060
                                          },
                                          {
-                                             "Type":  12,
+                                             "Type":  30,
                                              "Value":  0.12
                                          }
                                      ]
