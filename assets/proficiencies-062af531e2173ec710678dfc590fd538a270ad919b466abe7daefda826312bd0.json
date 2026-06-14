@@ -32081,6 +32081,10 @@
                                              "Value":  0.0900
                                          },
                                          {
+                                             "Type":  14,
+                                             "Value":  0.0900
+                                         },
+                                         {
                                              "SkillId":  1,
                                              "Type":  3,
                                              "Value":  1.2
@@ -32094,11 +32098,6 @@
                                              "Value":  0.048
                                          },
                                          {
-                                             "ElementId":  1,
-                                             "Type":  31,
-                                             "Value":  0.48
-                                         },
-                                         {
                                              "AugmentType":  15,
                                              "SpellId":  119,
                                              "Type":  5,
@@ -32116,17 +32115,17 @@
                            "Perks":  [
                                          {
                                              "Type":  28,
-                                             "Value":  0.12
+                                             "Value":  0.205
                                          },
                                          {
                                              "BestiaryId":  18,
                                              "BestiaryName":  "Undead",
                                              "Type":  6,
-                                             "Value":  0.036
+                                             "Value":  0.0615
                                          },
                                          {
                                              "Type":  29,
-                                             "Value":  0.0300
+                                             "Value":  0.05125
                                          }
                                      ]
                        },
@@ -32138,25 +32137,13 @@
                                              "Value":  0.024
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.012
-                                         },
-                                         {
-                                             "AugmentType":  14,
-                                             "SpellId":  119,
-                                             "Type":  5,
-                                             "Value":  0.60
-                                         },
-                                         {
                                              "ElementId":  16,
                                              "Type":  31,
                                              "Value":  0.024
                                          },
                                          {
-                                             "AugmentType":  14,
-                                             "SpellId":  56,
-                                             "Type":  5,
-                                             "Value":  0.60
+                                             "Type":  16,
+                                             "Value":  0.012
                                          }
                                      ]
                        },
@@ -32168,25 +32155,16 @@
                                              "Value":  0.096
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.0180
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
                                          },
                                          {
-                                             "DamageType":  1048576,
-                                             "Type":  4,
-                                             "Value":  2.4
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  56,
                                              "Type":  5,
-                                             "Value":  0.18
+                                             "Value":  0.12
                                          }
                                      ]
                        },
@@ -32201,11 +32179,6 @@
                                              "ElementId":  16,
                                              "Type":  31,
                                              "Value":  0.048
-                                         },
-                                         {
-                                             "ElementId":  1,
-                                             "Type":  13,
-                                             "Value":  1.20
                                          },
                                          {
                                              "Type":  29,
@@ -32241,6 +32214,10 @@
                                              "Value":  0.0900
                                          },
                                          {
+                                             "Type":  14,
+                                             "Value":  0.0900
+                                         },
+                                         {
                                              "SkillId":  1,
                                              "Type":  3,
                                              "Value":  1.2
@@ -32254,11 +32231,6 @@
                                              "Value":  0.048
                                          },
                                          {
-                                             "ElementId":  1,
-                                             "Type":  13,
-                                             "Value":  0.48
-                                         },
-                                         {
                                              "AugmentType":  15,
                                              "SpellId":  119,
                                              "Type":  5,
@@ -32276,17 +32248,17 @@
                            "Perks":  [
                                          {
                                              "Type":  28,
-                                             "Value":  0.12
+                                             "Value":  0.205
                                          },
                                          {
                                              "BestiaryId":  18,
                                              "BestiaryName":  "Undead",
                                              "Type":  6,
-                                             "Value":  0.036
+                                             "Value":  0.0615
                                          },
                                          {
                                              "Type":  29,
-                                             "Value":  0.0300
+                                             "Value":  0.05125
                                          }
                                      ]
                        },
@@ -32298,25 +32270,13 @@
                                              "Value":  0.024
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.012
-                                         },
-                                         {
-                                             "AugmentType":  14,
-                                             "SpellId":  119,
-                                             "Type":  5,
-                                             "Value":  0.60
-                                         },
-                                         {
                                              "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.024
                                          },
                                          {
-                                             "AugmentType":  14,
-                                             "SpellId":  56,
-                                             "Type":  5,
-                                             "Value":  0.60
+                                             "Type":  16,
+                                             "Value":  0.012
                                          }
                                      ]
                        },
@@ -32328,25 +32288,16 @@
                                              "Value":  0.096
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.0180
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
                                          },
                                          {
-                                             "DamageType":  1048576,
-                                             "Type":  4,
-                                             "Value":  2.4
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  56,
                                              "Type":  5,
-                                             "Value":  0.18
+                                             "Value":  0.12
                                          }
                                      ]
                        },
@@ -32361,11 +32312,6 @@
                                              "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.048
-                                         },
-                                         {
-                                             "ElementId":  1,
-                                             "Type":  13,
-                                             "Value":  1.20
                                          },
                                          {
                                              "Type":  29,
@@ -32401,6 +32347,10 @@
                                              "Value":  0.0900
                                          },
                                          {
+                                             "Type":  14,
+                                             "Value":  0.0900
+                                         },
+                                         {
                                              "SkillId":  1,
                                              "Type":  3,
                                              "Value":  1.2
@@ -32414,11 +32364,6 @@
                                              "Value":  0.048
                                          },
                                          {
-                                             "ElementId":  1,
-                                             "Type":  13,
-                                             "Value":  0.48
-                                         },
-                                         {
                                              "AugmentType":  15,
                                              "SpellId":  119,
                                              "Type":  5,
@@ -32436,17 +32381,17 @@
                            "Perks":  [
                                          {
                                              "Type":  28,
-                                             "Value":  0.12
+                                             "Value":  0.205
                                          },
                                          {
                                              "BestiaryId":  18,
                                              "BestiaryName":  "Undead",
                                              "Type":  6,
-                                             "Value":  0.036
+                                             "Value":  0.0615
                                          },
                                          {
                                              "Type":  29,
-                                             "Value":  0.0300
+                                             "Value":  0.05125
                                          }
                                      ]
                        },
@@ -32458,25 +32403,13 @@
                                              "Value":  0.024
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.012
-                                         },
-                                         {
-                                             "AugmentType":  14,
-                                             "SpellId":  119,
-                                             "Type":  5,
-                                             "Value":  0.60
-                                         },
-                                         {
                                              "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.024
                                          },
                                          {
-                                             "AugmentType":  14,
-                                             "SpellId":  56,
-                                             "Type":  5,
-                                             "Value":  0.60
+                                             "Type":  16,
+                                             "Value":  0.012
                                          }
                                      ]
                        },
@@ -32488,25 +32421,16 @@
                                              "Value":  0.096
                                          },
                                          {
-                                             "Type":  16,
-                                             "Value":  0.0180
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  119,
                                              "Type":  5,
                                              "Value":  0.12
                                          },
                                          {
-                                             "DamageType":  1048576,
-                                             "Type":  4,
-                                             "Value":  2.4
-                                         },
-                                         {
                                              "AugmentType":  2,
                                              "SpellId":  56,
                                              "Type":  5,
-                                             "Value":  0.18
+                                             "Value":  0.12
                                          }
                                      ]
                        },
@@ -32521,11 +32445,6 @@
                                              "ElementId":  16,
                                              "Type":  13,
                                              "Value":  0.048
-                                         },
-                                         {
-                                             "ElementId":  1,
-                                             "Type":  13,
-                                             "Value":  1.20
                                          },
                                          {
                                              "Type":  29,

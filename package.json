@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-11553f6b66c4-battleye1-a5bee65ecdd7",
+  "version": "15.23-prod-a053d9523497",
   "files": [
     {
       "url": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
@@ -102,7 +102,7 @@
     {
       "url": "assets/catalog-content.json",
       "localfile": "assets/catalog-content.json",
-      "packedhash": "95c4fa2273d79f74c27557584aacaaaabc737fddc3381228e330bb8f5037259e",
+      "packedhash": "6ea7c3084319c9a76ece77bb285dbf1af2b3cd890356e5fe543a19c46c9a70bd",
       "packedsize": 2664611,
       "unpack": false
     },
@@ -1486,10 +1486,10 @@
       "unpack": false
     },
     {
-      "url": "assets/proficiencies-86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca.json",
-      "localfile": "assets/proficiencies-86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca.json",
-      "packedhash": "41c1c27367c336ab90e6c3d6e78e3ceca9989220a1b1ae3a1345ae1f85ea01c0",
-      "packedsize": 1487050,
+      "url": "assets/proficiencies-062af531e2173ec710678dfc590fd538a270ad919b466abe7daefda826312bd0.json",
+      "localfile": "assets/proficiencies-062af531e2173ec710678dfc590fd538a270ad919b466abe7daefda826312bd0.json",
+      "packedhash": "062af531e2173ec710678dfc590fd538a270ad919b466abe7daefda826312bd0",
+      "packedsize": 1482577,
       "unpack": false
     },
     {

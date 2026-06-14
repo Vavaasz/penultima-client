@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-11553f6b66c4-battleye1-a5bee65ecdd7",
+  "version": "15.23-prod-a053d9523497",
   "tracked_files": [
     {
       "path": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
@@ -101,7 +101,7 @@
     },
     {
       "path": "assets/catalog-content.json",
-      "sha256": "95c4fa2273d79f74c27557584aacaaaabc737fddc3381228e330bb8f5037259e",
+      "sha256": "6ea7c3084319c9a76ece77bb285dbf1af2b3cd890356e5fe543a19c46c9a70bd",
       "size": 2664611,
       "managed_by_launcher": true,
       "bootstrap_only": false
@@ -1486,9 +1486,9 @@
       "bootstrap_only": false
     },
     {
-      "path": "assets/proficiencies-86cfe78d03b2f99c444ae663288aed21a2268ec5aeb4638917039344d716c5ca.json",
-      "sha256": "41c1c27367c336ab90e6c3d6e78e3ceca9989220a1b1ae3a1345ae1f85ea01c0",
-      "size": 1487050,
+      "path": "assets/proficiencies-062af531e2173ec710678dfc590fd538a270ad919b466abe7daefda826312bd0.json",
+      "sha256": "062af531e2173ec710678dfc590fd538a270ad919b466abe7daefda826312bd0",
+      "size": 1482577,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },
