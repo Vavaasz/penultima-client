@@ -1,5 +1,5 @@
 {
-  "version": "15.23-prod-f51bd9751ea5",
+  "version": "15.23-prod-798c3da0bf04",
   "tracked_files": [
     {
       "path": "assets/appearances-24de7a6af8db182f29e39c2298a7b03acde9495515a2f3d479f83668a4a09a02.dat",
@@ -99928,8 +99928,8 @@
     },
     {
       "path": "sounds/publish-website-client-assets.py",
-      "sha256": "09f26b0198da06e21bb24939171abf4b2b6d0d5d2236184e4af2ef2393ad23c9",
-      "size": 37020,
+      "sha256": "c8ce8fef5b5f95e4312ff0753c006faa29d4a845ba7578a5f8fcf03e775d364d",
+      "size": 37844,
       "managed_by_launcher": true,
       "bootstrap_only": false
     },

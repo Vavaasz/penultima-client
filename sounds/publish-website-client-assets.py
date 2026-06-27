@@ -884,25 +884,33 @@ def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None
     portable_zip_path = downloads_root / "Penultima-Client-Portable.zip"
     bootstrap_zip_path = downloads_root / "Penultima-Client-Feed.zip"
 
+    existing_metadata = {}
     existing_launcher_metadata = {}
+    existing_full_minimap_metadata = None
     if metadata_path.is_file():
         try:
             existing_metadata = json.loads(metadata_path.read_text(encoding="utf-8-sig"))
             existing_launcher = existing_metadata.get("launcher")
             if isinstance(existing_launcher, dict):
                 existing_launcher_metadata = existing_launcher
+            existing_full_minimap = existing_metadata.get("full_minimap")
+            if isinstance(existing_full_minimap, dict):
+                existing_full_minimap_metadata = existing_full_minimap
         except (OSError, json.JSONDecodeError):
+            existing_metadata = {}
             existing_launcher_metadata = {}
+            existing_full_minimap_metadata = None
 
     launcher_metadata = None
     if launcher_zip_path.is_file():
         launcher_hash = get_sha256_hex(launcher_zip_path)
+        launcher_cache_key = launcher_hash[:12].lower()
         launcher_size = launcher_zip_path.stat().st_size
         launcher_exe_hash = get_zip_entry_sha256_hex(
             launcher_zip_path, "penultima-launcher.exe"
         )
         launcher_metadata = {
-            "zip": "downloads/Penultima-Launcher.zip",
+            "zip": f"downloads/Penultima-Launcher.zip?sha256={launcher_cache_key}",
             "sha256": launcher_hash,
             "size": launcher_size,
         }
@@ -922,19 +930,23 @@ def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None
 
     portable_metadata = None
     if portable_zip_path.is_file():
+        portable_hash = get_sha256_hex(portable_zip_path)
+        portable_cache_key = portable_hash[:12].lower()
         portable_metadata = {
-            "zip": "downloads/Penultima-Client-Portable.zip",
-            "sha256": get_sha256_hex(portable_zip_path),
+            "zip": f"downloads/Penultima-Client-Portable.zip?sha256={portable_cache_key}",
+            "sha256": portable_hash,
             "size": portable_zip_path.stat().st_size,
         }
 
     client_feed_metadata = None
     if bootstrap_zip_path.is_file():
+        bootstrap_hash = get_sha256_hex(bootstrap_zip_path)
+        bootstrap_cache_key = bootstrap_hash[:12].lower()
         client_feed_metadata = {
             "version": publish_version,
             "root": "downloads/client-feed",
-            "bootstrap_zip": "downloads/Penultima-Client-Feed.zip",
-            "bootstrap_sha256": get_sha256_hex(bootstrap_zip_path),
+            "bootstrap_zip": f"downloads/Penultima-Client-Feed.zip?sha256={bootstrap_cache_key}",
+            "bootstrap_sha256": bootstrap_hash,
             "bootstrap_size": bootstrap_zip_path.stat().st_size,
         }
 
@@ -946,6 +958,9 @@ def write_downloads_metadata(downloads_root: Path, publish_version: str) -> None
         "portable_client": portable_metadata,
         "client_feed": client_feed_metadata,
     }
+    if existing_full_minimap_metadata is not None:
+        metadata["full_minimap"] = existing_full_minimap_metadata
+
     write_text(metadata_path, json.dumps(metadata, indent=4) + "\n")
 
 
